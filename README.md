@@ -12,3 +12,5 @@ Quick decision-making and tense time limits.
 AI-driven chasing when the timer runs out.
 Multiple horrific death animations, all presented in a cinematic pixel-art style.
 Extension features like a secret ending and AI that remembers the player’s hiding spots in repeated playthroughs.
+
+Test Commit
