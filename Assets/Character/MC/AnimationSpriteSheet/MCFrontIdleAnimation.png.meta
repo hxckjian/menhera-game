@@ -1,0 +1,676 @@
+fileFormatVersion: 2
+guid: 5397312cdad994d059001177f16525b7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3213633854158335723
+    second: MCFrontIdleAnimation_0
+  - first:
+      213: -8716116435798565251
+    second: MCFrontIdleAnimation_1
+  - first:
+      213: 545927640606156984
+    second: MCFrontIdleAnimation_2
+  - first:
+      213: -6347753938934053842
+    second: MCFrontIdleAnimation_3
+  - first:
+      213: 5418659073005433949
+    second: MCFrontIdleAnimation_4
+  - first:
+      213: 7238714685821326205
+    second: MCFrontIdleAnimation_5
+  - first:
+      213: -4480533010403964288
+    second: MCFrontIdleAnimation_6
+  - first:
+      213: -5447904982817985872
+    second: MCFrontIdleAnimation_7
+  - first:
+      213: -6233657189091663586
+    second: MCFrontIdleAnimation_8
+  - first:
+      213: -6323940073099053196
+    second: MCFrontIdleAnimation_9
+  - first:
+      213: 7909335333173860124
+    second: MCFrontIdleAnimation_10
+  - first:
+      213: -6433856563375109821
+    second: MCFrontIdleAnimation_11
+  - first:
+      213: 6206003063548972446
+    second: MCFrontIdleAnimation_12
+  - first:
+      213: 4738685743645431119
+    second: MCFrontIdleAnimation_13
+  - first:
+      213: -5766874341799329197
+    second: MCFrontIdleAnimation_14
+  - first:
+      213: -7049127733566687690
+    second: MCFrontIdleAnimation_15
+  - first:
+      213: -4348552819486096223
+    second: MCFrontIdleAnimation_16
+  - first:
+      213: 5574094701597822855
+    second: MCFrontIdleAnimation_17
+  - first:
+      213: 1372939566682486823
+    second: MCFrontIdleAnimation_18
+  - first:
+      213: 4861143662472296785
+    second: MCFrontIdleAnimation_19
+  - first:
+      213: 6926460210234707827
+    second: MCFrontIdleAnimation_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MCFrontIdleAnimation_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 0
+        width: 28
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51119b44901e663d0800000000000000
+      internalID: -3213633854158335723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFrontIdleAnimation_1
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 0
+        width: 28
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7e584718422a0780800000000000000
+      internalID: -8716116435798565251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFrontIdleAnimation_2
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 0
+        width: 28
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b8a563fb46839700800000000000000
+      internalID: 545927640606156984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFrontIdleAnimation_3
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 0
+        width: 28
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e24cf34ac6f38e7a0800000000000000
+      internalID: -6347753938934053842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFrontIdleAnimation_4
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 0
+        width: 28
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d54bf65b7b1f23b40800000000000000
+      internalID: 5418659073005433949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFrontIdleAnimation_5
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 0
+        width: 28
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7398c687a4157460800000000000000
+      internalID: 7238714685821326205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFrontIdleAnimation_6
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 0
+        width: 28
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08ac57647f2f1d1c0800000000000000
+      internalID: -4480533010403964288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFrontIdleAnimation_7
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 0
+        width: 28
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0baad0948472564b0800000000000000
+      internalID: -5447904982817985872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFrontIdleAnimation_8
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 0
+        width: 28
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e11a1a850d99d79a0800000000000000
+      internalID: -6233657189091663586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFrontIdleAnimation_9
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 0
+        width: 28
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 477b21a520adc38a0800000000000000
+      internalID: -6323940073099053196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFrontIdleAnimation_10
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 0
+        width: 28
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c17164f749a93cd60800000000000000
+      internalID: 7909335333173860124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFrontIdleAnimation_11
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 0
+        width: 28
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 349063c2b8956b6a0800000000000000
+      internalID: -6433856563375109821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFrontIdleAnimation_12
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 0
+        width: 28
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9d82ddc7e6202650800000000000000
+      internalID: 6206003063548972446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFrontIdleAnimation_13
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 0
+        width: 28
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f459134c39133c140800000000000000
+      internalID: 4738685743645431119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFrontIdleAnimation_14
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 0
+        width: 28
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3528cb02752f7ffa0800000000000000
+      internalID: -5766874341799329197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFrontIdleAnimation_15
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 0
+        width: 28
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63637689ca77c2e90800000000000000
+      internalID: -7049127733566687690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFrontIdleAnimation_16
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 0
+        width: 28
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a402831046d6a3c0800000000000000
+      internalID: -4348552819486096223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFrontIdleAnimation_17
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 0
+        width: 28
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78f002929992b5d40800000000000000
+      internalID: 5574094701597822855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFrontIdleAnimation_18
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 0
+        width: 28
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72830320349ad0310800000000000000
+      internalID: 1372939566682486823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFrontIdleAnimation_19
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 0
+        width: 28
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1597dc3d760467340800000000000000
+      internalID: 4861143662472296785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFrontIdleAnimation_20
+      rect:
+        serializedVersion: 2
+        x: 1298
+        y: 0
+        width: 28
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37fcaedfcdabf1060800000000000000
+      internalID: 6926460210234707827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      MCFrontIdleAnimation_0: -3213633854158335723
+      MCFrontIdleAnimation_1: -8716116435798565251
+      MCFrontIdleAnimation_10: 7909335333173860124
+      MCFrontIdleAnimation_11: -6433856563375109821
+      MCFrontIdleAnimation_12: 6206003063548972446
+      MCFrontIdleAnimation_13: 4738685743645431119
+      MCFrontIdleAnimation_14: -5766874341799329197
+      MCFrontIdleAnimation_15: -7049127733566687690
+      MCFrontIdleAnimation_16: -4348552819486096223
+      MCFrontIdleAnimation_17: 5574094701597822855
+      MCFrontIdleAnimation_18: 1372939566682486823
+      MCFrontIdleAnimation_19: 4861143662472296785
+      MCFrontIdleAnimation_2: 545927640606156984
+      MCFrontIdleAnimation_20: 6926460210234707827
+      MCFrontIdleAnimation_3: -6347753938934053842
+      MCFrontIdleAnimation_4: 5418659073005433949
+      MCFrontIdleAnimation_5: 7238714685821326205
+      MCFrontIdleAnimation_6: -4480533010403964288
+      MCFrontIdleAnimation_7: -5447904982817985872
+      MCFrontIdleAnimation_8: -6233657189091663586
+      MCFrontIdleAnimation_9: -6323940073099053196
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
