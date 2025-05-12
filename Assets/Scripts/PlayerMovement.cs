@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -11,6 +12,8 @@ public class PlayerMovement : MonoBehaviour
     public ContactFilter2D movementFilter;
 
     Vector2 movementInput;
+    Vector2 movement;
+    Animator animator;
 
     Rigidbody2D rb;
     List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
@@ -18,23 +21,48 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>(); 
+        movementFilter.useLayerMask = true;
+    movementFilter.layerMask = LayerMask.GetMask("Collision"); // ONLY check against Ground
+    movementFilter.useTriggers = false;
+    }
+    void Update()
+    {
+        animator.SetFloat("Horizontal", movementInput.x);
+        animator.SetFloat("Vertical", movementInput.y);
+        animator.SetFloat("Speed", movementInput.sqrMagnitude);
     }
 
     private void FixedUpdate()
     {
-        if (movementInput != Vector2.zero) {
+        // if (movementInput != Vector2.zero) {
 
+        if (movementInput != Vector2.zero){
             int count = rb.Cast(
-                movementInput,
+                movementInput.normalized, // Direction
                 movementFilter,
                 castCollisions,
                 moveSpeed * Time.fixedDeltaTime + collisionOffset
             );
+            foreach (var hit in castCollisions)
+{
+    Debug.Log("Hit: " + hit.collider.name + " on layer " + LayerMask.LayerToName(hit.collider.gameObject.layer));
+}
 
-            if(count == 0) {
+            if (count == 0)
+            {
                 rb.MovePosition(rb.position + movementInput * moveSpeed * Time.fixedDeltaTime);
             }
         }
+            // animator.SetBool("isMoving", true);
+            // movement.x = Input.GetAxisRaw("Horizontal");
+            // movement.y = Input.GetAxisRaw("Vertical");
+            // animator.SetFloat("Horizontal", movement.x);
+            // animator.SetFloat("Vertical", movement.y);
+        // } else {
+        //     animator.SetBool("isMoving", false);
+        // }
+
     }
 
     void OnMove(InputValue movementValue) {
