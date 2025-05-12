@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: granite floor_0
+  m_Name: fences_15
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -3381525532562605803, guid: 028f22754095a4b4da0011c3e027eb43, type: 3}
+  m_Sprite: {fileID: -1959452246, guid: 8a6f818410f954bc9a706939e2071617, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
