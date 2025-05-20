@@ -35,8 +35,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        // if (movementInput != Vector2.zero) {
-
         if (movementInput != Vector2.zero){
             int count = rb.Cast(
                 movementInput.normalized, // Direction
@@ -44,53 +42,15 @@ public class PlayerMovement : MonoBehaviour
                 castCollisions,
                 moveSpeed * Time.fixedDeltaTime + collisionOffset
             );
-            foreach (var hit in castCollisions)
-{
-    Debug.Log("Hit: " + hit.collider.name + " on layer " + LayerMask.LayerToName(hit.collider.gameObject.layer));
-}
 
             if (count == 0)
             {
                 rb.MovePosition(rb.position + movementInput * moveSpeed * Time.fixedDeltaTime);
             }
         }
-            // animator.SetBool("isMoving", true);
-            // movement.x = Input.GetAxisRaw("Horizontal");
-            // movement.y = Input.GetAxisRaw("Vertical");
-            // animator.SetFloat("Horizontal", movement.x);
-            // animator.SetFloat("Vertical", movement.y);
-        // } else {
-        //     animator.SetBool("isMoving", false);
-        // }
-
     }
 
     void OnMove(InputValue movementValue) {
         movementInput  = movementValue.Get<Vector2>();
     }
-    // public int speed = 10;
-    // private Rigidbody2D characterBody;
-    // private Vector2 velocity;
-    // private Vector2 inputMovement;
-
-    // void Start() 
-    // {
-    //     velocity = new Vector2(speed, speed);
-    //     characterBody = GetComponent<Rigidbody2D>();
-    // }
-
-    // void Update()
-    // {
-    //     inputMovement = new Vector2 (
-    //         Input.GetAxisRaw("Horizontal"),
-    //         Input.GetAxisRaw("Vertical")
-    //     );
-    // }
-
-    // private void FixedUpdate()
-    // {
-    //     Vector2 delta = inputMovement * velocity * Time.deltaTime;
-    //     Vector2 newPosition = characterBody.position + delta;
-    //     characterBody.MovePosition(newPosition);
-    // }
 }
