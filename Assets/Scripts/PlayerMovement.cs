@@ -23,8 +23,8 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>(); 
         movementFilter.useLayerMask = true;
-    movementFilter.layerMask = LayerMask.GetMask("Collision"); // ONLY check against Ground
-    movementFilter.useTriggers = false;
+        movementFilter.layerMask = LayerMask.GetMask("Collision"); // ONLY check against Ground
+        movementFilter.useTriggers = false;
     }
     void Update()
     {
@@ -35,20 +35,43 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (movementInput != Vector2.zero){
-            int count = rb.Cast(
-                movementInput.normalized, // Direction
-                movementFilter,
-                castCollisions,
-                moveSpeed * Time.fixedDeltaTime + collisionOffset
-            );
+        if (movementInput != Vector2.zero)
+        {
+            bool success = Movement(movementInput);
 
-            if (count == 0)
+            if (!success)
             {
-                rb.MovePosition(rb.position + movementInput * moveSpeed * Time.fixedDeltaTime);
+                success = Movement(new Vector2(movementInput.x, 0));
+
+                if (!success)
+                {
+                    success = Movement(new Vector2(0, movementInput.y));
+                }
             }
         }
     }
+
+    private bool Movement(Vector2 direction)
+    {
+        if (direction == Vector2.zero)
+            return false;
+
+        int count = rb.Cast(
+            direction.normalized,
+            movementFilter,
+            castCollisions,
+            moveSpeed * Time.fixedDeltaTime + collisionOffset
+        );
+
+        if (count == 0)
+        {
+            rb.MovePosition(rb.position + direction * moveSpeed * Time.fixedDeltaTime);
+            return true;
+        }
+
+        return false;
+    }
+
 
     void OnMove(InputValue movementValue) {
         movementInput  = movementValue.Get<Vector2>();
