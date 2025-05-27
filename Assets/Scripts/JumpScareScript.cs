@@ -30,8 +30,8 @@ public class JumpScareScript : MonoBehaviour
         jumpscareGroup.blocksRaycasts = true;
 
         // Play animation
-        // jumpscareAnimator.Play("Jumpscare");
-        jumpscareAnimator.SetTrigger("PlayJumpscare");
+        jumpscareAnimator.Play("Jumpscare");
+        // jumpscareAnimator.SetTrigger("PlayJumpscare");
 
         hasPlayed = true;
     }

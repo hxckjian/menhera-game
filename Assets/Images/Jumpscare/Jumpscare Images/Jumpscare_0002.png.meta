@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Jumpscare_0002_0: 2215755369975161277
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
