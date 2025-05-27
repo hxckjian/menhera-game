@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2e85a24f39dda495c9e79156c9ace4c5
+guid: c51f9d95109ae0241ba5518b8d9f3db9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2200396172047272399
-    second: OrbitalMain-1_0
+      213: -5433454790360253498
+    second: YandereFront_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: OrbitalMain-1_0
+      name: YandereFront_0
       rect:
         serializedVersion: 2
         x: 15
-        y: 0
+        y: 1
         width: 34
-        height: 64
+        height: 62
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1363ef7f65f9671e0800000000000000
-      internalID: -2200396172047272399
+      spriteID: 6cbbe65e7ad7894b0800000000000000
+      internalID: -5433454790360253498
       vertices: []
       indices: 
       edges: []
@@ -148,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      OrbitalMain-1_0: -2200396172047272399
+      YandereFront_0: -5433454790360253498
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
