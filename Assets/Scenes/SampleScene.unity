@@ -3130,7 +3130,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentNode: {fileID: 1561170460}
   path: []
-  speed: 2.3
+  speed: 2.2
   player: {fileID: 883634905}
 --- !u!114 &449368494 stripped
 MonoBehaviour:
@@ -4305,6 +4305,7 @@ GameObject:
   - component: {fileID: 659404228}
   - component: {fileID: 659404230}
   - component: {fileID: 659404229}
+  - component: {fileID: 659404231}
   m_Layer: 6
   m_Name: MCSprite
   m_TagString: Untagged
@@ -4392,7 +4393,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: e67850128a1cc4da2a995ec8ebb83a3f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4404,6 +4405,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &659404231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 659404227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be3300b8f93261e47aee97f2a7e18de1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offset: 10
+  baseOrder: 1000
 --- !u!114 &664085350 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5791951264261135232, guid: f9195b59381ad5b448a8ca6a381d6fb8, type: 3}
@@ -12755,6 +12770,7 @@ GameObject:
   - component: {fileID: 2074294325}
   - component: {fileID: 2074294326}
   - component: {fileID: 2074294327}
+  - component: {fileID: 2074294328}
   m_Layer: 6
   m_Name: YandereSprite
   m_TagString: Untagged
@@ -12820,7 +12836,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: c51f9d95109ae0241ba5518b8d9f3db9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -12854,6 +12870,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2074294328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2074294324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be3300b8f93261e47aee97f2a7e18de1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offset: 0
+  baseOrder: 1000
 --- !u!114 &2078119158 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5791951264261135232, guid: f9195b59381ad5b448a8ca6a381d6fb8, type: 3}
