@@ -11,7 +11,7 @@ public class TestYandereAI : MonoBehaviour
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        animator = GetComponent<Animator>();
+        animator = GetComponentInChildren<Animator>();
 
         agent.updateRotation = false;
         agent.updateUpAxis = false;
