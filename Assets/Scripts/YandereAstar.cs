@@ -34,17 +34,6 @@ public class YanderePathfinding : MonoBehaviour
 
     public void CreatePath()
     {
-        // if (path.Count > 0)
-        // {
-        //     int x = 0;
-        //     transform.position = Vector3.MoveTowards(transform.position, new Vector3(path[x].transform.position.x, path[x].transform.position.y, -2), (speed) * Time.deltaTime);
-
-        //     if (Vector2.Distance(transform.position, path[x].transform.position) < 0.1f)
-        //     {
-        //         currentNode = path[x];
-        //         path.RemoveAt(x);
-        //     }
-        // }
         if (path.Count > 0)
         {
             Node nextNode = path[0];

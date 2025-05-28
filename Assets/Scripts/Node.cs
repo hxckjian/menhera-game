@@ -31,9 +31,9 @@ public class Node : MonoBehaviour
     public void AutoConnect()
     {
     connections = new List<Node>();
-    Node[] allNodes = FindObjectsOfType<Node>();
+    Node[] allNodes = FindObjectsByType<Node>(FindObjectsSortMode.None);
     float snap = 0.01f;
-    float spacing = 0.5f; // or whatever your grid uses
+    float spacing = 0.5f;
 
     foreach (Node other in allNodes)
     {
@@ -41,7 +41,6 @@ public class Node : MonoBehaviour
 
         Vector2 diff = other.transform.position - transform.position;
 
-        // Only connect if exactly up, down, left, or right
         if (Mathf.Abs(diff.x) < snap && Mathf.Abs(diff.y - spacing) < snap) // up
             connections.Add(other);
         else if (Mathf.Abs(diff.x) < snap && Mathf.Abs(diff.y + spacing) < snap) // down
@@ -52,13 +51,13 @@ public class Node : MonoBehaviour
             connections.Add(other);
     }
     }
-    
+
     public void AutoConnect4()
 {
     connections = new List<Node>();
-    Node[] allNodes = FindObjectsOfType<Node>();
+    Node[] allNodes = FindObjectsByType<Node>(FindObjectsSortMode.None);
     float snap = 0.01f;
-    float spacing = 0.5f; // Match your grid spacing!
+    float spacing = 0.5f; 
 
     foreach (Node other in allNodes)
     {
@@ -66,7 +65,6 @@ public class Node : MonoBehaviour
 
         Vector2 diff = other.transform.position - transform.position;
 
-        // Only connect to up, down, left, right
         if (Mathf.Abs(diff.x) < snap && Mathf.Abs(diff.y - spacing) < snap) // up
             connections.Add(other);
         else if (Mathf.Abs(diff.x) < snap && Mathf.Abs(diff.y + spacing) < snap) // down

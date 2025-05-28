@@ -22,10 +22,8 @@ public class NodeGenerator : MonoBehaviour
         Node[] allNodes = GetComponentsInChildren<Node>();
         foreach (Node node in allNodes)
         {
-            node.AutoConnect4(); // custom method we'll add in a sec!
+            node.AutoConnect4(); 
         }
-
-        Debug.Log("Grid generated and nodes connected!");
     }
 
     void GenerateGrid()

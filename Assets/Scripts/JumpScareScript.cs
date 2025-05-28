@@ -31,7 +31,6 @@ public class JumpScareScript : MonoBehaviour
 
         // Play animation
         jumpscareAnimator.Play("Jumpscare");
-        // jumpscareAnimator.SetTrigger("PlayJumpscare");
 
         hasPlayed = true;
     }
