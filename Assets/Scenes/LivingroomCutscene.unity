@@ -567,6 +567,55 @@ Transform:
   - {fileID: 759408511}
   m_Father: {fileID: 1006482988}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &495074878
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 495074880}
+  - component: {fileID: 495074879}
+  m_Layer: 0
+  m_Name: TimelineSceneManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &495074879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495074878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b98893342ded06b43bdbee6a59a082ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeline1: {fileID: 997767921}
+  timeline2: {fileID: 0}
+  dialogueCanvas: {fileID: 0}
+  dialogue: {fileID: 0}
+  nextSceneName: BedroomCutscene
+--- !u!4 &495074880
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495074878}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -20.178242, y: -0.40659797, z: 658.3407}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &643690412
 GameObject:
   m_ObjectHideFlags: 0
@@ -1820,7 +1869,7 @@ GameObject:
   - component: {fileID: 997767922}
   - component: {fileID: 997767921}
   m_Layer: 0
-  m_Name: BedroomTimeline
+  m_Name: LivingRoom Timeline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2979,10 +3028,10 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.17367707
-    y: 0.15517241
-    width: 0.65128905
-    height: 0.6896552
+    x: 0.21723731
+    y: 0.186
+    width: 0.566706
+    height: 0.72
   near clip plane: 0.1
   far clip plane: 5000
   field of view: 40
@@ -5663,3 +5712,4 @@ SceneRoots:
   - {fileID: 997767922}
   - {fileID: 131623918}
   - {fileID: 1178221125}
+  - {fileID: 495074880}

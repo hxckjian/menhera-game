@@ -23,7 +23,7 @@ public class JumpScareScript : MonoBehaviour
         }
     }
 
-    void ShowJumpscare()
+    public void ShowJumpscare()
     {
         jumpscareGroup.alpha = 1f;
         jumpscareGroup.interactable = true;
