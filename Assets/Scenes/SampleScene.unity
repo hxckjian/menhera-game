@@ -2071,6 +2071,7 @@ GameObject:
   - component: {fileID: 490085337}
   - component: {fileID: 490085336}
   - component: {fileID: 490085338}
+  - component: {fileID: 490085339}
   m_Layer: 5
   m_Name: JumpscareImage
   m_TagString: Untagged
@@ -2157,6 +2158,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &490085339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 490085334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2780fc585ca8e7d42b69882870903069, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &574747081
 GameObject:
   m_ObjectHideFlags: 0
@@ -4750,10 +4763,10 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.18806745
-    y: 0.24431819
-    width: 0.6225681
-    height: 0.5113636
+    x: 0.125
+    y: 0
+    width: 0.75
+    height: 1
   near clip plane: 0.1
   far clip plane: 5000
   field of view: 40
@@ -4838,7 +4851,7 @@ MonoBehaviour:
   m_RefResolutionX: 480
   m_RefResolutionY: 360
   m_CropFrame: 3
-  m_GridSnapping: 2
+  m_GridSnapping: 1
   m_FilterMode: 0
   m_UpscaleRT: 0
   m_PixelSnapping: 0
