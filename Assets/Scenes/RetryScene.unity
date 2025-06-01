@@ -849,7 +849,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1480649343}
         m_TargetAssemblyTypeName: RetryMenu, Assembly-CSharp
-        m_MethodName: OnStartClick
+        m_MethodName: OnRetryClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

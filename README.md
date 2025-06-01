@@ -142,3 +142,11 @@ Future milestones for extended features is to increase accessibility and broaden
 Future milestones for extended features will also focus on improving the overall visual polish of the game. This includes increasing the frame count in animations to achieve smoother, more fluid motion during both gameplay and cutscenes. Character pixel art will also be enhanced for greater emotional expression and visual clarity. In addition, dialogue scenes will feature improved character portraits and supporting illustrations in a digital art style to strengthen the narrative presentation and emotional impact of each interaction.
 
 ---
+
+## Coding Standard
+
+- Class and Method names should always be in Pascal Case 
+- Method argument and Local variables should always be in Camel Case  
+- Avoid the use of underscore while naming identifiers  
+- Avoid the use of System data types and prefer using the Predefined data types.  
+- For better code indentation and readability always align the curly braces vertically.  

@@ -5,14 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class StartMenu : MonoBehaviour
 {
+    // Called when Start Button is clicked and load the game scene
     public void OnStartClick()
     {
         SceneManager.LoadScene("LivingroomCutscene");
     }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+    // Called when Exit Button is clicked and exit application
     public void OnExitClick()
     {
-        Debug.Log("Exit button clicked");
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
 #endif
