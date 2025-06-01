@@ -5,11 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class RetryMenu : MonoBehaviour
 {
-    public void OnStartClick()
+    //Called when retry button is clicked, loads the gameplay scene
+    public void OnRetryClick()
     {
         SceneManager.LoadScene("SampleScene");
     }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+    // Called when exit button is clicked, return to start menu
     public void OnExitClick()
     {
         SceneManager.LoadScene("StartScene");

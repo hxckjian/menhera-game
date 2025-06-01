@@ -6,22 +6,18 @@ using TMPro;
 
 public class Dialogue : MonoBehaviour
 {
-    public TextMeshProUGUI textComponent;
-    public string[] lines;
-    public float textSpeed;
+    [SerializeField] private TextMeshProUGUI textComponent;
+    [SerializeField] private string[] lines;
+    [SerializeField] private float textSpeed;
 
     private int index;
     private bool isTyping = false;
 
+    // Event triggered when the dialogue sequence completes
     public event Action OnDialogueComplete;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-
-    }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
@@ -38,17 +34,22 @@ public class Dialogue : MonoBehaviour
         }
     }
 
-    void StartDialogue()
+    private void ClearText()
+    {
+        textComponent.text = string.Empty;
+    }
+
+    private void StartDialogue()
     {
         index = 0;
-        textComponent.text = string.Empty;
+        ClearText();
         StartCoroutine(TypeLine()); 
     }
 
-    IEnumerator TypeLine()
+    private IEnumerator TypeLine()
     {
         isTyping = true;
-        textComponent.text = string.Empty;
+        ClearText();
         foreach (char c in lines[index].ToCharArray())
         {
             textComponent.text += c;
@@ -58,21 +59,22 @@ public class Dialogue : MonoBehaviour
         isTyping = false;
     }
 
-    void NextLine()
+    private void NextLine()
     {
         if (index < lines.Length - 1)
         {
             index++;
-            textComponent.text = string.Empty;
+            ClearText();
             StartCoroutine(TypeLine());
         }
         else
         {
             gameObject.SetActive(false);
-            OnDialogueComplete?.Invoke();//Callback
+            OnDialogueComplete?.Invoke(); //Callback
         }
     }
 
+    // Begin dialogue sequence from index 0
     public void StartDialogueManually()
     {
         index = 0;

@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class JumpscareTrigger : MonoBehaviour
 {
-    public JumpScareScript jumpscareManager;
+    [SerializeField] private JumpScareScript jumpscareManager;
 
-    void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {

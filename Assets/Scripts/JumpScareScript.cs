@@ -3,19 +3,19 @@ using UnityEngine;
 public class JumpScareScript : MonoBehaviour
 {
     [Header("Canvas Settings")]
-    public CanvasGroup jumpscareGroup;
+    [SerializeField] private CanvasGroup jumpscareGroup;
 
     [Header("Animator Settings")]
-    public Animator jumpscareAnimator;
+    [SerializeField] private Animator jumpscareAnimator;
 
     private bool hasPlayed = false;
 
-     void Start()
+    private void Start()
     {
-        HideJumpscare(); // Make sure it starts hidden
+        HideJumpscare();
     }
 
-    void Update()
+    private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space)  && !hasPlayed)
         {
@@ -23,20 +23,19 @@ public class JumpScareScript : MonoBehaviour
         }
     }
 
+    // Display Jumpscare Animation
     public void ShowJumpscare()
     {
         jumpscareGroup.alpha = 1f;
         jumpscareGroup.interactable = true;
         jumpscareGroup.blocksRaycasts = true;
 
-        // Play animation
         jumpscareAnimator.Play("Jumpscare");
-        // jumpscareAnimator.SetTrigger("PlayJumpscare");
-
         hasPlayed = true;
     }
 
-    void HideJumpscare()
+    // Hides Jumpscare Canvas
+    private void HideJumpscare()
     {
         jumpscareGroup.alpha = 0f;
         jumpscareGroup.interactable = false;
