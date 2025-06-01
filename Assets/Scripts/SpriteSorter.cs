@@ -3,19 +3,19 @@ using UnityEngine;
 [RequireComponent(typeof(SpriteRenderer))]
 public class SpriteSorter : MonoBehaviour
 {
-    public int offset = 0;
-    public int baseOrder = 1000; // Keeps characters always above ground layer
+    [SerializeField] private int offset = 0;
+    [SerializeField] private int baseOrder = 1000;
 
     private SpriteRenderer sr;
 
-    void Awake()
+    private void Awake()
     {
         sr = GetComponent<SpriteRenderer>();
     }
 
-    void LateUpdate()
+    private void LateUpdate()
     {
-        // Convert Y to sorting order (higher Y = behind)
+        // Sort based on Y position
         sr.sortingOrder = baseOrder - Mathf.RoundToInt(transform.position.y * 100f) + offset;
     }
 }

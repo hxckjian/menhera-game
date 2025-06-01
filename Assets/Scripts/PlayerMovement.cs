@@ -5,29 +5,27 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float moveSpeed = 8f;
+    [SerializeField] private float moveSpeed = 8f;
+    [SerializeField] private float collisionOffset = 0.05f;
+    [SerializeField] private ContactFilter2D movementFilter;
 
-    public float collisionOffset = 0.05f;
+    private Vector2 movementInput;
+    private Animator animator;
+    private Rigidbody2D rb;
+    private List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
 
-    public ContactFilter2D movementFilter;
-
-    Vector2 movementInput;
-    Vector2 movement;
-    Animator animator;
-
-    Rigidbody2D rb;
-    List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
-
-    void Start()
+    private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        // animator = GetComponent<Animator>(); 
         animator = GetComponentInChildren<Animator>();
+
         movementFilter.useLayerMask = true;
-        movementFilter.layerMask = LayerMask.GetMask("Collision"); // ONLY check against Ground
+        movementFilter.layerMask = LayerMask.GetMask("Collision"); 
         movementFilter.useTriggers = false;
     }
-    void Update()
+
+    // Adjusts Animator paremeters to allocate correct animation when moving in certain direction
+    private void Update()
     {
         animator.SetFloat("Horizontal", movementInput.x);
         animator.SetFloat("Vertical", movementInput.y);
@@ -38,20 +36,13 @@ public class PlayerMovement : MonoBehaviour
     {
         if (movementInput != Vector2.zero)
         {
-            bool success = Movement(movementInput);
-
-            if (!success)
-            {
-                success = Movement(new Vector2(movementInput.x, 0));
-
-                if (!success)
-                {
-                    success = Movement(new Vector2(0, movementInput.y));
-                }
-            }
+            bool success = Movement(movementInput)
+             || Movement(new Vector2(movementInput.x, 0))
+             || Movement(new Vector2(0, movementInput.y));
         }
     }
 
+    // Attempts to move player in specified direction and Cast is used to check for collisions
     private bool Movement(Vector2 direction)
     {
         if (direction == Vector2.zero)
@@ -73,8 +64,8 @@ public class PlayerMovement : MonoBehaviour
         return false;
     }
 
-
-    void OnMove(InputValue movementValue) {
+    // Receives movement input from the Input System
+    private void OnMove(InputValue movementValue) {
         movementInput  = movementValue.Get<Vector2>();
     }
 }

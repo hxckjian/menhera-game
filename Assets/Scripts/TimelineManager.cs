@@ -3,12 +3,12 @@ using UnityEngine.Playables;
 
 public class TimelineManager : MonoBehaviour
 {
-    public PlayableDirector timeline1;
-    public PlayableDirector timeline2;
-    public GameObject dialogueCanvas;
-    public Dialogue dialogue;
+    [SerializeField] private PlayableDirector timeline1;
+    [SerializeField] private PlayableDirector timeline2;
+    [SerializeField] private GameObject dialogueCanvas;
+    [SerializeField] private Dialogue dialogue;
 
-    void Start()
+    private void Start()
     {
         // Initially hide dialogue
         dialogueCanvas.SetActive(false);
@@ -20,7 +20,8 @@ public class TimelineManager : MonoBehaviour
         timeline1.Play();
     }
 
-    void OnTimeline1Ended(PlayableDirector director)
+    // Called when timeline1 finish playing, triggers dialogue
+    private void OnTimeline1Ended(PlayableDirector director)
     {
         // Show the dialogue UI
         dialogueCanvas.SetActive(true);
@@ -32,7 +33,8 @@ public class TimelineManager : MonoBehaviour
         dialogue.OnDialogueComplete += TriggerTimeline2;
     }
 
-    void TriggerTimeline2()
+    // Called when dialogue is completed. Starts timeline2
+    private void TriggerTimeline2()
     {
         // Unsubscribe to avoid duplicates
         dialogue.OnDialogueComplete -= TriggerTimeline2;

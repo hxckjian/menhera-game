@@ -3,12 +3,12 @@ using UnityEngine.AI;
 
 public class TestYandereAI : MonoBehaviour
 {
-    public Transform player;
+    [SerializeField] private Transform player;
 
     private NavMeshAgent agent;
     private Animator animator;
 
-    void Start()
+    private void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponentInChildren<Animator>();
@@ -26,7 +26,7 @@ public class TestYandereAI : MonoBehaviour
         }
     }
 
-    void Update()
+    private void Update()
     {
         if (player != null)
         {
