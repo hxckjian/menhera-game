@@ -9,8 +9,17 @@ public class ChaseManager : MonoBehaviour
     [Header("Delay Settings")]
     [SerializeField] private float yandereAppearDelay = 15f;
 
+    [Header("UI")]
+    [SerializeField] private DebugTimerDisplay debugTimer;
+
     private void Start()
     {
+        // Start debug countdown UI
+        if (debugTimer != null)
+        {
+            debugTimer.StartCountdown(yandereAppearDelay);
+        }
+
         if (yandere != null)
         {
             yandere.SetActive(false);

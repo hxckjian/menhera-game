@@ -2004,7 +2004,7 @@ Transform:
   m_GameObject: {fileID: 438898235}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.781, y: 0.711, z: 0}
+  m_LocalPosition: {x: 3.929, y: 0.964, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3426,7 +3426,7 @@ Transform:
   m_GameObject: {fileID: 883634902}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.79, y: 0.58, z: 0}
+  m_LocalPosition: {x: 3.94, y: 0.97, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4796,7 +4796,7 @@ Transform:
   m_GameObject: {fileID: 1054911086}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.79, y: 0.58, z: -10}
+  m_LocalPosition: {x: 3.94, y: 0.97, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4888,7 +4888,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   yandere: {fileID: 438898235}
-  yandereAppearDelay: 100
+  yandereAppearDelay: 5
+  debugTimer: {fileID: 1843272946}
 --- !u!4 &1059991661
 Transform:
   m_ObjectHideFlags: 0
@@ -5713,7 +5714,7 @@ Transform:
   m_GameObject: {fileID: 1796495868}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.79, y: 0.58, z: -10}
+  m_LocalPosition: {x: 3.94, y: 0.97, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

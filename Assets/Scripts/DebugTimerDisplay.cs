@@ -10,11 +10,14 @@ public class DebugTimerDisplay : MonoBehaviour
     [Header("Debug Settings")]
     [SerializeField] private bool showDebugTimer = true;
 
-    private float elapsedTime = 0f;
-    private bool isRunning = true;
+    private float timeLeft;
+    private bool isRunning = false;
 
-    private void Start()
+    public void StartCountdown(float delay)
     {
+        timeLeft = delay;
+        isRunning = true;
+
         if (timerText != null)
         {
             timerText.gameObject.SetActive(showDebugTimer);
@@ -23,18 +26,29 @@ public class DebugTimerDisplay : MonoBehaviour
 
     private void Update()
     {
-        if (!isRunning) return;
+        if (!isRunning || !showDebugTimer || timerText == null) return;
 
-        elapsedTime += Time.deltaTime;
-
-        if (showDebugTimer && timerText != null)
+        if (timeLeft > 0f)
         {
-            timerText.text = $"Timer: {elapsedTime:F1}s";
+            timeLeft -= Time.deltaTime;
+            int seconds = Mathf.FloorToInt(timeLeft);
+            int hundredths = Mathf.FloorToInt((timeLeft - seconds) * 100);
+            timerText.text = $"{seconds}:{hundredths:00}";
+        }
+        else
+        {
+            timerText.text = "0:00";
+            isRunning = false;
+
+            Invoke(nameof(HideText), 0f);
         }
     }
 
-    private void StopTimer()
+    private void HideText()
     {
-        isRunning = false;
+        if (timerText != null)
+        {
+            timerText.gameObject.SetActive(false);
+        }
     }
 }

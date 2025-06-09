@@ -54,7 +54,6 @@ public class PlayerMovement : MonoBehaviour
             castCollisions,
             moveSpeed * Time.fixedDeltaTime + collisionOffset
         );
-        Debug.Log(count);
 
         if (count == 0)
         {
