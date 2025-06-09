@@ -4,6 +4,7 @@ public class SceneBuilderScript : MonoBehaviour
 {
     private void Start()
     {
-        Screen.SetResolution(960,720,false);
+        // For now commented resolution fixing to see if other features can be expanded
+        // Screen.SetResolution(960,720,false);
     }
 }
