@@ -11,6 +11,11 @@ public class StartMenu : MonoBehaviour
         SceneManager.LoadScene("LivingroomCutscene");
     }
 
+    public void OnTestClick()
+    {
+        SceneManager.LoadScene("SampleScene");
+    }
+      
     // Called when Exit Button is clicked and exit application
     public void OnExitClick()
     {
