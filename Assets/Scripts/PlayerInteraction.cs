@@ -29,10 +29,10 @@ public class PlayerInteraction : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && currentInteractable != null)
+        if (InputManager.instance.InteractPressed && currentInteractable != null)
         {
             Debug.Log("E has been entered!");
-            currentInteractable.Interact();
+            // currentInteractable.Interact();
         }
     }
 

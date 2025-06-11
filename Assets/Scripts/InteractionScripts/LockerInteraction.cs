@@ -4,9 +4,12 @@ public class LockerInteraction : MonoBehaviour, IInteractable
 {
     [SerializeField] private string sceneButtonLabel = "Enter Locker";
 
+    [SerializeField] private MenuManager menuManager;
+
     public void Interact()
     {
-        InteractionUI.Instance.Show(sceneButtonLabel, OnSceneClick);
+        // InteractionUI.Instance.Show(sceneButtonLabel, OnSceneClick);
+        InteractionUI.Instance.Show(sceneButtonLabel, OnSceneClick, () => menuManager.Unpause());
     }
 
     private void OnSceneClick()
