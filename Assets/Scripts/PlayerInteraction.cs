@@ -21,18 +21,69 @@
 // }
 
 
+// using UnityEngine;
+
+// public class PlayerInteraction : MonoBehaviour
+// {
+//     private IInteractable currentInteractable = null;
+
+//     private void Update()
+//     {
+//         if (InputManager.instance.InteractOpenCloseInput && currentInteractable != null)
+//         {
+//             Debug.Log("E has been entered!");
+//             // currentInteractable.Interact();
+//         }
+//     }
+
+//     private void OnTriggerEnter2D(Collider2D other)
+//     {
+//         if (other.TryGetComponent<IInteractable>(out var interactable))
+//         {
+//             currentInteractable = interactable;
+//         }
+//     }
+
+//     private void OnTriggerExit2D(Collider2D other)
+//     {
+//         if (other.TryGetComponent<IInteractable>(out var interactable) && interactable == currentInteractable)
+//         {
+//             currentInteractable = null;
+//         }
+//     }
+// }
+
+
 using UnityEngine;
 
 public class PlayerInteraction : MonoBehaviour
 {
     private IInteractable currentInteractable = null;
 
-    private void Update()
+    private void OnEnable()
     {
-        if (InputManager.instance.InteractPressed && currentInteractable != null)
+        if (InputManager.instance != null)
+            InputManager.instance.OnInteractToggle += HandleInteraction;
+    }
+
+    private void OnDisable()
+    {
+        if (InputManager.instance != null)
+            InputManager.instance.OnInteractToggle -= HandleInteraction;
+    }
+
+    /// <summary>
+    /// Called when Interact key (E) is pressed.
+    /// </summary>
+    private void HandleInteraction()
+    {
+        if (PauseManager.instance.IsPaused)
+            return;
+
+        if (currentInteractable != null)
         {
-            Debug.Log("E has been entered!");
-            // currentInteractable.Interact();
+            Debug.Log("E key pressed on interactable.");
+            currentInteractable.Interact();
         }
     }
 

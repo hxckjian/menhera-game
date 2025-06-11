@@ -9,7 +9,12 @@ public class LockerInteraction : MonoBehaviour, IInteractable
     public void Interact()
     {
         // InteractionUI.Instance.Show(sceneButtonLabel, OnSceneClick);
-        InteractionUI.Instance.Show(sceneButtonLabel, OnSceneClick, () => menuManager.Unpause());
+        // InteractionUI.Instance.Show(sceneButtonLabel, OnSceneClick, () => menuManager.UnpauseScreen());
+    //     InteractionUI.Instance.Show(sceneButtonLabel, () => {
+    // PauseManager.instance.UnpauseScreen(); // or trigger cutscene, etc.
+    InteractionUI.Instance.Show(sceneButtonLabel, OnSceneClick);
+    
+
     }
 
     private void OnSceneClick()

@@ -41,6 +41,7 @@ public class InteractionUI : MonoBehaviour
         {
             Hide();
             onClose?.Invoke();
+            ResumeTime();
         });
 
         nothingButton.onClick.AddListener(() =>
@@ -48,11 +49,26 @@ public class InteractionUI : MonoBehaviour
             Debug.Log("Nothing clicked.");
             Hide();
             onClose?.Invoke();
+            ResumeTime();
         });
+
+        PauseTime();
 
         canvasGroup.alpha = 1f;
         canvasGroup.interactable = true;
         canvasGroup.blocksRaycasts = true;
+    }
+
+    private void PauseTime()
+    {
+        GameplayController.instance.SetGameplayEnabled(false);
+        PauseManager.instance.PauseScreen("interaction");
+    }
+
+    private void ResumeTime()
+    {
+        GameplayController.instance.SetGameplayEnabled(true);
+        PauseManager.instance.UnpauseScreen();
     }
 
     public void Hide()
