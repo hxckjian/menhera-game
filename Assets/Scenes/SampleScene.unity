@@ -5759,9 +5759,9 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0
+    x: 0.125
     y: 0
-    width: 1
+    width: 0.75
     height: 1
   near clip plane: 0.1
   far clip plane: 5000
@@ -5884,7 +5884,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   yandere: {fileID: 438898235}
-  yandereAppearDelay: 100
+  yandereAppearDelay: 5
   debugTimer: {fileID: 1843272946}
 --- !u!4 &1059991661
 Transform:

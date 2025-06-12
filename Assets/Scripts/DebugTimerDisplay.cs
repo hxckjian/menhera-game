@@ -40,6 +40,13 @@ public class DebugTimerDisplay : MonoBehaviour
             timerText.text = "0:00";
             isRunning = false;
 
+            //Disable playerinteraction
+            PlayerInteraction playerInteraction = FindFirstObjectByType<PlayerInteraction>();
+            if (playerInteraction != null)
+            {
+                playerInteraction.SetInteractEnabled(false);
+            }
+
             Invoke(nameof(HideText), 0f);
         }
     }

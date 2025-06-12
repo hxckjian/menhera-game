@@ -59,6 +59,7 @@ using UnityEngine;
 public class PlayerInteraction : MonoBehaviour
 {
     private IInteractable currentInteractable = null;
+    private bool canInteract = true;
 
     private void OnEnable()
     {
@@ -75,10 +76,21 @@ public class PlayerInteraction : MonoBehaviour
     /// <summary>
     /// Called when Interact key (E) is pressed.
     /// </summary>
+    // private void HandleInteraction()
+    // {
+    //     if (PauseManager.instance.IsPaused)
+    //         return;
+
+    //     if (currentInteractable != null)
+    //     {
+    //         Debug.Log("E key pressed on interactable.");
+    //         currentInteractable.Interact();
+    //     }
+    // }
     private void HandleInteraction()
     {
-        if (PauseManager.instance.IsPaused)
-            return;
+        if (!canInteract) return;
+        if (PauseManager.instance.IsPaused) return;
 
         if (currentInteractable != null)
         {
@@ -86,6 +98,7 @@ public class PlayerInteraction : MonoBehaviour
             currentInteractable.Interact();
         }
     }
+
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -101,5 +114,10 @@ public class PlayerInteraction : MonoBehaviour
         {
             currentInteractable = null;
         }
+    }
+
+    public void SetInteractEnabled(bool enabled)
+    {
+        canInteract = enabled;
     }
 }
