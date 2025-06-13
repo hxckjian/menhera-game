@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class LockerInteraction : MonoBehaviour, IInteractable
 {
-    [SerializeField] private string sceneButtonLabel = "Enter Locker";
+    [SerializeField] private string sceneButtonLabel = "Hide under table";
 
     [SerializeField] private MenuManager menuManager;
 

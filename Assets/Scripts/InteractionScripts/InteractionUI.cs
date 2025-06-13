@@ -116,7 +116,22 @@ public class InteractionUI : MonoBehaviour
         canvasGroup.blocksRaycasts = true;
     }
 
+    public void ShowDialogueOnly(GameObject dialogueCanvas = null, Dialogue dialogue = null)
+    {
+        PauseTime();
+        if (dialogueCanvas != null && dialogue != null)
+        {
+            dialogueCanvas.SetActive(true);
+            dialogue.StartDialogueManually();
 
+            dialogue.OnDialogueComplete += () =>
+            {
+                dialogueCanvas.SetActive(false);
+                ResumeTime(); 
+            };
+        }
+
+    }
 
     private void PauseTime()
     {
