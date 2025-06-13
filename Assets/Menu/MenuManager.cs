@@ -1,117 +1,3 @@
-// using UnityEngine;
-// using UnityEngine.SceneManagement;
-
-// public class MenuManager : MonoBehaviour
-// {
-//     [Header("Menu Objects")]
-//     [SerializeField] private GameObject mainMenuCanvasGO; 
-
-//     [Header("Scripts to be Deactivated on Pause")]
-//     // [SerializeField] private PlayerMovement playerMovement;
-//     // [SerializeField] private TestYandereAI yandereMovement;
-//     // [SerializeField] private PlayerInteraction playerInteraction;
-//     [SerializeField] private MonoBehaviour[] gameplayScripts;
-
-//     private bool isPaused;
-
-//     private void Start()
-//     {
-//         mainMenuCanvasGO.SetActive(false);
-//     }
-
-//     private void Update()
-//     {
-//         // Listen for Escape button from InputManager
-//         if (InputManager.instance.MenuOpenCloseInput)
-//         {
-//             // if (InteractionUI.InstanceIsVisible())
-//             // {
-//             //     InteractionUI.Instance.Hide();
-//             // }
-//             // else 
-//             // {
-//             //     OpenMainMenu();
-//             // }
-//             // if (!isPaused)
-//             //     Pause();
-//             // else
-//             //     Unpause();
-//             // if escaped is pressed while in interaction screen -> removeInteractionScreen
-//             // if escaped is pressed while not paused -> Open Pause Screen
-//             // if escaped is pressed while paused -> check whether if its interaction screen
-//             // -> if in interaction screen -> Remove Interaction Screen
-//             // -> if in pause screen -> Remove Pause Screen
-//             if (!PauseManager.instance.IsPaused)
-//                 PauseScreen();
-//             else
-//                 UnpauseScreen();
-//         } else if (InputManager.instance.InteractOpenCloseInput)
-//         {
-//             // if paused -> nothing happen
-//             // if unpaused open
-//         }
-//     }
-
-//     private void DisableScripts()
-//     {
-//         foreach (var script in gameplayScripts)
-//             script.enabled = false;
-//     }
-
-//     private void EnableScripts()
-//     {
-//         foreach (var script in gameplayScripts)
-//             script.enabled = true;
-//     }
-
-//     public void PauseScreen()
-//     {
-//         PauseManager.instance.PauseScreen();
-
-//         // playerMovement.enabled = false;
-//         // yandereMovement.enabled = false;
-//         // playerInteraction.enabled = false;
-//         DisableScripts();
-//         OpenMainMenu();
-//     }
-
-//     public void UnpauseScreen()
-//     {
-//         // isPaused = false;
-//         // Time.timeScale = 1f;
-
-//         // playerMovement.enabled = true;
-//         // yandereMovement.enabled = true;
-//         // playerInteraction.enabled = true;
-//         PauseManager.instance.UnpauseScreen();
-//         EnableScripts();
-//         CloseAllMenus();
-//     }
-
-//     private void OpenMainMenu()
-//     {
-//         mainMenuCanvasGO.SetActive(true);
-//     }
-
-//     private void CloseAllMenus()
-//     {
-//         mainMenuCanvasGO.SetActive(false);
-//     }
-
-//     public void OnResumeClick()
-//     {
-//         UnpauseScreen();
-//     }
-
-//     public void OnReturnClick()
-//     {
-//         // Ensure Scripts are enabled before starting new game
-//         UnpauseScreen();
-//         SceneManager.LoadScene("StartScene");
-//     }
-
-// }
-
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -165,6 +51,13 @@ public class MenuManager : MonoBehaviour
 
     private void HandleMenuToggle()
     {
+        Debug.Log( DialogueManager.Instance.IsDialogueActive());
+        if (DialogueManager.Instance != null && DialogueManager.Instance.IsDialogueActive())
+        {
+            DialogueManager.Instance.ForceCloseDialogue();
+            return;
+        }
+
         if (InteractionUI.InstanceIsVisible())
         {
             InteractionUI.Instance.Hide();
@@ -175,22 +68,6 @@ public class MenuManager : MonoBehaviour
         PauseManager.instance.TogglePause();
     }
 
-//     private void ShowMenu()
-// {
-//     // Only show if pause source is "pause" (from Esc)
-//     if (PauseManager.instance.PauseSource != "pause")
-//         return;
-
-//     mainMenuCanvasGO.SetActive(true);
-//     ToggleGameplayScripts(false);
-// }
-
-
-//     private void HideMenu()
-//     {
-//         mainMenuCanvasGO.SetActive(false);
-//         ToggleGameplayScripts(true);
-//     }
     private void ShowMenu()
     {
         if (PauseManager.instance.PauseSource != "pause")
@@ -205,17 +82,6 @@ public class MenuManager : MonoBehaviour
         mainMenuCanvasGO.SetActive(false);
         GameplayController.instance.SetGameplayEnabled(true);
     }
-
-//     private void ToggleGameplayScripts(bool enabled)
-//     {
-//         foreach (var script in gameplayScripts)
-//         {
-//             if (script != null)
-//                 script.enabled = enabled;
-//         }
-//     }
-
-
 
     public void OnResumeClick()
     {

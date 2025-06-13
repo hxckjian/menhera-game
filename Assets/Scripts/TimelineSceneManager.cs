@@ -53,7 +53,10 @@ public class TimelineSceneManager : MonoBehaviour
     private void TriggerTimeline2OrScene()
     {
         if (dialogue != null)
+        {
+            dialogueCanvas.SetActive(false);
             dialogue.OnDialogueComplete -= TriggerTimeline2OrScene;
+        }
 
         if (timeline2 != null)
         {

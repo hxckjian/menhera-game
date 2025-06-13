@@ -10,6 +10,8 @@ public class Dialogue : MonoBehaviour
     [SerializeField] private string[] lines;
     [SerializeField] private float textSpeed;
 
+    [SerializeField] private GameObject dialogueCanvas; 
+
     private int index;
     private bool isTyping = false;
 
@@ -53,7 +55,7 @@ public class Dialogue : MonoBehaviour
         foreach (char c in lines[index].ToCharArray())
         {
             textComponent.text += c;
-            yield return new WaitForSeconds(textSpeed);
+            yield return new WaitForSecondsRealtime(textSpeed);
         }
 
         isTyping = false;
@@ -69,7 +71,7 @@ public class Dialogue : MonoBehaviour
         }
         else
         {
-            gameObject.SetActive(false);
+            // gameObject.SetActive(false);
             OnDialogueComplete?.Invoke(); //Callback
         }
     }
@@ -78,7 +80,26 @@ public class Dialogue : MonoBehaviour
     public void StartDialogueManually()
     {
         index = 0;
+        DialogueManager.Instance?.Register(this);
         StartCoroutine(TypeLine());
+    }
+
+    public bool IsDialogueActive()
+{
+    return (dialogueCanvas != null && dialogueCanvas.activeSelf) && (isTyping || index < lines.Length);
+}
+
+
+    public void ForceCloseDialogue()
+    {
+        StopAllCoroutines();
+        isTyping = false;
+        ClearText();
+        OnDialogueComplete?.Invoke();
+        DialogueManager.Instance?.Clear();
+
+        if (dialogueCanvas != null)
+        dialogueCanvas.SetActive(false);
     }
 
 }
