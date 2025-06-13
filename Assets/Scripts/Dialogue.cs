@@ -10,6 +10,8 @@ public class Dialogue : MonoBehaviour
     [SerializeField] private string[] lines;
     [SerializeField] private float textSpeed;
 
+    [SerializeField] private GameObject dialogueCanvas; 
+
     private int index;
     private bool isTyping = false;
 
@@ -34,11 +36,13 @@ public class Dialogue : MonoBehaviour
         }
     }
 
+    // Clear current text from the text component
     private void ClearText()
     {
         textComponent.text = string.Empty;
     }
 
+    // Start dialogue from the first line
     private void StartDialogue()
     {
         index = 0;
@@ -46,6 +50,7 @@ public class Dialogue : MonoBehaviour
         StartCoroutine(TypeLine()); 
     }
 
+    // Coroutine to animate typing of current line
     private IEnumerator TypeLine()
     {
         isTyping = true;
@@ -53,7 +58,7 @@ public class Dialogue : MonoBehaviour
         foreach (char c in lines[index].ToCharArray())
         {
             textComponent.text += c;
-            yield return new WaitForSeconds(textSpeed);
+            yield return new WaitForSecondsRealtime(textSpeed);
         }
 
         isTyping = false;
@@ -69,16 +74,36 @@ public class Dialogue : MonoBehaviour
         }
         else
         {
-            gameObject.SetActive(false);
+            // gameObject.SetActive(false);
             OnDialogueComplete?.Invoke(); //Callback
         }
     }
 
-    // Begin dialogue sequence from index 0
+    // Public method to start dialogue manually from outside
     public void StartDialogueManually()
     {
         index = 0;
+        DialogueManager.Instance?.Register(this);
         StartCoroutine(TypeLine());
+    }
+
+    // Check if dialogue is active or still typing
+    public bool IsDialogueActive()
+    {
+        return (dialogueCanvas != null && dialogueCanvas.activeSelf) && (isTyping || index < lines.Length);
+    }
+
+    // Immediately stop dialogue and clear visuals
+    public void ForceCloseDialogue()
+    {
+        StopAllCoroutines();
+        isTyping = false;
+        ClearText();
+        OnDialogueComplete?.Invoke();
+        DialogueManager.Instance?.Clear();
+
+        if (dialogueCanvas != null)
+        dialogueCanvas.SetActive(false);
     }
 
 }
