@@ -36,11 +36,13 @@ public class Dialogue : MonoBehaviour
         }
     }
 
+    // Clear current text from the text component
     private void ClearText()
     {
         textComponent.text = string.Empty;
     }
 
+    // Start dialogue from the first line
     private void StartDialogue()
     {
         index = 0;
@@ -48,6 +50,7 @@ public class Dialogue : MonoBehaviour
         StartCoroutine(TypeLine()); 
     }
 
+    // Coroutine to animate typing of current line
     private IEnumerator TypeLine()
     {
         isTyping = true;
@@ -76,7 +79,7 @@ public class Dialogue : MonoBehaviour
         }
     }
 
-    // Begin dialogue sequence from index 0
+    // Public method to start dialogue manually from outside
     public void StartDialogueManually()
     {
         index = 0;
@@ -84,12 +87,13 @@ public class Dialogue : MonoBehaviour
         StartCoroutine(TypeLine());
     }
 
+    // Check if dialogue is active or still typing
     public bool IsDialogueActive()
-{
-    return (dialogueCanvas != null && dialogueCanvas.activeSelf) && (isTyping || index < lines.Length);
-}
+    {
+        return (dialogueCanvas != null && dialogueCanvas.activeSelf) && (isTyping || index < lines.Length);
+    }
 
-
+    // Immediately stop dialogue and clear visuals
     public void ForceCloseDialogue()
     {
         StopAllCoroutines();

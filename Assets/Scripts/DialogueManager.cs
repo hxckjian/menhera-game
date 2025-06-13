@@ -6,6 +6,7 @@ public class DialogueManager : MonoBehaviour
 
     private Dialogue currentDialogue;
 
+    // Ensure singleton pattern
     private void Awake()
     {
         if (Instance == null)
@@ -14,16 +15,19 @@ public class DialogueManager : MonoBehaviour
             Destroy(gameObject);
     }
 
+    // Register a dialogue instance as currently active
     public void Register(Dialogue dialogue)
     {
         currentDialogue = dialogue;
     }
 
+    // Check if a dialogue is currently active and visible
     public bool IsDialogueActive()
     {
         return currentDialogue != null && currentDialogue.IsDialogueActive();
     }
 
+    // Forcefully closes the current dialogue, if any
     public void ForceCloseDialogue()
     {
         if (currentDialogue != null)
@@ -33,6 +37,7 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
+    // Clears reference to the current dialogue
     public void Clear()
     {
         currentDialogue = null;

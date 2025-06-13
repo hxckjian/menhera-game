@@ -13,6 +13,7 @@ public class MenuManager : MonoBehaviour
     {
         Debug.Log("MenuManager Start()");
 
+        // Subscribe to menu toggle input
         if (InputManager.instance != null)
         {
             Debug.Log("Subscribing to InputManager");
@@ -23,6 +24,7 @@ public class MenuManager : MonoBehaviour
             Debug.LogWarning("InputManager is STILL null in Start().");
         }
 
+        // Subscribe to pause events
         if (PauseManager.instance != null)
         {
             PauseManager.instance.OnPause += ShowMenu;
@@ -33,12 +35,13 @@ public class MenuManager : MonoBehaviour
             Debug.LogWarning("PauseManager is null in Start().");
         }
 
-        // Start with menu hidden
+        // Ensure the menu is hidden on start
         mainMenuCanvasGO.SetActive(false);
     }
 
     private void OnDestroy()
     {
+        // Unsubscribe from events
         if (InputManager.instance != null)
             InputManager.instance.OnMenuToggle -= HandleMenuToggle;
 
@@ -49,6 +52,7 @@ public class MenuManager : MonoBehaviour
         }
     }
 
+    // Handle menu toggling logic
     private void HandleMenuToggle()
     {
         Debug.Log( DialogueManager.Instance.IsDialogueActive());
@@ -68,6 +72,7 @@ public class MenuManager : MonoBehaviour
         PauseManager.instance.TogglePause();
     }
 
+    // Show the pause menu
     private void ShowMenu()
     {
         if (PauseManager.instance.PauseSource != "pause")
@@ -77,17 +82,20 @@ public class MenuManager : MonoBehaviour
         GameplayController.instance.SetGameplayEnabled(false);
     }
 
+    // Hide the pause menu
     private void HideMenu()
     {
         mainMenuCanvasGO.SetActive(false);
         GameplayController.instance.SetGameplayEnabled(true);
     }
 
+    // Resume the game when resume is clicked
     public void OnResumeClick()
     {
         PauseManager.instance.UnpauseScreen();
     }
 
+    // Return to the start scene
     public void OnReturnClick()
     {
         PauseManager.instance.UnpauseScreen();

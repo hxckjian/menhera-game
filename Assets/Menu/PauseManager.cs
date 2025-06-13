@@ -13,10 +13,12 @@ public class PauseManager : MonoBehaviour
 
     private void Awake()
     {
+        // Implement singleton pattern
         if (instance == null)
             instance = this;
     }
 
+    // Pause the game and notify listeners
     public void PauseScreen(string source = "pause")
     {
         if (IsPaused) return;
@@ -26,6 +28,7 @@ public class PauseManager : MonoBehaviour
         OnPause?.Invoke();
     }
 
+    // Unpause the game and notify listeners
     public void UnpauseScreen()
     {
         if (!IsPaused) return;
@@ -35,6 +38,7 @@ public class PauseManager : MonoBehaviour
         OnUnpause?.Invoke();
     }
 
+    // Toggle pause state (e.g., for ESC key or menu toggle)
     public void TogglePause()
     {
         if (IsPaused)

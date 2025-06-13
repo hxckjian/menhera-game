@@ -27,37 +27,7 @@ public class InteractionUI : MonoBehaviour
         Hide();
     }
 
-    // public void Show(string label, UnityAction onSceneClick, UnityAction onClose = null)
-    // {
-    //     sceneButtonText.text = label;
-
-    //     // Clear previous listeners to avoid stacking
-    //     sceneButton.onClick.RemoveAllListeners();
-    //     nothingButton.onClick.RemoveAllListeners();
-
-    //     sceneButton.onClick.AddListener(onSceneClick);
-    //     // sceneButton.onClick.AddListener(Hide);
-    //     sceneButton.onClick.AddListener(() =>
-    //     {
-    //         Hide();
-    //         onClose?.Invoke();
-    //         ResumeTime();
-    //     });
-
-    //     nothingButton.onClick.AddListener(() =>
-    //     {
-    //         Debug.Log("Nothing clicked.");
-    //         Hide();
-    //         onClose?.Invoke();
-    //         ResumeTime();
-    //     });
-
-    //     PauseTime();
-
-    //     canvasGroup.alpha = 1f;
-    //     canvasGroup.interactable = true;
-    //     canvasGroup.blocksRaycasts = true;
-    // }
+    // Show the interaction UI, optionally with a dialogue first
     public void Show(string label, UnityAction onSceneClick, GameObject dialogueCanvas = null, Dialogue dialogue = null, UnityAction onClose = null)
     {
         PauseTime(); // Pause as early as possible
@@ -65,18 +35,12 @@ public class InteractionUI : MonoBehaviour
         // Dialogue comes first
         if (dialogueCanvas != null && dialogue != null)
         {
-            // dialogueCanvas.alpha = 1f;
-            // dialogueCanvas.interactable = true;
-            // dialogueCanvas.blocksRaycasts = true;
             dialogueCanvas.SetActive(true);
             dialogue.StartDialogueManually();
 
             // Wait for dialogue to finish, then show options
             dialogue.OnDialogueComplete += () =>
             {
-                // dialogueCanvas.alpha = 0f;
-                // dialogueCanvas.interactable = false;
-                // dialogueCanvas.blocksRaycasts = false;
                 dialogueCanvas.SetActive(false);
                 ShowInternal(label, onSceneClick, onClose);
             };
@@ -87,7 +51,7 @@ public class InteractionUI : MonoBehaviour
         }
     }
 
-
+    // Show UI elements for player interaction
     private void ShowInternal(string label, UnityAction onSceneClick, UnityAction onClose)
     {
         sceneButtonText.text = label;
@@ -116,6 +80,7 @@ public class InteractionUI : MonoBehaviour
         canvasGroup.blocksRaycasts = true;
     }
 
+    // Show dialogue without options UI
     public void ShowDialogueOnly(GameObject dialogueCanvas = null, Dialogue dialogue = null)
     {
         PauseTime();
@@ -133,18 +98,21 @@ public class InteractionUI : MonoBehaviour
 
     }
 
+    // Pause gameplay and notify pause system
     private void PauseTime()
     {
         GameplayController.instance.SetGameplayEnabled(false);
         PauseManager.instance.PauseScreen("interaction");
     }
 
+    // Resume gameplay and notify pause system
     private void ResumeTime()
     {
         GameplayController.instance.SetGameplayEnabled(true);
         PauseManager.instance.UnpauseScreen();
     }
 
+    // Hide all UI elements
     public void Hide()
     {
         canvasGroup.alpha = 0f;
@@ -152,11 +120,13 @@ public class InteractionUI : MonoBehaviour
         canvasGroup.blocksRaycasts = false;
     }
 
+     // Check if interaction UI is visible
     public bool IsVisible()
     {
         return canvasGroup.alpha > 0.9f; // You could cache a boolean too
     }
 
+    // Static check for global access
     public static bool InstanceIsVisible()
     {
         return Instance != null && Instance.IsVisible();

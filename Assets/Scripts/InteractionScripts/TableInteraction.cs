@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class LockerInteraction : MonoBehaviour, IInteractable
+public class TableInteraction : MonoBehaviour, IInteractable
 {
     [SerializeField] private string sceneButtonLabel = "Hide under table";
 
@@ -10,22 +10,22 @@ public class LockerInteraction : MonoBehaviour, IInteractable
     [SerializeField] private GameObject dialogueCanvas;
     [SerializeField] private Dialogue dialogue;
 
+    // Initialize by hiding the dialogue canvas (if any)
     private void Start()
     {
         if (dialogueCanvas != null)
         {
-            // dialogueCanvas.alpha = 0f;
-            // dialogueCanvas.interactable = false;
-            // dialogueCanvas.blocksRaycasts = false;
             dialogueCanvas.SetActive(false);
         }
     }
 
+    // Called when the player interacts with the locker
     public void Interact()
     {
         InteractionUI.Instance.Show(sceneButtonLabel, OnSceneClick, dialogueCanvas, dialogue);
     }
 
+    // Executes when the scene button is clicked
     private void OnSceneClick()
     {
         Debug.Log("Start Scene for Locker");
