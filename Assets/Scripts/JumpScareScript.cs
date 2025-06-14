@@ -10,7 +10,7 @@ public class JumpScareScript : MonoBehaviour
 
     // private bool hasPlayed = false;
 
-    private void Start()
+    public virtual void Start()
     {
         HideJumpscare();
     }
@@ -25,7 +25,7 @@ public class JumpScareScript : MonoBehaviour
     // }
 
     // Display Jumpscare Animation
-    public void ShowJumpscare()
+    public virtual void ShowJumpscare()
     {
         jumpscareGroup.alpha = 1f;
         jumpscareGroup.interactable = true;
