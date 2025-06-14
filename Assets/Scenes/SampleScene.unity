@@ -2593,6 +2593,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48b44d49f7898454db27537f92296127, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  menuOpenCloseAction:
+    m_Name: Menu Open Close
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: c0a064a6-7dbb-4a9d-b80d-962912211742
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 220415e7-21d3-4d52-8793-422a21d68a36
+      m_Path: <Keyboard>/escape
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Menu Open Close
+      m_Flags: 0
+    m_Flags: 0
+  interactAction:
+    m_Name: Interact
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 4b411ed1-69dc-4883-96f0-89728cf35e66
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: f07af7c7-7c6c-4a6d-8b1d-789b82a159e6
+      m_Path: <Keyboard>/e
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Interact
+      m_Flags: 0
+    m_Flags: 0
 --- !u!1 &533292760
 GameObject:
   m_ObjectHideFlags: 0
@@ -5466,9 +5500,9 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0
+    x: 0.125
     y: 0
-    width: 1
+    width: 0.75000006
     height: 1
   near clip plane: 0.1
   far clip plane: 5000
