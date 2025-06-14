@@ -58,4 +58,14 @@ public class TestYandereAI : MonoBehaviour
     {
         canChase = true;
     }
+
+    public void InjectPlayer(Transform player)
+    {
+        this.player = player;
+    }
+
+    public string GetTargetName()
+    {
+        return player != null ? player.name : "NULL";
+    }
 }
