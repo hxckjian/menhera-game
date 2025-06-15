@@ -23,16 +23,21 @@ public class Dialogue : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            if (isTyping)
-            {
-                StopAllCoroutines();
-                textComponent.text = lines[index];
-                isTyping = false;
-            }
-            else
-            {
-                NextLine();
-            }
+            HandleClick();
+        }
+    }
+
+    public void HandleClick()
+    {
+        if (isTyping)
+        {
+            StopAllCoroutines();
+            textComponent.text = lines[index];
+            isTyping = false;
+        }
+        else
+        {
+            NextLine();
         }
     }
 

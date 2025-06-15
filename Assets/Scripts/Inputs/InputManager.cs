@@ -6,13 +6,11 @@ public class InputManager : MonoBehaviour
 {
     public static InputManager instance;
 
-    // 🔔 Declare the input events here
+    [SerializeField] private InputAction menuOpenCloseAction;
+    [SerializeField] private InputAction interactAction;
+
     public event Action OnMenuToggle;
     public event Action OnInteractToggle;
-
-    private PlayerInput playerInput;
-    private InputAction menuOpenCloseAction;
-    private InputAction interactAction;
 
     private void Awake()
     {
@@ -20,19 +18,29 @@ public class InputManager : MonoBehaviour
         {
             instance = this;
         }
-
-        playerInput = GetComponent<PlayerInput>();
-        menuOpenCloseAction = playerInput.actions["MenuOpenClose"];
-        interactAction = playerInput.actions["InteractionOpenClose"];
     }
-
+    
     private void Update()
     {
-        // ✅ Trigger events instead of exposing state
         if (menuOpenCloseAction.WasPressedThisFrame())
+        {
             OnMenuToggle?.Invoke();
-
+        }
         if (interactAction.WasPressedThisFrame())
+        {
             OnInteractToggle?.Invoke();
+        }
+    }
+
+    private void OnEnable()
+    {
+        menuOpenCloseAction?.Enable();
+        interactAction?.Enable();
+    }
+
+    private void OnDisable()
+    {
+        menuOpenCloseAction?.Disable();
+        interactAction?.Disable();
     }
 }
