@@ -756,6 +756,7 @@ MonoBehaviour:
     and ever."
   - 'MC: ...!'
   textSpeed: 0.1
+  dialogueCanvas: {fileID: 0}
 --- !u!114 &723929168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3275,15 +3276,15 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.06757813
-    y: 0.07291667
-    width: 0.1875
-    height: 0.25
+    x: 0.125
+    y: 0
+    width: 0.75000006
+    height: 1
   near clip plane: 0.1
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 1
+  orthographic size: 2.8125
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2

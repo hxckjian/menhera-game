@@ -14,6 +14,8 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
 
+    private Vector2 lastMovementDirection;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -27,9 +29,22 @@ public class PlayerMovement : MonoBehaviour
     // Adjusts Animator paremeters to allocate correct animation when moving in certain direction
     private void Update()
     {
-        animator.SetFloat("Horizontal", movementInput.x);
-        animator.SetFloat("Vertical", movementInput.y);
+        // animator.SetFloat("Horizontal", movementInput.x);
+        // animator.SetFloat("Vertical", movementInput.y);
         animator.SetFloat("Speed", movementInput.sqrMagnitude);
+
+        if (movementInput.sqrMagnitude > 0.01f)
+        {
+            animator.SetFloat("Horizontal", movementInput.x);
+            animator.SetFloat("Vertical", movementInput.y);
+            lastMovementDirection = movementInput;
+        }
+        else
+        {
+            // Apply last movement direction when idle
+            animator.SetFloat("Horizontal", lastMovementDirection.x);
+            animator.SetFloat("Vertical", lastMovementDirection.y);
+        }
     }
 
     private void FixedUpdate()
