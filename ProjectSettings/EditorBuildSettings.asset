@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/RetryScene.unity
     guid: 9221b4cac0822d44aa5617ec6c020829
+  - enabled: 1
+    path: Assets/Scenes/DeathScenes/TableScene.unity
+    guid: 25b1ca8b035c02446a4a8107cc81e1f1
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

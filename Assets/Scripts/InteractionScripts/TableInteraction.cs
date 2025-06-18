@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TableInteraction : MonoBehaviour, IInteractable
 {
@@ -28,7 +29,8 @@ public class TableInteraction : MonoBehaviour, IInteractable
     // Executes when the scene button is clicked
     private void OnSceneClick()
     {
-        Debug.Log("Start Scene for Locker");
+        Debug.Log("Start Scene for Table");
         InteractionUI.Instance.Hide();
+        SceneManager.LoadScene("TableScene");
     }
 }

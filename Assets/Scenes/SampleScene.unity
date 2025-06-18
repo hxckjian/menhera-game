@@ -5625,7 +5625,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   yandere: {fileID: 8008498367107916335}
-  yandereAppearDelay: 5
+  yandereAppearDelay: 25
   debugTimer: {fileID: 1843272946}
 --- !u!4 &1059991661
 Transform:
