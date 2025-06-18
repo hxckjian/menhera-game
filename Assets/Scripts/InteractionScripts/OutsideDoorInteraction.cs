@@ -6,6 +6,11 @@ public class OutsideDoorInteraction : MonoBehaviour, IInteractable
     [SerializeField] private GameObject dialogueCanvas;
     [SerializeField] private Dialogue dialogue;
 
+    [Header("Required Direction for Trigger")]
+    [SerializeField] private Direction requiredFacingDirection = Direction.None;
+
+    public Direction RequiredDirection => requiredFacingDirection;
+
     private void Start()
     {
         if (dialogueCanvas != null)

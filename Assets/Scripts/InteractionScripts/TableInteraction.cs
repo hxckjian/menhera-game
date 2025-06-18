@@ -11,6 +11,11 @@ public class TableInteraction : MonoBehaviour, IInteractable
     [SerializeField] private GameObject dialogueCanvas;
     [SerializeField] private Dialogue dialogue;
 
+    [Header("Required Direction for Trigger")]
+    [SerializeField] private Direction requiredFacingDirection = Direction.Up;
+
+    public Direction RequiredDirection => requiredFacingDirection;
+
     // Initialize by hiding the dialogue canvas (if any)
     private void Start()
     {

@@ -26,6 +26,25 @@ public class PlayerMovement : MonoBehaviour
         movementFilter.useTriggers = false;
     }
 
+    public Vector2 FacingVector => lastMovementDirection;
+
+    public Direction FacingDirection
+    {
+        get
+        {
+            if (lastMovementDirection == Vector2.up)
+                return Direction.Up;
+            if (lastMovementDirection == Vector2.down)
+                return Direction.Down;
+            if (lastMovementDirection == Vector2.left)
+                return Direction.Left;
+            if (lastMovementDirection == Vector2.right)
+                return Direction.Right;
+
+            return Direction.None;
+        }
+    }
+
     // Adjusts Animator paremeters to allocate correct animation when moving in certain direction
     private void Update()
     {
