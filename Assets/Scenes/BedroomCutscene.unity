@@ -2063,6 +2063,54 @@ PlayableDirector:
   m_SceneBindings: []
   m_ExposedReferences:
     m_References: []
+--- !u!1 &1016113613
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1016113615}
+  - component: {fileID: 1016113614}
+  m_Layer: 0
+  m_Name: SpriteDirectionManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1016113614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016113613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68797d2258c7b7244895153b80b3c940, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MC:
+    animator: {fileID: 1905024101}
+  Yandere:
+    animator: {fileID: 288356657}
+--- !u!4 &1016113615
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016113613}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.1497399, y: 3.1213923, z: -0.020847501}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1054950762
 GameObject:
   m_ObjectHideFlags: 0
@@ -2097,15 +2145,34 @@ MonoBehaviour:
     timeline: {fileID: 699764650}
     dialogueCanvas: {fileID: 0}
     dialogue: {fileID: 0}
+    setFacingAfterStep: 1
+    facingInstructions:
+      setMC: 1
+      mcDirection: 1
+      setYandere: 0
+      yandereDirection: 0
   - stepType: 1
     timeline: {fileID: 0}
     dialogueCanvas: {fileID: 1878739483}
     dialogue: {fileID: 723929167}
+    setFacingAfterStep: 0
+    facingInstructions:
+      setMC: 0
+      mcDirection: 0
+      setYandere: 0
+      yandereDirection: 0
   - stepType: 0
     timeline: {fileID: 2068473896}
     dialogueCanvas: {fileID: 0}
     dialogue: {fileID: 0}
+    setFacingAfterStep: 0
+    facingInstructions:
+      setMC: 0
+      mcDirection: 0
+      setYandere: 0
+      yandereDirection: 0
   nextSceneName: SampleScene
+  directionManager: {fileID: 1016113614}
 --- !u!4 &1054950764
 Transform:
   m_ObjectHideFlags: 0
@@ -6190,3 +6257,4 @@ SceneRoots:
   - {fileID: 1878739487}
   - {fileID: 2141381938}
   - {fileID: 1054950764}
+  - {fileID: 1016113615}

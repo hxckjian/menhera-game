@@ -99,12 +99,25 @@ public class TimelineSceneManager : MonoBehaviour
     private enum StepType { Timeline, Dialogue }
 
     [System.Serializable]
+    private class CharacterFacingInstruction
+    {
+        public bool setMC = false;
+        public SpriteDirectionManager.Direction mcDirection;
+
+        public bool setYandere = false;
+        public SpriteDirectionManager.Direction yandereDirection;
+    }
+
+    [System.Serializable]
     private class Step
     {
         public StepType stepType;
         public PlayableDirector timeline;
         public GameObject dialogueCanvas;
         public Dialogue dialogue;
+        
+        public bool setFacingAfterStep = false;
+        public CharacterFacingInstruction facingInstructions;
     }
 
     [Header("Sequence Steps")]
@@ -112,6 +125,13 @@ public class TimelineSceneManager : MonoBehaviour
 
     [Header("Scene Transition")]
     [SerializeField] private string nextSceneName;
+
+    [Header("Default Direction Manager")]
+    [SerializeField] private SpriteDirectionManager directionManager;
+
+    public enum Character { MC, Yandere }
+    public enum Direction { Left, Right, Up, Down }
+
 
     private int currentStepIndex = 0;
     private bool isProcessing = false;
@@ -173,6 +193,21 @@ public class TimelineSceneManager : MonoBehaviour
 
     private void OnTimelineEnded(PlayableDirector director)
     {
+        Step previous = sequenceSteps[currentStepIndex - 1];
+
+        if (previous.setFacingAfterStep && previous.facingInstructions != null)
+        {
+            if (previous.facingInstructions.setMC)
+            {
+                directionManager.Face(SpriteDirectionManager.Character.MC, previous.facingInstructions.mcDirection);
+            }
+            if (previous.facingInstructions.setYandere)
+            {
+                directionManager.Face(SpriteDirectionManager.Character.Yandere, previous.facingInstructions.yandereDirection);
+            }
+        }
+
+
         director.stopped -= OnTimelineEnded;
         isProcessing = false;
         ProcessNextStep();
@@ -186,6 +221,18 @@ public class TimelineSceneManager : MonoBehaviour
 
         if (previous.dialogue != null)
             previous.dialogue.OnDialogueComplete -= OnDialogueCompleted;
+
+        if (previous.setFacingAfterStep && previous.facingInstructions != null)
+        {
+            if (previous.facingInstructions.setMC)
+            {
+                directionManager.Face(SpriteDirectionManager.Character.MC, previous.facingInstructions.mcDirection);
+            }
+            if (previous.facingInstructions.setYandere)
+            {
+                directionManager.Face(SpriteDirectionManager.Character.Yandere, previous.facingInstructions.yandereDirection);
+            }
+        }
 
         isProcessing = false;
         ProcessNextStep();
