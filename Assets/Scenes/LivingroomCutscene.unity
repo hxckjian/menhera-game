@@ -576,7 +576,14 @@ MonoBehaviour:
     timeline: {fileID: 1211541671}
     dialogueCanvas: {fileID: 0}
     dialogue: {fileID: 0}
+    setFacingAfterStep: 0
+    facingInstructions:
+      setMC: 0
+      mcDirection: 0
+      setYandere: 0
+      yandereDirection: 0
   nextSceneName: BedroomCutscene
+  directionManager: {fileID: 0}
 --- !u!4 &495074880
 Transform:
   m_ObjectHideFlags: 0
@@ -3071,7 +3078,7 @@ MonoBehaviour:
   m_RefResolutionX: 480
   m_RefResolutionY: 360
   m_CropFrame: 3
-  m_GridSnapping: 2
+  m_GridSnapping: 1
   m_FilterMode: 0
   m_UpscaleRT: 0
   m_PixelSnapping: 0
@@ -3189,10 +3196,10 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.125
-    y: 0
-    width: 0.75000006
-    height: 1
+    x: 0.10833334
+    y: 0.043518517
+    width: 0.25
+    height: 0.3333333
   near clip plane: 0.1
   far clip plane: 5000
   field of view: 40
