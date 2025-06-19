@@ -2092,10 +2092,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b98893342ded06b43bdbee6a59a082ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeline1: {fileID: 699764650}
-  timeline2: {fileID: 2068473896}
-  dialogueCanvas: {fileID: 1878739483}
-  dialogue: {fileID: 723929167}
+  sequenceSteps:
+  - stepType: 0
+    timeline: {fileID: 699764650}
+    dialogueCanvas: {fileID: 0}
+    dialogue: {fileID: 0}
+  - stepType: 1
+    timeline: {fileID: 0}
+    dialogueCanvas: {fileID: 1878739483}
+    dialogue: {fileID: 723929167}
+  - stepType: 0
+    timeline: {fileID: 2068473896}
+    dialogueCanvas: {fileID: 0}
+    dialogue: {fileID: 0}
   nextSceneName: SampleScene
 --- !u!4 &1054950764
 Transform:
@@ -3284,7 +3293,7 @@ Camera:
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 2.8125
+  orthographic size: 1
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2

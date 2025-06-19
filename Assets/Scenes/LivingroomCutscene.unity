@@ -571,10 +571,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b98893342ded06b43bdbee6a59a082ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeline1: {fileID: 1211541671}
-  timeline2: {fileID: 0}
-  dialogueCanvas: {fileID: 0}
-  dialogue: {fileID: 0}
+  sequenceSteps:
+  - stepType: 0
+    timeline: {fileID: 1211541671}
+    dialogueCanvas: {fileID: 0}
+    dialogue: {fileID: 0}
   nextSceneName: BedroomCutscene
 --- !u!4 &495074880
 Transform:
