@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TableInteraction : MonoBehaviour, IInteractable
 {
@@ -9,6 +10,11 @@ public class TableInteraction : MonoBehaviour, IInteractable
     [Header("Dialogue")]
     [SerializeField] private GameObject dialogueCanvas;
     [SerializeField] private Dialogue dialogue;
+
+    [Header("Required Direction for Trigger")]
+    [SerializeField] private Direction requiredFacingDirection = Direction.Up;
+
+    public Direction RequiredDirection => requiredFacingDirection;
 
     // Initialize by hiding the dialogue canvas (if any)
     private void Start()
@@ -28,7 +34,8 @@ public class TableInteraction : MonoBehaviour, IInteractable
     // Executes when the scene button is clicked
     private void OnSceneClick()
     {
-        Debug.Log("Start Scene for Locker");
+        Debug.Log("Start Scene for Table");
         InteractionUI.Instance.Hide();
+        SceneManager.LoadScene("TableScene");
     }
 }
