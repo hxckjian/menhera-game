@@ -905,7 +905,13 @@ PlayableDirector:
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
-  m_SceneBindings: []
+  m_SceneBindings:
+  - key: {fileID: -1572119407168761659, guid: dd25366362e6767459fbb07a85c0edfd, type: 2}
+    value: {fileID: 509657432}
+  - key: {fileID: 4538509834046625540, guid: dd25366362e6767459fbb07a85c0edfd, type: 2}
+    value: {fileID: 976602294}
+  - key: {fileID: 8532959109335021194, guid: dd25366362e6767459fbb07a85c0edfd, type: 2}
+    value: {fileID: 2109797034}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &320617032
@@ -2237,6 +2243,7 @@ GameObject:
   m_Component:
   - component: {fileID: 763021266}
   - component: {fileID: 763021267}
+  - component: {fileID: 763021268}
   m_Layer: 0
   m_Name: LockerPrehab
   m_TagString: Untagged
@@ -2314,6 +2321,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &763021268
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763021265}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &774534301
 GameObject:
   m_ObjectHideFlags: 0
@@ -6626,6 +6655,71 @@ Transform:
   - {fileID: 186892292}
   m_Father: {fileID: 1345834197}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2030240677
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2030240679}
+  - component: {fileID: 2030240678}
+  m_Layer: 0
+  m_Name: Timeline Scene 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!320 &2030240678
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2030240677}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 4c05f93eb5005504fb2b1bb79e28b126, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: -4736692188748635141, guid: 4c05f93eb5005504fb2b1bb79e28b126, type: 2}
+    value: {fileID: 509657432}
+  - key: {fileID: 2938962120109130716, guid: 4c05f93eb5005504fb2b1bb79e28b126, type: 2}
+    value: {fileID: 976602294}
+  - key: {fileID: -7060923973451786022, guid: 4c05f93eb5005504fb2b1bb79e28b126, type: 2}
+    value: {fileID: 2109797034}
+  - key: {fileID: 5102075187448805721, guid: 4c05f93eb5005504fb2b1bb79e28b126, type: 2}
+    value: {fileID: 763021268}
+  - key: {fileID: -3826257925626706836, guid: 4c05f93eb5005504fb2b1bb79e28b126, type: 2}
+    value: {fileID: 863562364}
+  - key: {fileID: -1313169837401310444, guid: 4c05f93eb5005504fb2b1bb79e28b126, type: 2}
+    value: {fileID: 639875870}
+  - key: {fileID: 525151546847212378, guid: 4c05f93eb5005504fb2b1bb79e28b126, type: 2}
+    value: {fileID: 97554682}
+  - key: {fileID: 3956215981037842804, guid: 4c05f93eb5005504fb2b1bb79e28b126, type: 2}
+    value: {fileID: 1182813511}
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &2030240679
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2030240677}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.6255958, y: 1.8138756, z: 0.13330597}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2044865915
 GameObject:
   m_ObjectHideFlags: 0
@@ -6674,10 +6768,10 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: -0.375
-    y: -0.37500003
-    width: 0.75
-    height: 0.75000006
+    x: 0.09765625
+    y: 0.053472225
+    width: 0.1875
+    height: 0.25
   near clip plane: 0.1
   far clip plane: 5000
   field of view: 40
@@ -6967,3 +7061,4 @@ SceneRoots:
   - {fileID: 397889613}
   - {fileID: 1412735645}
   - {fileID: 320617032}
+  - {fileID: 2030240679}
