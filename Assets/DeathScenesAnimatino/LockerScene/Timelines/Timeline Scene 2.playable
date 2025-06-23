@@ -291,7 +291,7 @@ MonoBehaviour:
   m_Markers:
     m_Objects: []
   m_PostPlaybackState: 3
---- !u!114 &965851795893983920
+--- !u!114 &1447219546077659962
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -338,7 +338,7 @@ MonoBehaviour:
     m_Start: 1.8333333333333333
     m_ClipIn: 0
     m_Asset: {fileID: -8381505156356113222}
-    m_Duration: 6.35
+    m_Duration: 7.3500000000000005
     m_TimeScale: 1
     m_ParentTrack: {fileID: 2938962120109130716}
     m_EaseInDuration: 0
@@ -588,10 +588,10 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 8.883333333333333
+    m_Start: 8.583333333333334
     m_ClipIn: 0
-    m_Asset: {fileID: 965851795893983920}
-    m_Duration: 1.5166666666666666
+    m_Asset: {fileID: 1447219546077659962}
+    m_Duration: 4.6
     m_TimeScale: 1
     m_ParentTrack: {fileID: 5102075187448805721}
     m_EaseInDuration: 0
@@ -654,7 +654,7 @@ MonoBehaviour:
     m_PostExtrapolationMode: 1
     m_PreExtrapolationMode: 1
     m_PostExtrapolationTime: Infinity
-    m_PreExtrapolationTime: 8.883333333333333
+    m_PreExtrapolationTime: 8.583333333333334
     m_DisplayName: Locker Timeline 2
   m_Markers:
     m_Objects: []
@@ -855,7 +855,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 5.4
+        time: 5.4666667
         value: 0
         inSlope: Infinity
         outSlope: Infinity
@@ -894,7 +894,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 5.4
+    m_StopTime: 5.4666667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -933,7 +933,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 5.4
+        time: 5.4666667
         value: 0
         inSlope: Infinity
         outSlope: Infinity
