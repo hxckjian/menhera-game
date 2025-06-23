@@ -39,7 +39,7 @@ namespace MainScripts
             Debug.Log("Start Scene for Locker");
             InteractionUI.Instance.Hide();
             // SceneManager.LoadScene("LockerScene");
-            SceneManager.LoadScene("RetryScene");
+            SceneManager.LoadScene("LockerScene");
         }
     }
 }
