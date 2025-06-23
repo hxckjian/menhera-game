@@ -1,0 +1,409 @@
+fileFormatVersion: 2
+guid: 54d0ae895e4269f47b3ada2fba25f1b6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5589416152286817817
+    second: LockerDeath224x160(Yandere)_0
+  - first:
+      213: -7699040775592750894
+    second: LockerDeath224x160(Yandere)_1
+  - first:
+      213: -6915136695596943337
+    second: LockerDeath224x160(Yandere)_2
+  - first:
+      213: 8750848808274792742
+    second: LockerDeath224x160(Yandere)_3
+  - first:
+      213: 7798002553005085950
+    second: LockerDeath224x160(Yandere)_4
+  - first:
+      213: -2510435791225351952
+    second: LockerDeath224x160(Yandere)_5
+  - first:
+      213: -346423109118163429
+    second: LockerDeath224x160(Yandere)_6
+  - first:
+      213: 2451885594891747260
+    second: LockerDeath224x160(Yandere)_7
+  - first:
+      213: 5364040194533628951
+    second: LockerDeath224x160(Yandere)_8
+  - first:
+      213: 2200356830829130106
+    second: LockerDeath224x160(Yandere)_9
+  - first:
+      213: -2188829539482629347
+    second: LockerDeath224x160(Yandere)_10
+  - first:
+      213: -2046603145548620703
+    second: LockerDeath224x160(Yandere)_11
+  - first:
+      213: -931979738179154774
+    second: LockerDeath224x160(Yandere)_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LockerDeath224x160(Yandere)_0
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 320
+        width: 224
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91ee2e26068919d40800000000000000
+      internalID: 5589416152286817817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LockerDeath224x160(Yandere)_1
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 320
+        width: 224
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d0db83b433872590800000000000000
+      internalID: -7699040775592750894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LockerDeath224x160(Yandere)_2
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 320
+        width: 224
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 718fca530df7800a0800000000000000
+      internalID: -6915136695596943337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LockerDeath224x160(Yandere)_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 224
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6219e5c80a2417970800000000000000
+      internalID: 8750848808274792742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LockerDeath224x160(Yandere)_4
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 160
+        width: 224
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef41571a102183c60800000000000000
+      internalID: 7798002553005085950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LockerDeath224x160(Yandere)_5
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 160
+        width: 224
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f01690e2f3292dd0800000000000000
+      internalID: -2510435791225351952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LockerDeath224x160(Yandere)_6
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 160
+        width: 224
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1686078402413bf0800000000000000
+      internalID: -346423109118163429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LockerDeath224x160(Yandere)_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 224
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbf7b6935f8d60220800000000000000
+      internalID: 2451885594891747260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LockerDeath224x160(Yandere)_8
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 224
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71c18141326e07a40800000000000000
+      internalID: 5364040194533628951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LockerDeath224x160(Yandere)_9
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 224
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a71bca031ec398e10800000000000000
+      internalID: 2200356830829130106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LockerDeath224x160(Yandere)_10
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 0
+        width: 224
+        height: 160
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1b81497127bf91e0800000000000000
+      internalID: -2188829539482629347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5bd8e7da5e984904397d235971b46613
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      LockerDeath224x160(Yandere)_0: 5589416152286817817
+      LockerDeath224x160(Yandere)_1: -7699040775592750894
+      LockerDeath224x160(Yandere)_10: -2188829539482629347
+      LockerDeath224x160(Yandere)_2: -6915136695596943337
+      LockerDeath224x160(Yandere)_3: 8750848808274792742
+      LockerDeath224x160(Yandere)_4: 7798002553005085950
+      LockerDeath224x160(Yandere)_5: -2510435791225351952
+      LockerDeath224x160(Yandere)_6: -346423109118163429
+      LockerDeath224x160(Yandere)_7: 2451885594891747260
+      LockerDeath224x160(Yandere)_8: 5364040194533628951
+      LockerDeath224x160(Yandere)_9: 2200356830829130106
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
