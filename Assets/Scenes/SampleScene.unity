@@ -2233,7 +2233,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -5.498825, y: 3.015153}
+  m_Offset: {x: -5.498825, y: 3.2256298}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2243,7 +2243,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.9092541, y: 0.97963405}
+  m_Size: {x: 1.9092541, y: 0.5586803}
   m_EdgeRadius: 0
 --- !u!114 &240023671
 MonoBehaviour:
@@ -5944,9 +5944,9 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0
+    x: 0.125
     y: 0
-    width: 1
+    width: 0.75
     height: 1
   near clip plane: 0.1
   far clip plane: 5000
@@ -6069,7 +6069,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   yandere: {fileID: 8008498367107916335}
-  yandereAppearDelay: 5
+  yandereAppearDelay: 15
   debugTimer: {fileID: 1843272946}
 --- !u!4 &1059991661
 Transform:
@@ -6718,7 +6718,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.0097670555, y: 0}
+  m_Offset: {x: -0.0097670555, y: 0.14760426}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -6728,7 +6728,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.1525028, y: 1}
+  m_Size: {x: 2.1525028, y: 0.7047915}
   m_EdgeRadius: 0
 --- !u!114 &1331402646
 MonoBehaviour:
