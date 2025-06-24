@@ -45,6 +45,7 @@ public class DebugTimerDisplay : MonoBehaviour
             if (playerInteraction != null)
             {
                 playerInteraction.SetInteractEnabled(false);
+                playerInteraction.DisableInteractionPopup();
             }
 
             Invoke(nameof(HideText), 0f);
