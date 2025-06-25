@@ -85,10 +85,8 @@ public class TimelineSceneManager : MonoBehaviour
                 break;
 
             case StepType.Dialogue:
-                Debug.Log("BYEEEE");
                 if (current.dialogue != null && current.dialogueCanvas != null)
                 {
-                    Debug.Log(current.dialogueCanvas);
                     current.dialogueCanvas.SetActive(true);
                     current.dialogue.StartDialogueManually();
                     current.dialogue.OnDialogueComplete += OnDialogueCompleted;
