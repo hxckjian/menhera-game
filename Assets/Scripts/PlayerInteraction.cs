@@ -8,6 +8,9 @@ public class PlayerInteraction : MonoBehaviour
     private Direction requiredDirection = Direction.None;
     private bool directionNone = false;
 
+    [Header("Popup Settings")]
+    [SerializeField] private InteractionPopupUI popUpInteraction;
+
     private void OnEnable()
     {
         if (InputManager.instance != null)
@@ -18,6 +21,11 @@ public class PlayerInteraction : MonoBehaviour
     {
         if (InputManager.instance != null)
             InputManager.instance.OnInteractToggle -= HandleInteraction;
+    }
+
+    public void DisableInteractionPopup()
+    {
+        popUpInteraction.DisablePopup();
     }
 
     private void HandleInteraction()
@@ -45,6 +53,8 @@ public class PlayerInteraction : MonoBehaviour
     {
         if (other.TryGetComponent<IInteractable>(out var interactable))
         {
+            popUpInteraction.ShowPopup();
+
             currentInteractable = interactable;
             requiredDirection = interactable.RequiredDirection;  
             if (requiredDirection == Direction.None)
@@ -58,6 +68,8 @@ public class PlayerInteraction : MonoBehaviour
     {
         if (other.TryGetComponent<IInteractable>(out var interactable) && interactable == currentInteractable)
         {
+            popUpInteraction.HidePopup();
+
             currentInteractable = null;
             requiredDirection = Direction.None;
             SetDirectionCheckEnabled(false);
