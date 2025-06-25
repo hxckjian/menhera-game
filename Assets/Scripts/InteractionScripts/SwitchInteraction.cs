@@ -39,7 +39,7 @@ namespace MainScripts
             Debug.Log("Start Scene for Switch");
             InteractionUI.Instance.Hide();
             // SceneManager.LoadScene("LockerScene");
-            SceneManager.LoadScene("RetryScene");
+            SceneManager.LoadScene("SwitchScene");
         }
     }
 }
