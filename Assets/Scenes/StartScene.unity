@@ -1443,7 +1443,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1919789293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1574,10 +1574,10 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.22972974
-    y: 0.2503458
-    width: 0.5405406
-    height: 0.4979253
+    x: 0.008196721
+    y: 0.0013831259
+    width: 0.9836065
+    height: 0.9958506
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
