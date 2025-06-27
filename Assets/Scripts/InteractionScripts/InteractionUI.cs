@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Events;
+using UnityEngine.EventSystems;
 
 public class InteractionUI : MonoBehaviour
 {
@@ -78,6 +79,8 @@ public class InteractionUI : MonoBehaviour
         canvasGroup.alpha = 1f;
         canvasGroup.interactable = true;
         canvasGroup.blocksRaycasts = true;
+        EventSystem.current.SetSelectedGameObject(null); // reset
+        EventSystem.current.SetSelectedGameObject(nothingButton.gameObject);
     }
 
     // Show dialogue without options UI

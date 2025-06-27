@@ -21,7 +21,8 @@ public class Dialogue : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        //original Input.GetMouseButtonDown(0)
+        if (Input.GetKeyDown(KeyCode.E))
         {
             HandleClick();
         }

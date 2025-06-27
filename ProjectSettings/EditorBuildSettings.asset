@@ -30,5 +30,5 @@ EditorBuildSettings:
     path: Assets/Scenes/DeathScenes/SwitchScene.unity
     guid: 25fcd8850dc32af4486321d4f55cce1f
   m_configObjects:
-    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 3dfc051119081af40a2100e190201e04, type: 3}
   m_UseUCBPForAssetBundles: 0
