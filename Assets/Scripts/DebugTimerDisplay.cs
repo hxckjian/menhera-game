@@ -37,7 +37,7 @@ public class DebugTimerDisplay : MonoBehaviour
         }
         else
         {
-            timerText.text = "0:00";
+            timerText.text = "----";
             isRunning = false;
 
             //Disable playerinteraction
@@ -48,7 +48,7 @@ public class DebugTimerDisplay : MonoBehaviour
                 playerInteraction.DisableInteractionPopup();
             }
 
-            Invoke(nameof(HideText), 0f);
+            // Invoke(nameof(HideText), 0f);
         }
     }
 

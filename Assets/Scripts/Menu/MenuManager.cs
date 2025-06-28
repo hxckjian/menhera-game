@@ -1,5 +1,7 @@
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class MenuManager : MonoBehaviour
 {
@@ -9,6 +11,8 @@ public class MenuManager : MonoBehaviour
     [Header("Scripts to be Deactivated on Pause")]
     [SerializeField] private MonoBehaviour[] gameplayScripts;
 
+    [Header("Buttons")]
+    [SerializeField] private Button defaultVerticalButton;
     private void Start()
     {
         Debug.Log("MenuManager Start()");
@@ -80,6 +84,9 @@ public class MenuManager : MonoBehaviour
 
         mainMenuCanvasGO.SetActive(true);
         GameplayController.instance.SetGameplayEnabled(false);
+
+        EventSystem.current.SetSelectedGameObject(null); // reset
+        EventSystem.current.SetSelectedGameObject(defaultVerticalButton.gameObject);
     }
 
     // Hide the pause menu
