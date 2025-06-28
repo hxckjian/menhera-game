@@ -5,6 +5,7 @@ using TMPro;
 public class DebugTimerDisplay : MonoBehaviour
 {
     [Header("UI Elements")]
+    [SerializeField] private GameObject timerPanel;
     [SerializeField] private TMP_Text timerText;
 
     [Header("Debug Settings")]
@@ -26,7 +27,23 @@ public class DebugTimerDisplay : MonoBehaviour
 
     private void Update()
     {
-        if (!isRunning || !showDebugTimer || timerText == null) return;
+        // Toggle visibility with F3 for development purposes
+        if (Input.GetKeyDown(KeyCode.F3))
+        {
+            showDebugTimer = !showDebugTimer;
+
+            if (timerPanel != null)
+            {
+                timerPanel.SetActive(showDebugTimer);
+            }
+
+            Debug.Log($"[DebugTimerDisplay] showDebugTimer toggled to: {showDebugTimer}");
+        }
+
+        if (!isRunning || timerText == null) 
+        {
+            return;
+        }
 
         if (timeLeft > 0f)
         {
@@ -40,15 +57,21 @@ public class DebugTimerDisplay : MonoBehaviour
             timerText.text = "----";
             isRunning = false;
 
-            //Disable playerinteraction
-            PlayerInteraction playerInteraction = FindFirstObjectByType<PlayerInteraction>();
-            if (playerInteraction != null)
-            {
-                playerInteraction.SetInteractEnabled(false);
-                playerInteraction.DisableInteractionPopup();
-            }
+            //Disable playerinteraction with area or object when timer over
+            DisablePlayerInteraction();
 
+            // Hide Text when timer is 0 but not needed for now
             // Invoke(nameof(HideText), 0f);
+        }
+    }
+
+    private void DisablePlayerInteraction()
+    {
+        PlayerInteraction playerInteraction = FindFirstObjectByType<PlayerInteraction>();
+        if (playerInteraction != null)
+        {
+            playerInteraction.SetInteractEnabled(false);
+            playerInteraction.DisableInteractionPopup();
         }
     }
 
