@@ -21,9 +21,13 @@ public class InteractionUI : MonoBehaviour
     private void Awake()
     {
         if (Instance == null)
+        {
             Instance = this;
+        }
         else
+        {
             Destroy(gameObject);
+        }
 
         Hide();
     }
@@ -79,7 +83,7 @@ public class InteractionUI : MonoBehaviour
         canvasGroup.alpha = 1f;
         canvasGroup.interactable = true;
         canvasGroup.blocksRaycasts = true;
-        EventSystem.current.SetSelectedGameObject(null); // reset
+        EventSystem.current.SetSelectedGameObject(null); 
         EventSystem.current.SetSelectedGameObject(nothingButton.gameObject);
     }
 
@@ -87,6 +91,7 @@ public class InteractionUI : MonoBehaviour
     public void ShowDialogueOnly(GameObject dialogueCanvas = null, Dialogue dialogue = null)
     {
         PauseTime();
+
         if (dialogueCanvas != null && dialogue != null)
         {
             dialogueCanvas.SetActive(true);
@@ -104,15 +109,15 @@ public class InteractionUI : MonoBehaviour
     // Pause gameplay and notify pause system
     private void PauseTime()
     {
-        GameplayController.instance.SetGameplayEnabled(false);
-        PauseManager.instance.PauseScreen("interaction");
+        GameplayController.Instance.SetGameplayEnabled(false);
+        PauseManager.Instance.PauseScreen("interaction");
     }
 
     // Resume gameplay and notify pause system
     private void ResumeTime()
     {
-        GameplayController.instance.SetGameplayEnabled(true);
-        PauseManager.instance.UnpauseScreen();
+        GameplayController.Instance.SetGameplayEnabled(true);
+        PauseManager.Instance.UnpauseScreen();
     }
 
     // Hide all UI elements
@@ -126,7 +131,7 @@ public class InteractionUI : MonoBehaviour
      // Check if interaction UI is visible
     public bool IsVisible()
     {
-        return canvasGroup.alpha > 0.9f; // You could cache a boolean too
+        return canvasGroup.alpha > 0.9f;
     }
 
     // Static check for global access

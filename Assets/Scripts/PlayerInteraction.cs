@@ -13,14 +13,14 @@ public class PlayerInteraction : MonoBehaviour
 
     private void OnEnable()
     {
-        if (InputManager.instance != null)
-            InputManager.instance.OnInteractToggle += HandleInteraction;
+        if (InputManager.Instance != null)
+            InputManager.Instance.OnInteractToggle += HandleInteraction;
     }
 
     private void OnDisable()
     {
-        if (InputManager.instance != null)
-            InputManager.instance.OnInteractToggle -= HandleInteraction;
+        if (InputManager.Instance != null)
+            InputManager.Instance.OnInteractToggle -= HandleInteraction;
     }
 
     public void DisableInteractionPopup()
@@ -31,7 +31,7 @@ public class PlayerInteraction : MonoBehaviour
     private void HandleInteraction()
     {
         if (!canInteract) return;
-        if (PauseManager.instance.IsPaused) return;
+        if (PauseManager.Instance.IsPaused) return;
 
         if (!checkDirectionMatch()) 
         {

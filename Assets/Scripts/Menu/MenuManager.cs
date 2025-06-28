@@ -13,15 +13,16 @@ public class MenuManager : MonoBehaviour
 
     [Header("Buttons")]
     [SerializeField] private Button defaultVerticalButton;
+
     private void Start()
     {
         Debug.Log("MenuManager Start()");
 
         // Subscribe to menu toggle input
-        if (InputManager.instance != null)
+        if (InputManager.Instance != null)
         {
             Debug.Log("Subscribing to InputManager");
-            InputManager.instance.OnMenuToggle += HandleMenuToggle;
+            InputManager.Instance.OnMenuToggle += HandleMenuToggle;
         }
         else
         {
@@ -29,10 +30,10 @@ public class MenuManager : MonoBehaviour
         }
 
         // Subscribe to pause events
-        if (PauseManager.instance != null)
+        if (PauseManager.Instance != null)
         {
-            PauseManager.instance.OnPause += ShowMenu;
-            PauseManager.instance.OnUnpause += HideMenu;
+            PauseManager.Instance.OnPause += ShowMenu;
+            PauseManager.Instance.OnUnpause += HideMenu;
         }
         else
         {
@@ -46,13 +47,15 @@ public class MenuManager : MonoBehaviour
     private void OnDestroy()
     {
         // Unsubscribe from events
-        if (InputManager.instance != null)
-            InputManager.instance.OnMenuToggle -= HandleMenuToggle;
-
-        if (PauseManager.instance != null)
+        if (InputManager.Instance != null)
         {
-            PauseManager.instance.OnPause -= ShowMenu;
-            PauseManager.instance.OnUnpause -= HideMenu;
+            InputManager.Instance.OnMenuToggle -= HandleMenuToggle;
+        }
+
+        if (PauseManager.Instance != null)
+        {
+            PauseManager.Instance.OnPause -= ShowMenu;
+            PauseManager.Instance.OnUnpause -= HideMenu;
         }
     }
 
@@ -69,23 +72,25 @@ public class MenuManager : MonoBehaviour
         if (InteractionUI.InstanceIsVisible())
         {
             InteractionUI.Instance.Hide();
-            PauseManager.instance.UnpauseScreen();
+            PauseManager.Instance.UnpauseScreen();
             return;
         }
 
-        PauseManager.instance.TogglePause();
+        PauseManager.Instance.TogglePause();
     }
 
     // Show the pause menu
     private void ShowMenu()
     {
-        if (PauseManager.instance.PauseSource != "pause")
+        if (PauseManager.Instance.PauseSource != "pause")
+        {
             return;
+        }
 
         mainMenuCanvasGO.SetActive(true);
-        GameplayController.instance.SetGameplayEnabled(false);
+        GameplayController.Instance.SetGameplayEnabled(false);
 
-        EventSystem.current.SetSelectedGameObject(null); // reset
+        EventSystem.current.SetSelectedGameObject(null);
         EventSystem.current.SetSelectedGameObject(defaultVerticalButton.gameObject);
     }
 
@@ -93,19 +98,19 @@ public class MenuManager : MonoBehaviour
     private void HideMenu()
     {
         mainMenuCanvasGO.SetActive(false);
-        GameplayController.instance.SetGameplayEnabled(true);
+        GameplayController.Instance.SetGameplayEnabled(true);
     }
 
     // Resume the game when resume is clicked
     public void OnResumeClick()
     {
-        PauseManager.instance.UnpauseScreen();
+        PauseManager.Instance.UnpauseScreen();
     }
 
     // Return to the start scene
     public void OnReturnClick()
     {
-        PauseManager.instance.UnpauseScreen();
+        PauseManager.Instance.UnpauseScreen();
         SceneManager.LoadScene("StartScene");
     }
 }

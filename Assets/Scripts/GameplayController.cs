@@ -2,16 +2,20 @@ using UnityEngine;
 
 public class GameplayController : MonoBehaviour
 {
-    public static GameplayController instance;
+    public static GameplayController Instance { get; private set; }
 
     [SerializeField] private MonoBehaviour[] gameplayScripts;
 
     private void Awake()
     {
-        if (instance == null)
-            instance = this;
+        if (Instance == null)
+        {
+            Instance = this;
+        }
         else
+        {
             Destroy(gameObject);
+        }
     }
 
     public void SetGameplayEnabled(bool enabled)

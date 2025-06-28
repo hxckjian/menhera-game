@@ -26,7 +26,6 @@ public class OutsideDoorInteraction : MonoBehaviour, IInteractable
 
     private void OnSceneClick()
     {
-        Debug.Log("Start Scene for Hiding under table");
         InteractionUI.Instance.Hide();
     }
 }

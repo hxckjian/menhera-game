@@ -4,7 +4,6 @@ using UnityEngine.SceneManagement;
 public class TableInteraction : MonoBehaviour, IInteractable
 {
     [SerializeField] private string sceneButtonLabel = "Hide under table";
-
     [SerializeField] private MenuManager menuManager;
 
     [Header("Dialogue")]
