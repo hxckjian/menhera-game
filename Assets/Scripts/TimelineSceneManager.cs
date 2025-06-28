@@ -104,18 +104,7 @@ public class TimelineSceneManager : MonoBehaviour
     {
         Step previous = sequenceSteps[currentStepIndex - 1];
 
-        if (previous.setFacingAfterStep && previous.facingInstructions != null)
-        {
-            if (previous.facingInstructions.setMC)
-            {
-                directionManager.Face(SpriteDirectionManager.Character.MC, previous.facingInstructions.mcDirection);
-            }
-            if (previous.facingInstructions.setYandere)
-            {
-                directionManager.Face(SpriteDirectionManager.Character.Yandere, previous.facingInstructions.yandereDirection);
-            }
-        }
-
+        ApplyFacingInstructions(previous);
 
         director.stopped -= OnTimelineEnded;
         isProcessing = false;
@@ -131,20 +120,26 @@ public class TimelineSceneManager : MonoBehaviour
         if (previous.dialogue != null)
             previous.dialogue.OnDialogueComplete -= OnDialogueCompleted;
 
-        if (previous.setFacingAfterStep && previous.facingInstructions != null)
-        {
-            if (previous.facingInstructions.setMC)
-            {
-                directionManager.Face(SpriteDirectionManager.Character.MC, previous.facingInstructions.mcDirection);
-            }
-            if (previous.facingInstructions.setYandere)
-            {
-                directionManager.Face(SpriteDirectionManager.Character.Yandere, previous.facingInstructions.yandereDirection);
-            }
-        }
+        ApplyFacingInstructions(previous);
 
         isProcessing = false;
         ProcessNextStep();
+    }
+
+    private void ApplyFacingInstructions(Step step)
+    {
+         if (step.setFacingAfterStep && step.facingInstructions != null)
+        {
+            if (step.facingInstructions.setMC)
+            {
+                directionManager.Face(SpriteDirectionManager.Character.MC, step.facingInstructions.mcDirection);
+            }
+
+            if (step.facingInstructions.setYandere)
+            {
+                directionManager.Face(SpriteDirectionManager.Character.Yandere, step.facingInstructions.yandereDirection);
+            }
+        }
     }
 
     private void LoadNextScene()

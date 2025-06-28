@@ -9,7 +9,6 @@ public class Dialogue : MonoBehaviour
     [SerializeField] private TextMeshProUGUI textComponent;
     [SerializeField] private string[] lines;
     [SerializeField] private float textSpeed;
-
     [SerializeField] private GameObject dialogueCanvas; 
 
     private int index;
@@ -48,19 +47,12 @@ public class Dialogue : MonoBehaviour
         textComponent.text = string.Empty;
     }
 
-    // Start dialogue from the first line
-    private void StartDialogue()
-    {
-        index = 0;
-        ClearText();
-        StartCoroutine(TypeLine()); 
-    }
-
     // Coroutine to animate typing of current line
     private IEnumerator TypeLine()
     {
         isTyping = true;
         ClearText();
+
         foreach (char c in lines[index].ToCharArray())
         {
             textComponent.text += c;
@@ -106,10 +98,13 @@ public class Dialogue : MonoBehaviour
         isTyping = false;
         ClearText();
         OnDialogueComplete?.Invoke();
+        
         DialogueManager.Instance?.Clear();
 
         if (dialogueCanvas != null)
-        dialogueCanvas.SetActive(false);
+        {
+            dialogueCanvas.SetActive(false);
+        }
     }
 
 }
