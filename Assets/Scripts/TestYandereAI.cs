@@ -31,7 +31,10 @@ public class TestYandereAI : MonoBehaviour
     private void Update()
     {
         // Cut program short if canChase and player is not available
-        if (!canChase || player == null) return;
+        if (!canChase || player == null) 
+        {
+            return;
+        }
         // if (player != null)
         // {
         // Move toward player

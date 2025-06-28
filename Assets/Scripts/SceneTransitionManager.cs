@@ -1,23 +1,3 @@
-// using UnityEngine;
-// using UnityEngine.SceneManagement;
-
-// public class SceneTransitionManager : MonoBehaviour
-// {
-//     public GameObject objectToDestroyBeforeLoad;
-
-//     public void LoadSceneAndDestroy(string sceneName)
-//     {
-//         // Destroy this GameObject (the Start Canvas or a wrapper parent)
-//         if (objectToDestroyBeforeLoad != null)
-//         {
-//             Destroy(objectToDestroyBeforeLoad);
-//         }
-
-//         // Load next scene
-//         SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
-//     }
-// }
-
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;

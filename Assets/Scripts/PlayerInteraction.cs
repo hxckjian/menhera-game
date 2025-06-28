@@ -4,7 +4,7 @@ public class PlayerInteraction : MonoBehaviour
 {
     private IInteractable currentInteractable = null;
     private bool canInteract = true;
-    // private bool requiredDirection = null;
+
     private Direction requiredDirection = Direction.None;
     private bool directionNone = false;
 
@@ -14,13 +14,17 @@ public class PlayerInteraction : MonoBehaviour
     private void OnEnable()
     {
         if (InputManager.Instance != null)
+        {
             InputManager.Instance.OnInteractToggle += HandleInteraction;
+        }
     }
 
     private void OnDisable()
     {
         if (InputManager.Instance != null)
+        {
             InputManager.Instance.OnInteractToggle -= HandleInteraction;
+        }
     }
 
     public void DisableInteractionPopup()
@@ -30,15 +34,14 @@ public class PlayerInteraction : MonoBehaviour
 
     private void HandleInteraction()
     {
-        if (!canInteract) return;
-        if (PauseManager.Instance.IsPaused) return;
-
-        if (!checkDirectionMatch()) 
+        if (!canInteract || PauseManager.Instance.IsPaused) 
         {
-            if (!directionNone)
-            {
-                return;
-            }
+            return;
+        }
+
+        if (!CheckDirectionMatch() && !directionNone) 
+        {
+            return;
         }
 
         if (currentInteractable != null)
@@ -81,12 +84,12 @@ public class PlayerInteraction : MonoBehaviour
         canInteract = enabled;
     }
 
-    public void SetDirectionCheckEnabled(bool enabled)
+    private void SetDirectionCheckEnabled(bool enabled)
     {
         directionNone = enabled;
     }
 
-    public bool checkDirectionMatch()
+    private bool CheckDirectionMatch()
     {
         PlayerMovement player = GameObject.FindWithTag("Player").GetComponent<PlayerMovement>();
         return player.FacingDirection == requiredDirection;
