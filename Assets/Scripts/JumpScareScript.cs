@@ -8,21 +8,16 @@ public class JumpScareScript : MonoBehaviour
     [Header("Animator Settings")]
     [SerializeField] private Animator jumpscareAnimator;
 
+    [Header("Audio Settings")]
+    [SerializeField] private AudioSource jumpscareAudio;
+    [SerializeField] private AudioClip jumpscareClip;
+
     // private bool hasPlayed = false;
 
     public virtual void Start()
     {
         HideJumpscare();
     }
-
-    // Jumpscare Check
-    // private void Update()
-    // {
-    //     if (Input.GetKeyDown(KeyCode.Space)  && !hasPlayed)
-    //     {
-    //         ShowJumpscare();
-    //     }
-    // }
 
     // Display Jumpscare Animation
     public virtual void ShowJumpscare()
@@ -32,6 +27,13 @@ public class JumpScareScript : MonoBehaviour
         jumpscareGroup.blocksRaycasts = true;
 
         jumpscareAnimator.Play("Jumpscare");
+
+        // Play jumpscare sound
+        if (jumpscareAudio != null && jumpscareClip != null)
+        {
+            jumpscareAudio.PlayOneShot(jumpscareClip);
+        }
+
         // hasPlayed = true;
     }
 

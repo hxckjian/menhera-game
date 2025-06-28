@@ -12,9 +12,11 @@ public class GameplayController : MonoBehaviour
         {
             Instance = this;
         }
-        else
+        // Prevent duplicate singleton instances
+        else if (Instance != this)
         {
             Destroy(gameObject);
+            return;
         }
     }
 
@@ -23,7 +25,9 @@ public class GameplayController : MonoBehaviour
         foreach (var script in gameplayScripts)
         {
             if (script != null)
+            {
                 script.enabled = enabled;
+            }
         }
     }
 }
