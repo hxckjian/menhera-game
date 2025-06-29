@@ -3,7 +3,7 @@ using System;
 
 public class PauseManager : MonoBehaviour
 {
-    public static PauseManager instance;
+    public static PauseManager Instance { get; private set; }
 
     public bool IsPaused { get; private set; }
     public string PauseSource { get; private set; } = "";
@@ -14,14 +14,25 @@ public class PauseManager : MonoBehaviour
     private void Awake()
     {
         // Implement singleton pattern
-        if (instance == null)
-            instance = this;
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else if (Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
     }
 
     // Pause the game and notify listeners
     public void PauseScreen(string source = "pause")
     {
-        if (IsPaused) return;
+        if (IsPaused) 
+        {
+            return;
+        }
+
         IsPaused = true;
         PauseSource = source;
         Time.timeScale = 0f;
@@ -31,7 +42,11 @@ public class PauseManager : MonoBehaviour
     // Unpause the game and notify listeners
     public void UnpauseScreen()
     {
-        if (!IsPaused) return;
+        if (!IsPaused) 
+        {
+            return;
+        }
+
         IsPaused = false;
         PauseSource = "";
         Time.timeScale = 1f;
@@ -42,8 +57,12 @@ public class PauseManager : MonoBehaviour
     public void TogglePause()
     {
         if (IsPaused)
+        {
             UnpauseScreen();
+        }
         else
+        {
             PauseScreen("pause");
+        }
     }
 }

@@ -13,7 +13,7 @@ public class StartMenu : MonoBehaviour
 
     public void OnTestClick()
     {
-        SceneManager.LoadScene("SampleScene");
+        FindFirstObjectByType<SceneTransitionManager>().LoadSceneAndDestroy("SampleScene");
     }
       
     // Called when Exit Button is clicked and exit application

@@ -21,11 +21,13 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponentInChildren<Animator>();
 
+        // Ensure only "Collision" layer is considered and triggers are ignored
         movementFilter.useLayerMask = true;
         movementFilter.layerMask = LayerMask.GetMask("Collision"); 
         movementFilter.useTriggers = false;
     }
 
+    //Returns last facing vector
     public Vector2 FacingVector => lastMovementDirection;
 
     public Direction FacingDirection
@@ -48,8 +50,6 @@ public class PlayerMovement : MonoBehaviour
     // Adjusts Animator paremeters to allocate correct animation when moving in certain direction
     private void Update()
     {
-        // animator.SetFloat("Horizontal", movementInput.x);
-        // animator.SetFloat("Vertical", movementInput.y);
         animator.SetFloat("Speed", movementInput.sqrMagnitude);
 
         if (movementInput.sqrMagnitude > 0.01f)

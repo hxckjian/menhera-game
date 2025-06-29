@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 
 public class InputManager : MonoBehaviour
 {
-    public static InputManager instance;
+    public static InputManager Instance { get; private set; }
 
     [SerializeField] private InputAction menuOpenCloseAction;
     [SerializeField] private InputAction interactAction;
@@ -14,9 +14,9 @@ public class InputManager : MonoBehaviour
 
     private void Awake()
     {
-        if (instance == null)
+        if (Instance == null)
         {
-            instance = this;
+            Instance = this;
         }
     }
     

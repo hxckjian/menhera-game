@@ -6,7 +6,6 @@ namespace MainScripts
     public class SwitchInteraction : MonoBehaviour, IInteractable
     {
         [SerializeField] private string sceneButtonLabel = "Switch off";
-
         [SerializeField] private MenuManager menuManager;
 
         [Header("Dialogue")]
@@ -38,7 +37,6 @@ namespace MainScripts
         {
             Debug.Log("Start Scene for Switch");
             InteractionUI.Instance.Hide();
-            // SceneManager.LoadScene("LockerScene");
             SceneManager.LoadScene("SwitchScene");
         }
     }
