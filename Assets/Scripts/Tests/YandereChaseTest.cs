@@ -14,7 +14,10 @@ public class YandereChaseTest
     [UnitySetUp]
     public IEnumerator SetUp()
     {
-        yield return UnityEngine.SceneManagement.SceneManager.LoadSceneAsync("SampleScene");
+        yield return UnityEngine.SceneManagement.SceneManager.LoadSceneAsync("SampleScene_YandereAITest");
+
+        yield return null;
+        yield return new WaitForSeconds(0.1f);
 
         // Disable the original main character to avoid conflicts
         var originalMC  = GameObject.FindGameObjectWithTag("Player");
@@ -29,13 +32,15 @@ public class YandereChaseTest
         yandere = Object.Instantiate(Resources.Load<GameObject>("Prefabs/DummyYandere"));
         yandere.transform.position = new Vector3(5, 0, 0);
 
+        yield return null;
+
         agent = yandere.GetComponent<NavMeshAgent>();
         ai = yandere.GetComponent<TestYandereAI>();
 
         // Inject the dummy player as the yandere’s target
         ai.InjectPlayer(player.transform);
-
         ai.BeginChase();
+
         yield return null;
     }
 

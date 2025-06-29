@@ -53,6 +53,9 @@ public class StartMenuTest
         string targetScene = "SampleScene";
         bool sceneLoadTriggered = false;
 
+        GameObject stmGO = new GameObject("SceneTransitionManager");
+        var stm = stmGO.AddComponent<SceneTransitionManager>();
+
         SceneManager.sceneLoaded += OnSceneLoaded;
 
         void OnSceneLoaded(Scene scene, LoadSceneMode mode)
