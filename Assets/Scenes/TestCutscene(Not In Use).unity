@@ -849,9 +849,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1625664629}
   lines:
-  - "\u30DE\u30C3\u30B8\u30E7\u30FC\u30EC"
+  - m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   textSpeed: 0.1
   dialogueCanvas: {fileID: 0}
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &723929168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2884,10 +2894,10 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.061328124
-    y: 0.17361112
-    width: 0.1875
-    height: 0.25
+    x: 0
+    y: 0
+    width: 1
+    height: 1
   near clip plane: 0.1
   far clip plane: 5000
   field of view: 40
@@ -3490,10 +3500,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u3053\u306E\u666F\u8272\u3092"
+  m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f8147fe8d0f04d743ad1b21ee42248ab, type: 2}
-  m_sharedMaterial: {fileID: -3416524091714698755, guid: f8147fe8d0f04d743ad1b21ee42248ab, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5028322cd669c2642a366638a9c9d989, type: 2}
+  m_sharedMaterial: {fileID: 8649034561439281600, guid: 5028322cd669c2642a366638a9c9d989, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3726,10 +3736,10 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.061328124
-    y: 0.17361112
-    width: 0.1875
-    height: 0.25
+    x: 0
+    y: 0
+    width: 1
+    height: 1
   near clip plane: 0.1
   far clip plane: 5000
   field of view: 40
