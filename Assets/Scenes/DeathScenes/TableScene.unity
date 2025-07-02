@@ -228,6 +228,7 @@ GameObject:
   - component: {fileID: 22024274}
   - component: {fileID: 22024276}
   - component: {fileID: 22024275}
+  - component: {fileID: 22024277}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -353,6 +354,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 22024273}
   m_CullTransparentMesh: 1
+--- !u!114 &22024277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 22024273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 140cfa0e2109679489f73a579ba8a4a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  englishFontSize: 160
+  japaneseFontSize: 120
 --- !u!1 &131623914
 GameObject:
   m_ObjectHideFlags: 0
@@ -4380,10 +4395,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 22024275}
   lines:
-  - 'Girlfriend: Hide and seek is over, okay?'
-  - 'Girlfriend: Shall I carve a little peek hole for you?'
+  - m_TableReference:
+      m_TableCollectionName: GUID:f2a5b1b0be9d95548a7071e7b9f903af
+    m_TableEntryReference:
+      m_KeyId: 73411440640
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:f2a5b1b0be9d95548a7071e7b9f903af
+    m_TableEntryReference:
+      m_KeyId: 89936998400
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   textSpeed: 0.1
   dialogueCanvas: {fileID: 0}
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &1633590077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4578,10 +4610,10 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.01122449
-    y: 0.0798005
-    width: 0.9795918
-    height: 0.8977556
+    x: 0.125
+    y: 0
+    width: 0.75
+    height: 1
   near clip plane: 0.1
   far clip plane: 5000
   field of view: 40

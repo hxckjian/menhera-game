@@ -849,28 +849,155 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1625664629}
   lines:
-  - 'MC: Haha... you''re more normal than I expected. I was kinda nervous.'
-  - 'Girlfriend: Ehh? Normal? That''s boring...'
-  - 'MC: Well, I mean that in a good way. I thought you''ll be more... intense.'
-  - 'Girlfriend: I can be... if you want me to.'
-  - 'MC: Heh... nah. I''m not into serious stuff anyway. Just having fun is enough,
-    right?'
-  - 'Girlfriend: ...Fun...?'
-  - 'MC: Yeah. Like, you''re cute and all, but this doesn''t have to be like... a
-    thing.'
-  - 'Girlfriend: A thing...? You mean... us...?'
-  - 'MC: Y-yeah. I mean, I thought we were just messing around... right?'
-  - 'Girlfriend: So... to you... it meant nothing...?'
-  - 'MC: W-wait, I didn''t mean it like-'
-  - 'Girlfriend: ..... *sniff* .....'
-  - 'Girlfriend: So you were planning to leave me all along...?'
-  - 'Girlfriend: Even after everything...? *sob*'
-  - 'MC: (This is getting bad...)'
-  - 'Girlfriend: Then I''ll make it so... you''ll never leave me again...'
-  - 'Girlfriend: I''ll make it so that you''ll stay with me... forever and ever.'
-  - 'MC: ...!'
+  - m_TableReference:
+      m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
+    m_TableEntryReference:
+      m_KeyId: 32575696896
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
+    m_TableEntryReference:
+      m_KeyId: 8311540396032
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
+    m_TableEntryReference:
+      m_KeyId: 42098164871168
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
+    m_TableEntryReference:
+      m_KeyId: 41925552484352
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
+    m_TableEntryReference:
+      m_KeyId: 41978492989440
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
+    m_TableEntryReference:
+      m_KeyId: 41989242990592
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
+    m_TableEntryReference:
+      m_KeyId: 41994649448448
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
+    m_TableEntryReference:
+      m_KeyId: 42050605658112
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
+    m_TableEntryReference:
+      m_KeyId: 42073829519360
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
+    m_TableEntryReference:
+      m_KeyId: 42086643118080
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
+    m_TableEntryReference:
+      m_KeyId: 42359100911616
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
+    m_TableEntryReference:
+      m_KeyId: 42382819700736
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
+    m_TableEntryReference:
+      m_KeyId: 42399622082560
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
+    m_TableEntryReference:
+      m_KeyId: 42412355989504
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
+    m_TableEntryReference:
+      m_KeyId: 42424888569856
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
+    m_TableEntryReference:
+      m_KeyId: 42437702168576
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
+    m_TableEntryReference:
+      m_KeyId: 42457327316992
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
+    m_TableEntryReference:
+      m_KeyId: 42471512453120
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   textSpeed: 0.1
   dialogueCanvas: {fileID: 0}
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &723929168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3278,6 +3405,7 @@ GameObject:
   - component: {fileID: 1625664628}
   - component: {fileID: 1625664630}
   - component: {fileID: 1625664629}
+  - component: {fileID: 1625664631}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -3403,6 +3531,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1625664627}
   m_CullTransparentMesh: 1
+--- !u!114 &1625664631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1625664627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 140cfa0e2109679489f73a579ba8a4a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  englishFontSize: 160
+  japaneseFontSize: 120
 --- !u!1 &1692853039
 GameObject:
   m_ObjectHideFlags: 0
@@ -3559,10 +3701,10 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.20634921
-    y: 0.2777778
-    width: 0.5860806
-    height: 0.44444448
+    x: 0.080078125
+    y: 0.17986111
+    width: 0.1875
+    height: 0.25
   near clip plane: 0.1
   far clip plane: 5000
   field of view: 40

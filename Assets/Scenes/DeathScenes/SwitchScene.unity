@@ -2328,9 +2328,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1838722479}
   lines:
-  - 'MC: ...!'
+  - m_TableReference:
+      m_TableCollectionName: GUID:154424416c29824459a413295ec8ca5c
+    m_TableEntryReference:
+      m_KeyId: 3924406272
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   textSpeed: 0.1
   dialogueCanvas: {fileID: 0}
+  references:
+    version: 2
+    RefIds: []
 --- !u!224 &699807542
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5774,6 +5784,7 @@ GameObject:
   - component: {fileID: 1829573391}
   - component: {fileID: 1829573393}
   - component: {fileID: 1829573392}
+  - component: {fileID: 1829573394}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -5899,6 +5910,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1829573390}
   m_CullTransparentMesh: 1
+--- !u!114 &1829573394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829573390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 140cfa0e2109679489f73a579ba8a4a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  englishFontSize: 160
+  japaneseFontSize: 120
 --- !u!1 &1838722478
 GameObject:
   m_ObjectHideFlags: 0
@@ -5910,6 +5935,7 @@ GameObject:
   - component: {fileID: 1838722481}
   - component: {fileID: 1838722480}
   - component: {fileID: 1838722479}
+  - component: {fileID: 1838722482}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -6035,6 +6061,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 31}
   m_SizeDelta: {x: 2150, y: 360}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1838722482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1838722478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 140cfa0e2109679489f73a579ba8a4a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  englishFontSize: 160
+  japaneseFontSize: 120
 --- !u!1 &1849591308
 GameObject:
   m_ObjectHideFlags: 0
@@ -7351,14 +7391,59 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1829573392}
   lines:
-  - 'Girlfriend: ...found you~'
-  - 'Girlfriend: Did you really think you can hide by turning off the light?'
-  - 'Girlfriend: You smell really good you know?'
-  - 'Girlfriend: That''s how I found you, hehe~'
-  - 'Girlfriend: In the dark, you smell even more delicious since I can''t see anything.'
-  - 'Girlfriend: Can I have more pieces of you...?'
+  - m_TableReference:
+      m_TableCollectionName: GUID:8bbc3e5f63354204b986cd6ea40b00b7
+    m_TableEntryReference:
+      m_KeyId: 178822688768
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:8bbc3e5f63354204b986cd6ea40b00b7
+    m_TableEntryReference:
+      m_KeyId: 232593666048
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:8bbc3e5f63354204b986cd6ea40b00b7
+    m_TableEntryReference:
+      m_KeyId: 250851471360
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:8bbc3e5f63354204b986cd6ea40b00b7
+    m_TableEntryReference:
+      m_KeyId: 259911168000
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:8bbc3e5f63354204b986cd6ea40b00b7
+    m_TableEntryReference:
+      m_KeyId: 267762905088
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  - m_TableReference:
+      m_TableCollectionName: GUID:8bbc3e5f63354204b986cd6ea40b00b7
+    m_TableEntryReference:
+      m_KeyId: 532817752064
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   textSpeed: 0.1
   dialogueCanvas: {fileID: 0}
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &1940511872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7477,10 +7562,10 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.033947624
-    y: 0.073459715
-    width: 0.9311348
-    height: 0.85308063
+    x: 0.125
+    y: 0
+    width: 0.75
+    height: 1
   near clip plane: 0.1
   far clip plane: 5000
   field of view: 40

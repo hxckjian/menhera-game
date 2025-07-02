@@ -6,7 +6,7 @@ namespace MainScripts
     public class LanguageToggle : MonoBehaviour
     {
         // Start is called once before the first execution of Update after the MonoBehaviour is created
-        void Start()
+        void Awake()
         {
             LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.GetLocale("ja");
         }

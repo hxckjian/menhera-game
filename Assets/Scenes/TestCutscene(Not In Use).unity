@@ -301,7 +301,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 205258073}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2b44a37dcf390f54aa4a598472834cc6, type: 3}
   m_Name: 
@@ -894,145 +894,9 @@ MonoBehaviour:
   textComponent: {fileID: 1625664629}
   lines:
   - m_TableReference:
-      m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
+      m_TableCollectionName: GUID:f2a5b1b0be9d95548a7071e7b9f903af
     m_TableEntryReference:
-      m_KeyId: 32575696896
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  - m_TableReference:
-      m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
-    m_TableEntryReference:
-      m_KeyId: 8311540396032
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  - m_TableReference:
-      m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
-    m_TableEntryReference:
-      m_KeyId: 42098164871168
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  - m_TableReference:
-      m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
-    m_TableEntryReference:
-      m_KeyId: 41925552484352
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  - m_TableReference:
-      m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
-    m_TableEntryReference:
-      m_KeyId: 41978492989440
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  - m_TableReference:
-      m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
-    m_TableEntryReference:
-      m_KeyId: 41989242990592
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  - m_TableReference:
-      m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
-    m_TableEntryReference:
-      m_KeyId: 41994649448448
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  - m_TableReference:
-      m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
-    m_TableEntryReference:
-      m_KeyId: 42050605658112
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  - m_TableReference:
-      m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
-    m_TableEntryReference:
-      m_KeyId: 42073829519360
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  - m_TableReference:
-      m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
-    m_TableEntryReference:
-      m_KeyId: 42086643118080
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  - m_TableReference:
-      m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
-    m_TableEntryReference:
-      m_KeyId: 42359100911616
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  - m_TableReference:
-      m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
-    m_TableEntryReference:
-      m_KeyId: 42382819700736
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  - m_TableReference:
-      m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
-    m_TableEntryReference:
-      m_KeyId: 42399622082560
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  - m_TableReference:
-      m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
-    m_TableEntryReference:
-      m_KeyId: 42412355989504
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  - m_TableReference:
-      m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
-    m_TableEntryReference:
-      m_KeyId: 42424888569856
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  - m_TableReference:
-      m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
-    m_TableEntryReference:
-      m_KeyId: 42437702168576
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  - m_TableReference:
-      m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
-    m_TableEntryReference:
-      m_KeyId: 42457327316992
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  - m_TableReference:
-      m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
-    m_TableEntryReference:
-      m_KeyId: 42471512453120
+      m_KeyId: 89936998400
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -3105,10 +2969,10 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: -0.375
-    y: -0.37500003
+    x: 0.125
+    y: 0
     width: 0.75
-    height: 0.75000006
+    height: 1
   near clip plane: 0.1
   far clip plane: 5000
   field of view: 40
@@ -3712,10 +3576,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u30D7\u30EC\u30A4"
+  m_text: "\u3061\u3087"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c78151cc78f5d76468b5b07225bdc23b, type: 2}
-  m_sharedMaterial: {fileID: 5037212415754721673, guid: c78151cc78f5d76468b5b07225bdc23b, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5028322cd669c2642a366638a9c9d989, type: 2}
+  m_sharedMaterial: {fileID: 8649034561439281600, guid: 5028322cd669c2642a366638a9c9d989, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3804,7 +3668,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   englishFontSize: 160
-  japaneseFontSize: 120
+  japaneseFontSize: 100
 --- !u!1 &1692853039
 GameObject:
   m_ObjectHideFlags: 0
@@ -3962,10 +3826,10 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: -0.375
-    y: -0.37500003
+    x: 0.125
+    y: 0
     width: 0.75
-    height: 0.75000006
+    height: 1
   near clip plane: 0.1
   far clip plane: 5000
   field of view: 40
