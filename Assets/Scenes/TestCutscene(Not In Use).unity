@@ -306,6 +306,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b44a37dcf390f54aa4a598472834cc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  debugLanguage: 2
 --- !u!4 &205258075
 Transform:
   m_ObjectHideFlags: 0
@@ -2969,10 +2970,10 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.125
-    y: 0
-    width: 0.75
-    height: 1
+    x: 0.108571425
+    y: 0.0926893
+    width: 0.78367347
+    height: 0.9399478
   near clip plane: 0.1
   far clip plane: 5000
   field of view: 40
@@ -3576,10 +3577,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u3061\u3087"
+  m_text: "\u301C"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5028322cd669c2642a366638a9c9d989, type: 2}
-  m_sharedMaterial: {fileID: 8649034561439281600, guid: 5028322cd669c2642a366638a9c9d989, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3f6ac6c1fba219144b481649711ac7c5, type: 2}
+  m_sharedMaterial: {fileID: 6095555130186435977, guid: 3f6ac6c1fba219144b481649711ac7c5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3826,10 +3827,10 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.125
-    y: 0
-    width: 0.75
-    height: 1
+    x: 0.108571425
+    y: 0.0926893
+    width: 0.78367347
+    height: 0.9399478
   near clip plane: 0.1
   far clip plane: 5000
   field of view: 40
