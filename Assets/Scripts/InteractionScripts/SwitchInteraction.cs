@@ -1,11 +1,13 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Localization;
 
 namespace MainScripts
 {
-    public class SwitchInteraction : MonoBehaviour, IInteractable
+    public class SwitchInteraction : MonoBehaviour, IInteractable, ILabelProvider
     {
-        [SerializeField] private string sceneButtonLabel = "Switch off";
+        // [SerializeField] private string sceneButtonLabel = "Switch off";
+        [SerializeField] private LocalizedString localizedLabel;
         [SerializeField] private MenuManager menuManager;
 
         [Header("Dialogue")]
@@ -29,7 +31,12 @@ namespace MainScripts
         // Called when the player interacts with the locker
         public void Interact()
         {
-            InteractionUI.Instance.Show(sceneButtonLabel, OnSceneClick, dialogueCanvas, dialogue);
+            InteractionUI.Instance.Show(this, OnSceneClick, dialogueCanvas, dialogue);
+        }
+
+        public LocalizedString GetInteractionLabel()
+        {
+            return localizedLabel;
         }
 
         // Executes when the scene button is clicked

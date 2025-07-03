@@ -33,7 +33,7 @@ public class InteractionUI : MonoBehaviour
     }
 
     // Show the interaction UI, optionally with a dialogue first
-    public void Show(string label, UnityAction onSceneClick, GameObject dialogueCanvas = null, Dialogue dialogue = null, UnityAction onClose = null)
+    public void Show(ILabelProvider labelProvider, UnityAction onSceneClick, GameObject dialogueCanvas = null, Dialogue dialogue = null, UnityAction onClose = null)
     {
         PauseTime(); // Pause as early as possible
 
@@ -47,44 +47,50 @@ public class InteractionUI : MonoBehaviour
             dialogue.OnDialogueComplete += () =>
             {
                 dialogueCanvas.SetActive(false);
-                ShowInternal(label, onSceneClick, onClose);
+                ShowInternal(labelProvider, onSceneClick, onClose);
             };
         }
         else
         {
-            ShowInternal(label, onSceneClick, onClose);
+            ShowInternal(labelProvider, onSceneClick, onClose);
         }
     }
 
     // Show UI elements for player interaction
-    private void ShowInternal(string label, UnityAction onSceneClick, UnityAction onClose)
+    private void ShowInternal(ILabelProvider labelProvider, UnityAction onSceneClick, UnityAction onClose)
     {
-        sceneButtonText.text = label;
+        // sceneButtonText.text = label;
+        var label = labelProvider.GetInteractionLabel();
 
-        sceneButton.onClick.RemoveAllListeners();
-        nothingButton.onClick.RemoveAllListeners();
-
-        sceneButton.onClick.AddListener(onSceneClick);
-        sceneButton.onClick.AddListener(() =>
+        label.GetLocalizedStringAsync().Completed += handle =>
         {
-            Hide();
-            onClose?.Invoke();
-            ResumeTime(); 
-        });
+            sceneButtonText.text = handle.Result;
 
-        nothingButton.onClick.AddListener(() =>
-        {
-            Debug.Log("Nothing clicked.");
-            Hide();
-            onClose?.Invoke();
-            ResumeTime(); 
-        });
+            sceneButton.onClick.RemoveAllListeners();
+            nothingButton.onClick.RemoveAllListeners();
 
-        canvasGroup.alpha = 1f;
-        canvasGroup.interactable = true;
-        canvasGroup.blocksRaycasts = true;
-        EventSystem.current.SetSelectedGameObject(null); 
-        EventSystem.current.SetSelectedGameObject(nothingButton.gameObject);
+            sceneButton.onClick.AddListener(onSceneClick);
+            sceneButton.onClick.AddListener(() =>
+            {
+                Hide();
+                onClose?.Invoke();
+                ResumeTime(); 
+            });
+
+            nothingButton.onClick.AddListener(() =>
+            {
+                Debug.Log("Nothing clicked.");
+                Hide();
+                onClose?.Invoke();
+                ResumeTime(); 
+            });
+
+            canvasGroup.alpha = 1f;
+            canvasGroup.interactable = true;
+            canvasGroup.blocksRaycasts = true;
+            EventSystem.current.SetSelectedGameObject(null); 
+            EventSystem.current.SetSelectedGameObject(nothingButton.gameObject);
+        };
     }
 
     // Show dialogue without options UI

@@ -1,11 +1,13 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Localization;
 
 namespace MainScripts
 {
-    public class LockerInteraction : MonoBehaviour, IInteractable
+    public class LockerInteraction : MonoBehaviour, IInteractable, ILabelProvider
     {
-        [SerializeField] private string sceneButtonLabel = "Hide in locker";
+        // [SerializeField] private string sceneButtonLabel = "Hide in locker";
+        [SerializeField] private LocalizedString localizedLabel;
 
         [SerializeField] private MenuManager menuManager;
 
@@ -30,7 +32,12 @@ namespace MainScripts
         // Called when the player interacts with the locker
         public void Interact()
         {
-            InteractionUI.Instance.Show(sceneButtonLabel, OnSceneClick, dialogueCanvas, dialogue);
+            InteractionUI.Instance.Show(this, OnSceneClick, dialogueCanvas, dialogue);
+        }
+
+        public LocalizedString GetInteractionLabel()
+        {
+            return localizedLabel;
         }
 
         // Executes when the scene button is clicked
