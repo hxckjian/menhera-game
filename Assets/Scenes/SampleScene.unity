@@ -2320,11 +2320,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6579db7f3adb19e4d9bf22ee575c450e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneButtonLabel: Hide in locker
+  localizedLabel:
+    m_TableReference:
+      m_TableCollectionName: GUID:b50eac0bbbef3334bb5483daa5f99826
+    m_TableEntryReference:
+      m_KeyId: 5308246765568
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   menuManager: {fileID: 2040827827}
   dialogueCanvas: {fileID: 1411043553}
   dialogue: {fileID: 1667703463}
   requiredFacingDirection: 0
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &276207777
 GameObject:
   m_ObjectHideFlags: 0
@@ -2481,6 +2492,8 @@ GameObject:
   - component: {fileID: 442526211}
   - component: {fileID: 442526213}
   - component: {fileID: 442526212}
+  - component: {fileID: 442526214}
+  - component: {fileID: 442526215}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -2606,6 +2619,60 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 442526210}
   m_CullTransparentMesh: 1
+--- !u!114 &442526214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 442526210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 140cfa0e2109679489f73a579ba8a4a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  englishFontSize: 42
+  japaneseFontSize: 34
+--- !u!114 &442526215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 442526210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:b50eac0bbbef3334bb5483daa5f99826
+    m_TableEntryReference:
+      m_KeyId: 5345609625600
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 442526212}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &485804138
 GameObject:
   m_ObjectHideFlags: 0
@@ -3191,11 +3258,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65ac879bfbe9a3b4e98f23aa4c0b8a60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneButtonLabel: Switch off
+  localizedLabel:
+    m_TableReference:
+      m_TableCollectionName: GUID:b50eac0bbbef3334bb5483daa5f99826
+    m_TableEntryReference:
+      m_KeyId: 5171193688064
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   menuManager: {fileID: 2040827827}
   dialogueCanvas: {fileID: 740950424}
   dialogue: {fileID: 1962416137}
   requiredFacingDirection: 3
+  references:
+    version: 2
+    RefIds: []
 --- !u!61 &554747928
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3398,10 +3476,10 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.14860907
-    y: 0.03125
-    width: 0.70278186
-    height: 0.9375
+    x: 0.016796876
+    y: 0.05
+    width: 0.375
+    height: 0.5
   near clip plane: 0.1
   far clip plane: 5000
   field of view: 40
@@ -4387,6 +4465,7 @@ GameObject:
   - component: {fileID: 676578587}
   - component: {fileID: 676578589}
   - component: {fileID: 676578588}
+  - component: {fileID: 676578590}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -4512,6 +4591,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 676578586}
   m_CullTransparentMesh: 1
+--- !u!114 &676578590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 676578586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 140cfa0e2109679489f73a579ba8a4a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  englishFontSize: 120
+  japaneseFontSize: 80
 --- !u!1 &691016274
 GameObject:
   m_ObjectHideFlags: 0
@@ -4523,6 +4616,7 @@ GameObject:
   - component: {fileID: 691016275}
   - component: {fileID: 691016277}
   - component: {fileID: 691016276}
+  - component: {fileID: 691016278}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -4648,6 +4742,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 691016274}
   m_CullTransparentMesh: 1
+--- !u!114 &691016278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 691016274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 140cfa0e2109679489f73a579ba8a4a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  englishFontSize: 120
+  japaneseFontSize: 80
 --- !u!1 &696855555
 GameObject:
   m_ObjectHideFlags: 0
@@ -4805,6 +4913,8 @@ GameObject:
   - component: {fileID: 792784000}
   - component: {fileID: 792784002}
   - component: {fileID: 792784001}
+  - component: {fileID: 792784003}
+  - component: {fileID: 792784004}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -4932,6 +5042,60 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 792783999}
   m_CullTransparentMesh: 1
+--- !u!114 &792784003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 792783999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 140cfa0e2109679489f73a579ba8a4a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  englishFontSize: 42
+  japaneseFontSize: 34
+--- !u!114 &792784004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 792783999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:6395de36a2cceee4db795e6dafcae640
+    m_TableEntryReference:
+      m_KeyId: 31866859520
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 792784001}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &855859641
 GameObject:
   m_ObjectHideFlags: 0
@@ -6696,10 +6860,10 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.14860907
-    y: 0.03125
-    width: 0.70278186
-    height: 0.9375
+    x: 0.016796876
+    y: 0.05
+    width: 0.375
+    height: 0.5
   near clip plane: 0.1
   far clip plane: 5000
   field of view: 40
@@ -7496,11 +7660,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e5a4c270a4ae5f44ae03bff5837b1e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneButtonLabel: Hide under table
+  localizedLabel:
+    m_TableReference:
+      m_TableCollectionName: GUID:b50eac0bbbef3334bb5483daa5f99826
+    m_TableEntryReference:
+      m_KeyId: 5244866637824
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   menuManager: {fileID: 2040827827}
   dialogueCanvas: {fileID: 1351478493}
   dialogue: {fileID: 1569971932}
   requiredFacingDirection: 0
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &1350275192
 GameObject:
   m_ObjectHideFlags: 0
@@ -7908,6 +8083,7 @@ GameObject:
   - component: {fileID: 1436270610}
   - component: {fileID: 1436270609}
   - component: {fileID: 1436270608}
+  - component: {fileID: 1436270611}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -8033,6 +8209,20 @@ RectTransform:
   m_AnchoredPosition: {x: 11, y: -9}
   m_SizeDelta: {x: 4319.1, y: 837.9}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1436270611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436270607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 140cfa0e2109679489f73a579ba8a4a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  englishFontSize: 120
+  japaneseFontSize: 80
 --- !u!1 &1471486396
 GameObject:
   m_ObjectHideFlags: 0
@@ -8117,9 +8307,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1436270608}
   lines:
-  - (You found a spot that you can barely hide under the table)
+  - m_TableReference:
+      m_TableCollectionName: GUID:b50eac0bbbef3334bb5483daa5f99826
+    m_TableEntryReference:
+      m_KeyId: 4876250230784
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   textSpeed: 0.1
   dialogueCanvas: {fileID: 1351478493}
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &1569971933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8492,9 +8692,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 676578588}
   lines:
-  - (You found a locker to hide)
+  - m_TableReference:
+      m_TableCollectionName: GUID:b50eac0bbbef3334bb5483daa5f99826
+    m_TableEntryReference:
+      m_KeyId: 4977567838208
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   textSpeed: 0.1
   dialogueCanvas: {fileID: 1411043553}
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &1667703464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8544,6 +8754,7 @@ GameObject:
   - component: {fileID: 1683148015}
   - component: {fileID: 1683148017}
   - component: {fileID: 1683148016}
+  - component: {fileID: 1683148018}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -8669,6 +8880,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1683148014}
   m_CullTransparentMesh: 1
+--- !u!114 &1683148018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683148014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 140cfa0e2109679489f73a579ba8a4a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  englishFontSize: 42
+  japaneseFontSize: 34
 --- !u!1 &1743559482
 GameObject:
   m_ObjectHideFlags: 0
@@ -9164,6 +9389,8 @@ GameObject:
   - component: {fileID: 1851507308}
   - component: {fileID: 1851507310}
   - component: {fileID: 1851507309}
+  - component: {fileID: 1851507311}
+  - component: {fileID: 1851507312}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -9289,6 +9516,60 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1851507307}
   m_CullTransparentMesh: 1
+--- !u!114 &1851507311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1851507307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 140cfa0e2109679489f73a579ba8a4a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  englishFontSize: 42
+  japaneseFontSize: 34
+--- !u!114 &1851507312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1851507307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_StringReference:
+    m_TableReference:
+      m_TableCollectionName: GUID:6395de36a2cceee4db795e6dafcae640
+    m_TableEntryReference:
+      m_KeyId: 48614715392
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  m_FormatArguments: []
+  m_UpdateString:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1851507309}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &1866267475
 GameObject:
   m_ObjectHideFlags: 0
@@ -9574,9 +9855,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 2023858446}
   lines:
-  - (You found a switch that can turn off the living room's light)
+  - m_TableReference:
+      m_TableCollectionName: GUID:b50eac0bbbef3334bb5483daa5f99826
+    m_TableEntryReference:
+      m_KeyId: 5068852670464
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   textSpeed: 0.1
   dialogueCanvas: {fileID: 740950424}
+  references:
+    version: 2
+    RefIds: []
 --- !u!114 &1962416138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9702,6 +9993,7 @@ GameObject:
   - component: {fileID: 2023858445}
   - component: {fileID: 2023858447}
   - component: {fileID: 2023858446}
+  - component: {fileID: 2023858448}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -9827,6 +10119,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2023858444}
   m_CullTransparentMesh: 1
+--- !u!114 &2023858448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023858444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 140cfa0e2109679489f73a579ba8a4a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  englishFontSize: 120
+  japaneseFontSize: 80
 --- !u!1 &2040827825
 GameObject:
   m_ObjectHideFlags: 0
@@ -10296,9 +10602,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 691016276}
   lines:
-  - (Door is locked)
+  - m_TableReference:
+      m_TableCollectionName: GUID:b50eac0bbbef3334bb5483daa5f99826
+    m_TableEntryReference:
+      m_KeyId: 4695920324608
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   textSpeed: 0.1
   dialogueCanvas: {fileID: 131454501978631579}
+  references:
+    version: 2
+    RefIds: []
 --- !u!212 &529962106330605706
 SpriteRenderer:
   m_ObjectHideFlags: 0

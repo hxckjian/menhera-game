@@ -3,11 +3,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Settings;
+using UnityEngine.ResourceManagement.AsyncOperations;
 
 public class Dialogue : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI textComponent;
-    [SerializeField] private string[] lines;
+    // [SerializeField] private string[] lines;
+    [SerializeField] private LocalizedString[] lines;
     [SerializeField] private float textSpeed;
     [SerializeField] private GameObject dialogueCanvas; 
 
@@ -32,7 +36,11 @@ public class Dialogue : MonoBehaviour
         if (isTyping)
         {
             StopAllCoroutines();
-            textComponent.text = lines[index];
+            // textComponent.text = lines[index];
+            lines[index].GetLocalizedStringAsync().Completed += handle =>
+            {
+                textComponent.text = handle.Result;
+            };
             isTyping = false;
         }
         else
@@ -53,7 +61,12 @@ public class Dialogue : MonoBehaviour
         isTyping = true;
         ClearText();
 
-        foreach (char c in lines[index].ToCharArray())
+        var handle = lines[index].GetLocalizedStringAsync();
+        yield return handle;
+
+        string line = handle.Result;
+
+        foreach (char c in line)
         {
             textComponent.text += c;
             yield return new WaitForSecondsRealtime(textSpeed);
