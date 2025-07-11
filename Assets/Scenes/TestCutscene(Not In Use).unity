@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 46489636}
   - component: {fileID: 46489635}
   m_Layer: 5
-  m_Name: Sample Character Box
+  m_Name: Character Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -896,100 +896,17 @@ Transform:
   - {fileID: 759408511}
   m_Father: {fileID: 1006482988}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &550506019
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 550506021}
-  - component: {fileID: 550506020}
-  m_Layer: 0
-  m_Name: CharacterExpressionManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &550506020
+--- !u!114 &550506020 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 2122721540759887763, guid: fa94e58fc2d01844dbeaa463a03864b0, type: 3}
+  m_PrefabInstance: {fileID: 1773099888236205288}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 550506019}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03e4fc12f11ad334a9ffcd9e30f38575, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterImage: {fileID: 46489635}
-  characterSprites:
-  - characterName: Japanese
-    expressions:
-    - expressionName: a
-      sprite: {fileID: 21300000, guid: 1360eb546f4952e438b0ac1de97da099, type: 3}
-    - expressionName: i
-      sprite: {fileID: 21300000, guid: e4375312652e2d94e823c613f4d5c4fc, type: 3}
-    - expressionName: u
-      sprite: {fileID: 21300000, guid: 61b32c7513ff19743abcd70a2020baac, type: 3}
-    - expressionName: e
-      sprite: {fileID: 21300000, guid: 1a7f34d98f2e7d546af95e02b6d67d8c, type: 3}
-    - expressionName: e
-      sprite: {fileID: 21300000, guid: 1a7f34d98f2e7d546af95e02b6d67d8c, type: 3}
-  - characterName: MC
-    expressions:
-    - expressionName: default smile
-      sprite: {fileID: 21300000, guid: 78f2003576b5d31419f63f4fe4b097d8, type: 3}
-    - expressionName: fear
-      sprite: {fileID: 21300000, guid: 630324a7dd4277e4ea58fa573dc78712, type: 3}
-    - expressionName: shocked
-      sprite: {fileID: 21300000, guid: c1a74bd0e5d63e54e815adcb242784b4, type: 3}
-    - expressionName: smile with eyes closed
-      sprite: {fileID: 21300000, guid: 3e65a225abf98994980e3c0fc3f499d7, type: 3}
-    - expressionName: smile with eyes opened
-      sprite: {fileID: 21300000, guid: e9851c037b32e1f449d5e30436315471, type: 3}
-    - expressionName: thinking
-      sprite: {fileID: 21300000, guid: 844490c52e35e57488d6ee6d7e359496, type: 3}
-    - expressionName: this is getting bad
-      sprite: {fileID: 21300000, guid: 59461979da643854bb82c071e1f61ff6, type: 3}
-  - characterName: Yandere
-    expressions:
-    - expressionName: normal smile
-      sprite: {fileID: 21300000, guid: b5f2755f7d342014bbc0d9e7c185d08b, type: 3}
-    - expressionName: normal smile with eyes closed
-      sprite: {fileID: 21300000, guid: 9d08bea282d91f24a8eb59c24d2ed42b, type: 3}
-    - expressionName: normal cry
-      sprite: {fileID: 21300000, guid: 8b69003f633493e4eb753916a5b00864, type: 3}
-    - expressionName: pout
-      sprite: {fileID: 21300000, guid: 733a48aa15b38b847975935c150aca40, type: 3}
-    - expressionName: shocked
-      sprite: {fileID: 21300000, guid: 2686cfef5a6e65c44b1964d07390fa4f, type: 3}
-    - expressionName: small smile but creepy
-      sprite: {fileID: 21300000, guid: 5a933abff6bd2b543a15f9a2f83f9cb8, type: 3}
-    - expressionName: smile with tears
-      sprite: {fileID: 21300000, guid: abadb15212a474f469ec76d704817b13, type: 3}
-    - expressionName: yandere smile with tears
-      sprite: {fileID: 21300000, guid: 24bfb8ead5ceb5f46b09d4fac526dd18, type: 3}
-    - expressionName: yandere smile
-      sprite: {fileID: 21300000, guid: 0a12ad70b60cf1645baa0125e0566b10, type: 3}
---- !u!4 &550506021
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 550506019}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -19.81258, y: -2.0694466, z: 16.336811}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &643690412
 GameObject:
   m_ObjectHideFlags: 0
@@ -7213,6 +7130,67 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1773099888236205288
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2090595282276441454, guid: fa94e58fc2d01844dbeaa463a03864b0, type: 3}
+      propertyPath: m_Name
+      value: CharacterExpressionManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 2122721540759887763, guid: fa94e58fc2d01844dbeaa463a03864b0, type: 3}
+      propertyPath: characterImage
+      value: 
+      objectReference: {fileID: 46489635}
+    - target: {fileID: 8317927838929637405, guid: fa94e58fc2d01844dbeaa463a03864b0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -19.81258
+      objectReference: {fileID: 0}
+    - target: {fileID: 8317927838929637405, guid: fa94e58fc2d01844dbeaa463a03864b0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.0694466
+      objectReference: {fileID: 0}
+    - target: {fileID: 8317927838929637405, guid: fa94e58fc2d01844dbeaa463a03864b0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 16.336811
+      objectReference: {fileID: 0}
+    - target: {fileID: 8317927838929637405, guid: fa94e58fc2d01844dbeaa463a03864b0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8317927838929637405, guid: fa94e58fc2d01844dbeaa463a03864b0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8317927838929637405, guid: fa94e58fc2d01844dbeaa463a03864b0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8317927838929637405, guid: fa94e58fc2d01844dbeaa463a03864b0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8317927838929637405, guid: fa94e58fc2d01844dbeaa463a03864b0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8317927838929637405, guid: fa94e58fc2d01844dbeaa463a03864b0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8317927838929637405, guid: fa94e58fc2d01844dbeaa463a03864b0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fa94e58fc2d01844dbeaa463a03864b0, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -7242,5 +7220,5 @@ SceneRoots:
   - {fileID: 1100607101}
   - {fileID: 205258075}
   - {fileID: 1968721672}
-  - {fileID: 550506021}
+  - {fileID: 1773099888236205288}
   - {fileID: 377324675}
