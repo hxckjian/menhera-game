@@ -63,9 +63,9 @@ MonoBehaviour:
     - expressionName: default smile
       sprite: {fileID: 21300000, guid: 78f2003576b5d31419f63f4fe4b097d8, type: 3}
     - expressionName: fear
-      sprite: {fileID: 21300000, guid: 630324a7dd4277e4ea58fa573dc78712, type: 3}
+      sprite: {fileID: 21300000, guid: 61ea43e4443cc5441a9d91af6608ad63, type: 3}
     - expressionName: shocked
-      sprite: {fileID: 21300000, guid: c1a74bd0e5d63e54e815adcb242784b4, type: 3}
+      sprite: {fileID: 21300000, guid: f08eae1b53953e749a62f98108ddeb87, type: 3}
     - expressionName: smile with eyes closed
       sprite: {fileID: 21300000, guid: 3e65a225abf98994980e3c0fc3f499d7, type: 3}
     - expressionName: smile with eyes opened
@@ -83,7 +83,7 @@ MonoBehaviour:
     - expressionName: normal cry
       sprite: {fileID: 21300000, guid: 8b69003f633493e4eb753916a5b00864, type: 3}
     - expressionName: pout
-      sprite: {fileID: 21300000, guid: 733a48aa15b38b847975935c150aca40, type: 3}
+      sprite: {fileID: 21300000, guid: 276d70de1a577494082dc0d473431ba9, type: 3}
     - expressionName: shocked
       sprite: {fileID: 21300000, guid: 2686cfef5a6e65c44b1964d07390fa4f, type: 3}
     - expressionName: small smile but creepy
