@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2090595282276441454
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8317927838929637405}
+  - component: {fileID: 2122721540759887763}
+  m_Layer: 0
+  m_Name: CharacterExpressionManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8317927838929637405
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2090595282276441454}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -19.81258, y: -2.0694466, z: 16.336811}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2122721540759887763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2090595282276441454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03e4fc12f11ad334a9ffcd9e30f38575, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterImage: {fileID: 0}
+  characterSprites:
+  - characterName: Japanese
+    expressions:
+    - expressionName: a
+      sprite: {fileID: 21300000, guid: 1360eb546f4952e438b0ac1de97da099, type: 3}
+    - expressionName: i
+      sprite: {fileID: 21300000, guid: e4375312652e2d94e823c613f4d5c4fc, type: 3}
+    - expressionName: u
+      sprite: {fileID: 21300000, guid: 61b32c7513ff19743abcd70a2020baac, type: 3}
+    - expressionName: e
+      sprite: {fileID: 21300000, guid: 1a7f34d98f2e7d546af95e02b6d67d8c, type: 3}
+    - expressionName: e
+      sprite: {fileID: 21300000, guid: 1a7f34d98f2e7d546af95e02b6d67d8c, type: 3}
+  - characterName: MC
+    expressions:
+    - expressionName: default smile
+      sprite: {fileID: 21300000, guid: 78f2003576b5d31419f63f4fe4b097d8, type: 3}
+    - expressionName: fear
+      sprite: {fileID: 21300000, guid: 61ea43e4443cc5441a9d91af6608ad63, type: 3}
+    - expressionName: shocked
+      sprite: {fileID: 21300000, guid: f08eae1b53953e749a62f98108ddeb87, type: 3}
+    - expressionName: smile with eyes closed
+      sprite: {fileID: 21300000, guid: 3e65a225abf98994980e3c0fc3f499d7, type: 3}
+    - expressionName: smile with eyes opened
+      sprite: {fileID: 21300000, guid: e9851c037b32e1f449d5e30436315471, type: 3}
+    - expressionName: thinking
+      sprite: {fileID: 21300000, guid: 844490c52e35e57488d6ee6d7e359496, type: 3}
+    - expressionName: this is getting bad
+      sprite: {fileID: 21300000, guid: 59461979da643854bb82c071e1f61ff6, type: 3}
+  - characterName: Yandere
+    expressions:
+    - expressionName: normal smile
+      sprite: {fileID: 21300000, guid: b5f2755f7d342014bbc0d9e7c185d08b, type: 3}
+    - expressionName: normal smile with eyes closed
+      sprite: {fileID: 21300000, guid: 9d08bea282d91f24a8eb59c24d2ed42b, type: 3}
+    - expressionName: normal cry
+      sprite: {fileID: 21300000, guid: 8b69003f633493e4eb753916a5b00864, type: 3}
+    - expressionName: pout
+      sprite: {fileID: 21300000, guid: 276d70de1a577494082dc0d473431ba9, type: 3}
+    - expressionName: shocked
+      sprite: {fileID: 21300000, guid: 2686cfef5a6e65c44b1964d07390fa4f, type: 3}
+    - expressionName: small smile but creepy
+      sprite: {fileID: 21300000, guid: 5a933abff6bd2b543a15f9a2f83f9cb8, type: 3}
+    - expressionName: smile with tears
+      sprite: {fileID: 21300000, guid: abadb15212a474f469ec76d704817b13, type: 3}
+    - expressionName: yandere smile with tears
+      sprite: {fileID: 21300000, guid: 24bfb8ead5ceb5f46b09d4fac526dd18, type: 3}
+    - expressionName: yandere smile
+      sprite: {fileID: 21300000, guid: 0a12ad70b60cf1645baa0125e0566b10, type: 3}

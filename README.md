@@ -1,3 +1,26 @@
+## Asset Ownership & Licensing
+
+🎨 **All pixel art assets, including character portraits and death animations, are 100% original and created by the developer.**
+
+❌ These assets **may not be reused, modified, or redistributed** without explicit permission.
+
+If you wish to use these assets or features of this project in any way, please contact the developer for permission.
+
+🔊 **Sound effects** are sourced from free-use libraries under their respective licenses.
+
+Some sound effects used in this game are provided by:
+
+**効果音ラボ (Sound Effect Lab)**  
+https://soundeffect-lab.info/
+
+**DOVA-SYNDROME**  
+https://dova-s.jp/
+- "不穏な影" 
+
+All rights reserved by Sound Effect Lab. Used under their free use license.
+
+---
+
 ## Team Name: 
 
 I Tried Escaping My Yandere Girlfriend, But She Still Found Me!?

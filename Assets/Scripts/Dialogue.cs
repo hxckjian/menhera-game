@@ -9,9 +9,19 @@ using UnityEngine.ResourceManagement.AsyncOperations;
 
 public class Dialogue : MonoBehaviour
 {
+    [System.Serializable]
+    public class DialogueLine
+    {
+        public LocalizedString localizedLine;
+        public string speakerName; //"MC", "Girlfriend"
+        public string expression; //sad, happy
+    }
+    [SerializeField] private CharacterExpressionManager expressionManager;
+
     [SerializeField] private TextMeshProUGUI textComponent;
     // [SerializeField] private string[] lines;
-    [SerializeField] private LocalizedString[] lines;
+    // [SerializeField] private LocalizedString[] lines;
+    [SerializeField] private DialogueLine[] lines;
     [SerializeField] private float textSpeed;
     [SerializeField] private GameObject dialogueCanvas; 
 
@@ -37,7 +47,7 @@ public class Dialogue : MonoBehaviour
         {
             StopAllCoroutines();
             // textComponent.text = lines[index];
-            lines[index].GetLocalizedStringAsync().Completed += handle =>
+            lines[index].localizedLine.GetLocalizedStringAsync().Completed += handle =>
             {
                 textComponent.text = handle.Result;
             };
@@ -61,7 +71,7 @@ public class Dialogue : MonoBehaviour
         isTyping = true;
         ClearText();
 
-        var handle = lines[index].GetLocalizedStringAsync();
+        var handle = lines[index].localizedLine.GetLocalizedStringAsync();
         yield return handle;
 
         string line = handle.Result;
@@ -80,6 +90,11 @@ public class Dialogue : MonoBehaviour
         if (index < lines.Length - 1)
         {
             index++;
+
+            // Set expression
+            var currentLine = lines[index];
+            expressionManager.SetExpression(currentLine.speakerName, currentLine.expression);
+
             ClearText();
             StartCoroutine(TypeLine());
         }
@@ -95,6 +110,13 @@ public class Dialogue : MonoBehaviour
     {
         index = 0;
         DialogueManager.Instance?.Register(this);
+
+        if (expressionManager != null && lines.Length > 0)
+        {
+            var currentLine = lines[index];
+            expressionManager.SetExpression(currentLine.speakerName, currentLine.expression);
+        }
+
         StartCoroutine(TypeLine());
     }
 

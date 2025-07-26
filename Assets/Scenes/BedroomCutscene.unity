@@ -119,6 +119,81 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &42437096
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 42437097}
+  - component: {fileID: 42437099}
+  - component: {fileID: 42437098}
+  m_Layer: 5
+  m_Name: Character Box
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &42437097
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 42437096}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1878739487}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 970, y: -700}
+  m_SizeDelta: {x: -440, y: -200}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &42437098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 42437096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: c7e252e55c7b77a4caf701bb4fc94263, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &42437099
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 42437096}
+  m_CullTransparentMesh: 1
 --- !u!1 &131623914
 GameObject:
   m_ObjectHideFlags: 0
@@ -832,8 +907,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -625}
-  m_SizeDelta: {x: 1400, y: -250}
+  m_AnchoredPosition: {x: -270, y: -700}
+  m_SizeDelta: {x: 960, y: -200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &723929167
 MonoBehaviour:
@@ -847,152 +922,207 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efe2b5d70229f7a42b2f656de22f29c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  expressionManager: {fileID: 893729695}
   textComponent: {fileID: 1625664629}
   lines:
-  - m_TableReference:
-      m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
-    m_TableEntryReference:
-      m_KeyId: 32575696896
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  - m_TableReference:
-      m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
-    m_TableEntryReference:
-      m_KeyId: 8311540396032
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  - m_TableReference:
-      m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
-    m_TableEntryReference:
-      m_KeyId: 42098164871168
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  - m_TableReference:
-      m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
-    m_TableEntryReference:
-      m_KeyId: 41925552484352
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  - m_TableReference:
-      m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
-    m_TableEntryReference:
-      m_KeyId: 41978492989440
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  - m_TableReference:
-      m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
-    m_TableEntryReference:
-      m_KeyId: 41989242990592
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  - m_TableReference:
-      m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
-    m_TableEntryReference:
-      m_KeyId: 41994649448448
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  - m_TableReference:
-      m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
-    m_TableEntryReference:
-      m_KeyId: 42050605658112
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  - m_TableReference:
-      m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
-    m_TableEntryReference:
-      m_KeyId: 42073829519360
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  - m_TableReference:
-      m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
-    m_TableEntryReference:
-      m_KeyId: 42086643118080
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  - m_TableReference:
-      m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
-    m_TableEntryReference:
-      m_KeyId: 42359100911616
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  - m_TableReference:
-      m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
-    m_TableEntryReference:
-      m_KeyId: 42382819700736
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  - m_TableReference:
-      m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
-    m_TableEntryReference:
-      m_KeyId: 42399622082560
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  - m_TableReference:
-      m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
-    m_TableEntryReference:
-      m_KeyId: 42412355989504
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  - m_TableReference:
-      m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
-    m_TableEntryReference:
-      m_KeyId: 42424888569856
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  - m_TableReference:
-      m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
-    m_TableEntryReference:
-      m_KeyId: 42437702168576
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  - m_TableReference:
-      m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
-    m_TableEntryReference:
-      m_KeyId: 42457327316992
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  - m_TableReference:
-      m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
-    m_TableEntryReference:
-      m_KeyId: 42471512453120
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
+  - localizedLine:
+      m_TableReference:
+        m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
+      m_TableEntryReference:
+        m_KeyId: 32575696896
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    speakerName: MC
+    expression: smile with eyes opened
+  - localizedLine:
+      m_TableReference:
+        m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
+      m_TableEntryReference:
+        m_KeyId: 8311540396032
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    speakerName: Yandere
+    expression: pout
+  - localizedLine:
+      m_TableReference:
+        m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
+      m_TableEntryReference:
+        m_KeyId: 42098164871168
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    speakerName: MC
+    expression: smile with eyes closed
+  - localizedLine:
+      m_TableReference:
+        m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
+      m_TableEntryReference:
+        m_KeyId: 41925552484352
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    speakerName: Yandere
+    expression: small smile but creepy
+  - localizedLine:
+      m_TableReference:
+        m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
+      m_TableEntryReference:
+        m_KeyId: 41978492989440
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    speakerName: MC
+    expression: default smile
+  - localizedLine:
+      m_TableReference:
+        m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
+      m_TableEntryReference:
+        m_KeyId: 41989242990592
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    speakerName: Yandere
+    expression: shocked
+  - localizedLine:
+      m_TableReference:
+        m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
+      m_TableEntryReference:
+        m_KeyId: 41994649448448
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    speakerName: MC
+    expression: default smile
+  - localizedLine:
+      m_TableReference:
+        m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
+      m_TableEntryReference:
+        m_KeyId: 42050605658112
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    speakerName: Yandere
+    expression: shocked
+  - localizedLine:
+      m_TableReference:
+        m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
+      m_TableEntryReference:
+        m_KeyId: 42073829519360
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    speakerName: MC
+    expression: smile with eyes closed
+  - localizedLine:
+      m_TableReference:
+        m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
+      m_TableEntryReference:
+        m_KeyId: 42086643118080
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    speakerName: Yandere
+    expression: normal cry
+  - localizedLine:
+      m_TableReference:
+        m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
+      m_TableEntryReference:
+        m_KeyId: 42359100911616
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    speakerName: MC
+    expression: shocked
+  - localizedLine:
+      m_TableReference:
+        m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
+      m_TableEntryReference:
+        m_KeyId: 42382819700736
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    speakerName: Yandere
+    expression: normal cry
+  - localizedLine:
+      m_TableReference:
+        m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
+      m_TableEntryReference:
+        m_KeyId: 42399622082560
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    speakerName: Yandere
+    expression: normal cry
+  - localizedLine:
+      m_TableReference:
+        m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
+      m_TableEntryReference:
+        m_KeyId: 42412355989504
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    speakerName: Yandere
+    expression: normal cry
+  - localizedLine:
+      m_TableReference:
+        m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
+      m_TableEntryReference:
+        m_KeyId: 42424888569856
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    speakerName: MC
+    expression: this is getting bad
+  - localizedLine:
+      m_TableReference:
+        m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
+      m_TableEntryReference:
+        m_KeyId: 42437702168576
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    speakerName: Yandere
+    expression: yandere smile with tears
+  - localizedLine:
+      m_TableReference:
+        m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
+      m_TableEntryReference:
+        m_KeyId: 42457327316992
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    speakerName: Yandere
+    expression: yandere smile with tears
+  - localizedLine:
+      m_TableReference:
+        m_TableCollectionName: GUID:a8eabeee46aa297448c59d68852c4dbb
+      m_TableEntryReference:
+        m_KeyId: 42471512453120
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    speakerName: MC
+    expression: fear
   textSpeed: 0.1
   dialogueCanvas: {fileID: 0}
   references:
@@ -1018,8 +1148,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 0882f49aa101d614ab390552d6888472, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2177,6 +2307,78 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1001 &893729694
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2090595282276441454, guid: fa94e58fc2d01844dbeaa463a03864b0, type: 3}
+      propertyPath: m_Name
+      value: CharacterExpressionManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 2122721540759887763, guid: fa94e58fc2d01844dbeaa463a03864b0, type: 3}
+      propertyPath: characterImage
+      value: 
+      objectReference: {fileID: 42437098}
+    - target: {fileID: 8317927838929637405, guid: fa94e58fc2d01844dbeaa463a03864b0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -19.81258
+      objectReference: {fileID: 0}
+    - target: {fileID: 8317927838929637405, guid: fa94e58fc2d01844dbeaa463a03864b0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.0694466
+      objectReference: {fileID: 0}
+    - target: {fileID: 8317927838929637405, guid: fa94e58fc2d01844dbeaa463a03864b0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 16.336811
+      objectReference: {fileID: 0}
+    - target: {fileID: 8317927838929637405, guid: fa94e58fc2d01844dbeaa463a03864b0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8317927838929637405, guid: fa94e58fc2d01844dbeaa463a03864b0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8317927838929637405, guid: fa94e58fc2d01844dbeaa463a03864b0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8317927838929637405, guid: fa94e58fc2d01844dbeaa463a03864b0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8317927838929637405, guid: fa94e58fc2d01844dbeaa463a03864b0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8317927838929637405, guid: fa94e58fc2d01844dbeaa463a03864b0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8317927838929637405, guid: fa94e58fc2d01844dbeaa463a03864b0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fa94e58fc2d01844dbeaa463a03864b0, type: 3}
+--- !u!114 &893729695 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2122721540759887763, guid: fa94e58fc2d01844dbeaa463a03864b0, type: 3}
+  m_PrefabInstance: {fileID: 893729694}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03e4fc12f11ad334a9ffcd9e30f38575, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &918093966
 GameObject:
   m_ObjectHideFlags: 0
@@ -3429,8 +3631,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 2}
-  m_SizeDelta: {x: 2150, y: 360}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1800, y: 420}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1625664629
 MonoBehaviour:
@@ -3701,10 +3903,10 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.125
-    y: 0
-    width: 0.75
-    height: 1
+    x: 0.016406251
+    y: 0.056250002
+    width: 0.375
+    height: 0.5
   near clip plane: 0.1
   far clip plane: 5000
   field of view: 40
@@ -3866,6 +4068,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 723929166}
+  - {fileID: 42437097}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -4949,6 +5152,37 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1941361718
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1941361719}
+  m_Layer: 0
+  m_Name: ------ExpressionManager--------
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1941361719
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1941361718}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1798.9792, y: 892.8057, z: -5.7171392}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1975102875
 GameObject:
   m_ObjectHideFlags: 0
@@ -6676,3 +6910,5 @@ SceneRoots:
   - {fileID: 365761569}
   - {fileID: 338122677}
   - {fileID: 2141381938}
+  - {fileID: 1941361719}
+  - {fileID: 893729694}
