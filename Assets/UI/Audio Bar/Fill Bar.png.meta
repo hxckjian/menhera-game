@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e8faed3e928679741b30d1fe28224d37
+guid: ebc69bdfe4ec9634780060976fb9623c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9091388170344077541
-    second: DialogueBox960720_0
+      213: 2485444512722234819
+    second: Fill Bar_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DialogueBox960720_0
+      name: Fill Bar_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 960
-        height: 750
+        width: 2560
+        height: 180
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b17e37790a6e4d180800000000000000
-      internalID: -9091388170344077541
+      spriteID: 3cda0c9ad921e7220800000000000000
+      internalID: 2485444512722234819
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      DialogueBox960720_0: -9091388170344077541
+      Fill Bar_0: 2485444512722234819
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

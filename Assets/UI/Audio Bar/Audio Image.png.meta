@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e8faed3e928679741b30d1fe28224d37
+guid: 8c4c10d0c3acbfc45a887a0d4053ca51
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9091388170344077541
-    second: DialogueBox960720_0
+      213: -2735635373346332546
+    second: Audio Image_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DialogueBox960720_0
+      name: Audio Image_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 960
-        height: 750
+        width: 1500
+        height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b17e37790a6e4d180800000000000000
-      internalID: -9091388170344077541
+      spriteID: e70e2b83f12190ad0800000000000000
+      internalID: -2735635373346332546
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      DialogueBox960720_0: -9091388170344077541
+      Audio Image_0: -2735635373346332546
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
