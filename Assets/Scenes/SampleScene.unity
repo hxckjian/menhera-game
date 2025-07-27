@@ -6246,7 +6246,7 @@ MonoBehaviour:
     m_TableReference:
       m_TableCollectionName: GUID:d1dc01eaf55c64f4eb35012ae07ea7e8
     m_TableEntryReference:
-      m_KeyId: 17560088576
+      m_KeyId: 151544371195904
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -7442,7 +7442,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 5.287}
+  m_AnchoredPosition: {x: 0, y: 145}
   m_SizeDelta: {x: 300, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &930966858
@@ -10916,7 +10916,7 @@ GameObject:
   - component: {fileID: 1493867176}
   - component: {fileID: 1493867175}
   m_Layer: 5
-  m_Name: OptionsCanvas (1)
+  m_Name: OptionsCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12357,7 +12357,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 151.6}
+  m_AnchoredPosition: {x: 0, y: 6.6}
   m_SizeDelta: {x: 300, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1783602566
@@ -13939,7 +13939,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 4
+    m_Mode: 2
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 930966858}
     m_SelectOnDown: {fileID: 2118453040}

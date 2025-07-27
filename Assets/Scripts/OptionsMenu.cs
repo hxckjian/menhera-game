@@ -16,15 +16,10 @@ public class OptionsMenu : MonoBehaviour
         {
             if (optionsPanel.activeSelf)
             {
-                Debug.Log("ACTIVATED");
                 optionsPanel.SetActive(false);
                 EnableSelectableInMain();
                  ClearSelected();
                  EventSystem.current.SetSelectedGameObject(optionMainButton);
-            }
-            else
-            {
-                Debug.Log("NOT ACTIVATED");
             }
         }
     }
