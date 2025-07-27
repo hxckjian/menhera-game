@@ -15,4 +15,15 @@ public class VolumeInitializer : MonoBehaviour
         mixer.SetFloat("BGM", Mathf.Log10(Mathf.Clamp(bgm, 0.0001f, 1f)) * 20);
         mixer.SetFloat("SE", Mathf.Log10(Mathf.Clamp(se, 0.0001f, 1f)) * 20);
     }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.F12)) // dev-only reset key
+        {
+            PlayerPrefs.DeleteAll();
+            PlayerPrefs.Save();
+            Debug.Log("PlayerPrefs reset!");
+        }
+
+    }
 }
