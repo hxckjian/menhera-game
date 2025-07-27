@@ -1,6 +1,6 @@
 ## Asset Ownership & Licensing
 
-🎨 **All pixel art assets, including character portraits and death animations, are 100% original and created by the developer.**
+🎨 **All pixel art assets, including character portraits, death animations, start menu and retry menu background are 100% original and created by the developer.**
 
 ❌ These assets **may not be reused, modified, or redistributed** without explicit permission.
 
