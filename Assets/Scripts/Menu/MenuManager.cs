@@ -81,7 +81,7 @@ public class MenuManager : MonoBehaviour
 
         if (optionsMenu.activeSelf)
         {
-            optionsMenu.SetActive(false);
+            // optionsMenu.SetActive(false);
             return;
         }
 
