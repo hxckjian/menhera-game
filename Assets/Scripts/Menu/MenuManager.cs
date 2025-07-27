@@ -14,6 +14,9 @@ public class MenuManager : MonoBehaviour
     [Header("Buttons")]
     [SerializeField] private Button defaultVerticalButton;
 
+    [Header("Option Menu")]
+    [SerializeField] private GameObject optionsMenu;
+
     private void Start()
     {
         Debug.Log("MenuManager Start()");
@@ -73,6 +76,12 @@ public class MenuManager : MonoBehaviour
         {
             InteractionUI.Instance.Hide();
             PauseManager.Instance.UnpauseScreen();
+            return;
+        }
+
+        if (optionsMenu.activeSelf)
+        {
+            optionsMenu.SetActive(false);
             return;
         }
 

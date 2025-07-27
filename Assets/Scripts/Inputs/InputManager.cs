@@ -22,6 +22,7 @@ public class InputManager : MonoBehaviour
     
     private void Update()
     {
+        // Pressing Escape trigger menu
         if (menuOpenCloseAction.WasPressedThisFrame())
         {
             OnMenuToggle?.Invoke();
