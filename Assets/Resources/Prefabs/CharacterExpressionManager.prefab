@@ -74,6 +74,8 @@ MonoBehaviour:
       sprite: {fileID: 21300000, guid: 844490c52e35e57488d6ee6d7e359496, type: 3}
     - expressionName: this is getting bad
       sprite: {fileID: 21300000, guid: 59461979da643854bb82c071e1f61ff6, type: 3}
+    - expressionName: gag
+      sprite: {fileID: 21300000, guid: dc7f391166c1fe047b7186cf512bea54, type: 3}
   - characterName: Yandere
     expressions:
     - expressionName: normal smile
