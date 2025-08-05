@@ -851,7 +851,7 @@ MonoBehaviour:
       mcDirection: 0
       setYandere: 0
       yandereDirection: 0
-  nextSceneName: RetryScene
+  nextSceneName: RetryScene (Tutorial)
   directionManager: {fileID: 785217392}
 --- !u!4 &397889613
 Transform:
@@ -5074,15 +5074,15 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.125
-    y: 0
-    width: 0.75
-    height: 1
+    x: 0.1078125
+    y: 0.068055555
+    width: 0.1875
+    height: 0.25
   near clip plane: 0.1
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 2.8125
+  orthographic size: 1
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2

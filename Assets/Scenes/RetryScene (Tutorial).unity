@@ -266,7 +266,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1480649343}
-        m_TargetAssemblyTypeName: RetryMenu, Assembly-CSharp
+        m_TargetAssemblyTypeName: RetryMenuTutorial, MainScripts
         m_MethodName: OnExitClick
         m_Mode: 1
         m_Arguments:
@@ -954,7 +954,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1480649338}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9092f747a04c27c48bffacc47a4ebb8f, type: 3}
+  m_Script: {fileID: 11500000, guid: 8be31e8fe788fa34e86e44733dea2b5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1602460910
@@ -1143,7 +1143,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1480649343}
-        m_TargetAssemblyTypeName: RetryMenu, Assembly-CSharp
+        m_TargetAssemblyTypeName: RetryMenuTutorial, MainScripts
         m_MethodName: OnRetryClick
         m_Mode: 1
         m_Arguments:
