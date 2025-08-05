@@ -1,0 +1,1413 @@
+fileFormatVersion: 2
+guid: b16c809adae5f894bb5a6e637dc1f6f0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 63954687707762726
+    second: MCTeaDeath (SpriteSheet)_0
+  - first:
+      213: -6407305895866380661
+    second: MCTeaDeath (SpriteSheet)_1
+  - first:
+      213: -7519169902485162161
+    second: MCTeaDeath (SpriteSheet)_2
+  - first:
+      213: -2439716326659605444
+    second: MCTeaDeath (SpriteSheet)_3
+  - first:
+      213: -4622195716066529735
+    second: MCTeaDeath (SpriteSheet)_4
+  - first:
+      213: -1165311163163091368
+    second: MCTeaDeath (SpriteSheet)_5
+  - first:
+      213: -7915116316564954124
+    second: MCTeaDeath (SpriteSheet)_6
+  - first:
+      213: -3854238047686839191
+    second: MCTeaDeath (SpriteSheet)_7
+  - first:
+      213: -3910669468142721331
+    second: MCTeaDeath (SpriteSheet)_8
+  - first:
+      213: -8656021866742641803
+    second: MCTeaDeath (SpriteSheet)_9
+  - first:
+      213: 4510863556895103141
+    second: MCTeaDeath (SpriteSheet)_10
+  - first:
+      213: 7711402391198145508
+    second: MCTeaDeath (SpriteSheet)_11
+  - first:
+      213: 490410243698945234
+    second: MCTeaDeath (SpriteSheet)_12
+  - first:
+      213: -5127617156406776460
+    second: MCTeaDeath (SpriteSheet)_13
+  - first:
+      213: 5645353781907324789
+    second: MCTeaDeath (SpriteSheet)_14
+  - first:
+      213: 5153061091756303134
+    second: MCTeaDeath (SpriteSheet)_15
+  - first:
+      213: -2697216253940826515
+    second: MCTeaDeath (SpriteSheet)_16
+  - first:
+      213: 7216701195626260508
+    second: MCTeaDeath (SpriteSheet)_17
+  - first:
+      213: -3060719513632990507
+    second: MCTeaDeath (SpriteSheet)_18
+  - first:
+      213: 876990676150914623
+    second: MCTeaDeath (SpriteSheet)_19
+  - first:
+      213: 2215310091652491337
+    second: MCTeaDeath (SpriteSheet)_20
+  - first:
+      213: -7906084358801274176
+    second: MCTeaDeath (SpriteSheet)_21
+  - first:
+      213: 6565142136774840531
+    second: MCTeaDeath (SpriteSheet)_22
+  - first:
+      213: 3720698461773997113
+    second: MCTeaDeath (SpriteSheet)_23
+  - first:
+      213: -6729998705242991797
+    second: MCTeaDeath (SpriteSheet)_24
+  - first:
+      213: 5292606014589106580
+    second: MCTeaDeath (SpriteSheet)_25
+  - first:
+      213: 4956122460900882129
+    second: MCTeaDeath (SpriteSheet)_26
+  - first:
+      213: 345703712413512618
+    second: MCTeaDeath (SpriteSheet)_27
+  - first:
+      213: -8238725847123722283
+    second: MCTeaDeath (SpriteSheet)_28
+  - first:
+      213: 5609234201051207083
+    second: MCTeaDeath (SpriteSheet)_29
+  - first:
+      213: 7107027090933782411
+    second: MCTeaDeath (SpriteSheet)_30
+  - first:
+      213: -6862504865401309454
+    second: MCTeaDeath (SpriteSheet)_31
+  - first:
+      213: -6481784231428582701
+    second: MCTeaDeath (SpriteSheet)_32
+  - first:
+      213: -459903041476395066
+    second: MCTeaDeath (SpriteSheet)_33
+  - first:
+      213: -2930794908097041266
+    second: MCTeaDeath (SpriteSheet)_34
+  - first:
+      213: 6540829456571815828
+    second: MCTeaDeath (SpriteSheet)_35
+  - first:
+      213: -4625475815470876362
+    second: MCTeaDeath (SpriteSheet)_36
+  - first:
+      213: 1379478088929316929
+    second: MCTeaDeath (SpriteSheet)_37
+  - first:
+      213: 4292074220383355165
+    second: MCTeaDeath (SpriteSheet)_38
+  - first:
+      213: 3460839401912202195
+    second: MCTeaDeath (SpriteSheet)_39
+  - first:
+      213: 7765763769404992582
+    second: MCTeaDeath (SpriteSheet)_40
+  - first:
+      213: 5342206526574325290
+    second: MCTeaDeath (SpriteSheet)_41
+  - first:
+      213: 489263263578495936
+    second: MCTeaDeath (SpriteSheet)_42
+  - first:
+      213: 6255104791387380690
+    second: MCTeaDeath (SpriteSheet)_43
+  - first:
+      213: -2726721751565726133
+    second: MCTeaDeath (SpriteSheet)_44
+  - first:
+      213: -1841547422096155804
+    second: MCTeaDeath (SpriteSheet)_45
+  - first:
+      213: -2175833796287655849
+    second: MCTeaDeath (SpriteSheet)_46
+  - first:
+      213: -7843648906192594285
+    second: MCTeaDeath (SpriteSheet)_47
+  - first:
+      213: 4076649829634841770
+    second: MCTeaDeath (SpriteSheet)_48
+  - first:
+      213: 3398191366253030349
+    second: MCTeaDeath (SpriteSheet)_49
+  - first:
+      213: -408581868855037568
+    second: MCTeaDeath (SpriteSheet)_50
+  - first:
+      213: 3669783160532260927
+    second: MCTeaDeath (SpriteSheet)_51
+  - first:
+      213: 6063036482849231056
+    second: MCTeaDeath (SpriteSheet)_52
+  - first:
+      213: 6770010872520404149
+    second: MCTeaDeath (SpriteSheet)_53
+  - first:
+      213: 3265643002677330992
+    second: MCTeaDeath (SpriteSheet)_54
+  - first:
+      213: 8251881453027848570
+    second: MCTeaDeath (SpriteSheet)_55
+  - first:
+      213: -6830812631008372936
+    second: MCTeaDeath (SpriteSheet)_56
+  - first:
+      213: -1302316974282607606
+    second: MCTeaDeath (SpriteSheet)_57
+  - first:
+      213: -3890075721806267582
+    second: MCTeaDeath (SpriteSheet)_58
+  - first:
+      213: 2300483680635909982
+    second: MCTeaDeath (SpriteSheet)_59
+  - first:
+      213: 7623829187063330864
+    second: MCTeaDeath (SpriteSheet)_60
+  - first:
+      213: 3563949490250030881
+    second: MCTeaDeath (SpriteSheet)_61
+  - first:
+      213: -491544792994319971
+    second: MCTeaDeath (SpriteSheet)_62
+  - first:
+      213: -8857192621977590543
+    second: MCTeaDeath (SpriteSheet)_63
+  - first:
+      213: 3968058774454274998
+    second: MCTeaDeath (SpriteSheet)_64
+  - first:
+      213: -552041499840002652
+    second: MCTeaDeath (SpriteSheet)_65
+  - first:
+      213: 4256943059974740091
+    second: MCTeaDeath (SpriteSheet)_66
+  - first:
+      213: 7093482509327987904
+    second: MCTeaDeath (SpriteSheet)_67
+  - first:
+      213: -33930827856189515
+    second: MCTeaDeath (SpriteSheet)_68
+  - first:
+      213: -4485827484877274846
+    second: MCTeaDeath (SpriteSheet)_69
+  - first:
+      213: 3608900709639943841
+    second: MCTeaDeath (SpriteSheet)_70
+  - first:
+      213: -7899834712047942069
+    second: MCTeaDeath (SpriteSheet)_71
+  - first:
+      213: 7748728903382249326
+    second: MCTeaDeath (SpriteSheet)_72
+  - first:
+      213: -7488463736618851096
+    second: MCTeaDeath (SpriteSheet)_73
+  - first:
+      213: -4112244741100382995
+    second: MCTeaDeath (SpriteSheet)_74
+  - first:
+      213: -258199319619325110
+    second: MCTeaDeath (SpriteSheet)_75
+  - first:
+      213: 3274330542775790446
+    second: MCTeaDeath (SpriteSheet)_76
+  - first:
+      213: -2000133171295263172
+    second: MCTeaDeath (SpriteSheet)_77
+  - first:
+      213: 7334728278928599824
+    second: MCTeaDeath (SpriteSheet)_78
+  - first:
+      213: 6523798745647311338
+    second: MCTeaDeath (SpriteSheet)_79
+  - first:
+      213: 1850567874930003778
+    second: MCTeaDeath (SpriteSheet)_80
+  - first:
+      213: -7444387503699717795
+    second: MCTeaDeath (SpriteSheet)_81
+  - first:
+      213: 3318069249422143787
+    second: MCTeaDeath (SpriteSheet)_82
+  - first:
+      213: 9118317406158949556
+    second: MCTeaDeath (SpriteSheet)_83
+  - first:
+      213: 4458053774945425725
+    second: MCTeaDeath (SpriteSheet)_84
+  - first:
+      213: -2628664629119135023
+    second: MCTeaDeath (SpriteSheet)_85
+  - first:
+      213: 4485714645283738949
+    second: MCTeaDeath (SpriteSheet)_86
+  - first:
+      213: 253315251501455851
+    second: MCTeaDeath (SpriteSheet)_87
+  - first:
+      213: 6401884869042216902
+    second: MCTeaDeath (SpriteSheet)_88
+  - first:
+      213: -1882923711840835777
+    second: MCTeaDeath (SpriteSheet)_89
+  - first:
+      213: 2909915609459370897
+    second: MCTeaDeath (SpriteSheet)_90
+  - first:
+      213: 1295690211183998927
+    second: MCTeaDeath (SpriteSheet)_91
+  - first:
+      213: 4657899487896411122
+    second: MCTeaDeath (SpriteSheet)_92
+  - first:
+      213: -2870916206613339863
+    second: MCTeaDeath (SpriteSheet)_93
+  - first:
+      213: -7339442672190347329
+    second: MCTeaDeath (SpriteSheet)_94
+  - first:
+      213: -5632286528451791299
+    second: MCTeaDeath (SpriteSheet)_95
+  - first:
+      213: -2196491067345103929
+    second: MCTeaDeath (SpriteSheet)_96
+  - first:
+      213: -1756952215454165249
+    second: MCTeaDeath (SpriteSheet)_97
+  - first:
+      213: -3768355656937535133
+    second: MCTeaDeath (SpriteSheet)_98
+  - first:
+      213: -6637521040396937100
+    second: MCTeaDeath (SpriteSheet)_99
+  - first:
+      213: -6383445918250345342
+    second: MCTeaDeath (SpriteSheet)_100
+  - first:
+      213: 1153658124648091944
+    second: MCTeaDeath (SpriteSheet)_101
+  - first:
+      213: -5200447723981913607
+    second: MCTeaDeath (SpriteSheet)_102
+  - first:
+      213: -6536479059618113919
+    second: MCTeaDeath (SpriteSheet)_103
+  - first:
+      213: -7116731361747389188
+    second: MCTeaDeath (SpriteSheet)_104
+  - first:
+      213: -8957656964546348301
+    second: MCTeaDeath (SpriteSheet)_105
+  - first:
+      213: -4385987258509921193
+    second: MCTeaDeath (SpriteSheet)_106
+  - first:
+      213: -2434018283203413469
+    second: MCTeaDeath (SpriteSheet)_107
+  - first:
+      213: -8305717493694236837
+    second: MCTeaDeath (SpriteSheet)_108
+  - first:
+      213: -3052351822881038988
+    second: MCTeaDeath (SpriteSheet)_109
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MCTeaDeath (SpriteSheet)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.625, y: 0.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 620da8a137633e000800000000000000
+      internalID: 63954687707762726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCTeaDeath (SpriteSheet)_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 640
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.625, y: 0.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8e4e9d2c3da417a0800000000000000
+      internalID: -6407305895866380661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCTeaDeath (SpriteSheet)_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 640
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.625, y: 0.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f47309cdfca86a790800000000000000
+      internalID: -7519169902485162161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCTeaDeath (SpriteSheet)_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 640
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.625, y: 0.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3cbbb45de2642ed0800000000000000
+      internalID: -2439716326659605444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCTeaDeath (SpriteSheet)_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 640
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.625, y: 0.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93ea5855c79aadfb0800000000000000
+      internalID: -4622195716066529735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCTeaDeath (SpriteSheet)_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 640
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.625, y: 0.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85eddd2dbabf3dfe0800000000000000
+      internalID: -1165311163163091368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCTeaDeath (SpriteSheet)_6
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 640
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.625, y: 0.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f36f3b65abd72290800000000000000
+      internalID: -7915116316564954124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCTeaDeath (SpriteSheet)_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.625, y: 0.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 964b4df8aeef28ac0800000000000000
+      internalID: -3854238047686839191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCTeaDeath (SpriteSheet)_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 512
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.625, y: 0.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc6236d96d28ab9c0800000000000000
+      internalID: -3910669468142721331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCTeaDeath (SpriteSheet)_9
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.625, y: 0.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57b8ac849f1afd780800000000000000
+      internalID: -8656021866742641803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCTeaDeath (SpriteSheet)_10
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 512
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.625, y: 0.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a8dcf2618ec99e30800000000000000
+      internalID: 4510863556895103141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCTeaDeath (SpriteSheet)_11
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.625, y: 0.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4eb96773e97640b60800000000000000
+      internalID: 7711402391198145508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCTeaDeath (SpriteSheet)_12
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 512
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.625, y: 0.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dc63e1b4894ec600800000000000000
+      internalID: 490410243698945234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCTeaDeath (SpriteSheet)_13
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 512
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.625, y: 0.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47dec201d5b07d8b0800000000000000
+      internalID: -5127617156406776460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCTeaDeath (SpriteSheet)_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.625, y: 0.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57f7ef1ba53585e40800000000000000
+      internalID: 5645353781907324789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCTeaDeath (SpriteSheet)_15
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.625, y: 0.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e136508c2c9538740800000000000000
+      internalID: 5153061091756303134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCTeaDeath (SpriteSheet)_16
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 384
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.625, y: 0.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6e72758b10919ad0800000000000000
+      internalID: -2697216253940826515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCTeaDeath (SpriteSheet)_17
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 384
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.625, y: 0.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c18a07f608fd62460800000000000000
+      internalID: 7216701195626260508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCTeaDeath (SpriteSheet)_18
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 384
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.625, y: 0.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5da9cc891d32685d0800000000000000
+      internalID: -3060719513632990507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCTeaDeath (SpriteSheet)_19
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 384
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.625, y: 0.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3e0e4b9f52bb2c00800000000000000
+      internalID: 876990676150914623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCTeaDeath (SpriteSheet)_20
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 384
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.625, y: 0.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 948e8488acc5ebe10800000000000000
+      internalID: 2215310091652491337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCTeaDeath (SpriteSheet)_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.625, y: 0.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cac065f922f74290800000000000000
+      internalID: -7906084358801274176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCTeaDeath (SpriteSheet)_22
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.625, y: 0.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d0d9626df11c1b50800000000000000
+      internalID: 6565142136774840531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCTeaDeath (SpriteSheet)_23
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.625, y: 0.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 934a162b98392a330800000000000000
+      internalID: 3720698461773997113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCTeaDeath (SpriteSheet)_24
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.625, y: 0.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b43172ba5dd3a92a0800000000000000
+      internalID: -6729998705242991797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCTeaDeath (SpriteSheet)_25
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.625, y: 0.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 499fdabf02d137940800000000000000
+      internalID: 5292606014589106580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCTeaDeath (SpriteSheet)_26
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 256
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.625, y: 0.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d6f4599e1fa7c440800000000000000
+      internalID: 4956122460900882129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCTeaDeath (SpriteSheet)_27
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 256
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.625, y: 0.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa3f0ffd1bf2cc400800000000000000
+      internalID: 345703712413512618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCTeaDeath (SpriteSheet)_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.625, y: 0.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5df7c502e7a2aad80800000000000000
+      internalID: -8238725847123722283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCTeaDeath (SpriteSheet)_29
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.625, y: 0.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba511af69c008dd40800000000000000
+      internalID: 5609234201051207083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCTeaDeath (SpriteSheet)_30
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.625, y: 0.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b879f2c0c7b31a260800000000000000
+      internalID: 7107027090933782411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCTeaDeath (SpriteSheet)_31
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.625, y: 0.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f67d5c1f2c73c0a0800000000000000
+      internalID: -6862504865401309454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCTeaDeath (SpriteSheet)_32
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 128
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.625, y: 0.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d298fe55931c06a0800000000000000
+      internalID: -6481784231428582701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCTeaDeath (SpriteSheet)_33
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 128
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.625, y: 0.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cf7da5de981e99f0800000000000000
+      internalID: -459903041476395066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCTeaDeath (SpriteSheet)_34
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 128
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.625, y: 0.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8c2a512f89b357d0800000000000000
+      internalID: -2930794908097041266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCTeaDeath (SpriteSheet)_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.625, y: 0.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 497df576cb1b5ca50800000000000000
+      internalID: 6540829456571815828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCTeaDeath (SpriteSheet)_36
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.625, y: 0.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 639b2bda0420fcfb0800000000000000
+      internalID: -4625475815470876362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCTeaDeath (SpriteSheet)_37
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.625, y: 0.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 140111a5304e42310800000000000000
+      internalID: 1379478088929316929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCTeaDeath (SpriteSheet)_38
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.625, y: 0.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d11cf8753c2809b30800000000000000
+      internalID: 4292074220383355165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCTeaDeath (SpriteSheet)_39
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.625, y: 0.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d3f6a7891f570030800000000000000
+      internalID: 3460839401912202195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCTeaDeath (SpriteSheet)_40
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.625, y: 0.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64cabf4e00985cb60800000000000000
+      internalID: 7765763769404992582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCTeaDeath (SpriteSheet)_41
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.625, y: 0.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2e6c3d1884532a40800000000000000
+      internalID: 5342206526574325290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: f74560cd67916d346b1c31eb967c1cf6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      MCTeaDeath (SpriteSheet)_0: 63954687707762726
+      MCTeaDeath (SpriteSheet)_1: -6407305895866380661
+      MCTeaDeath (SpriteSheet)_10: 4510863556895103141
+      MCTeaDeath (SpriteSheet)_11: 7711402391198145508
+      MCTeaDeath (SpriteSheet)_12: 490410243698945234
+      MCTeaDeath (SpriteSheet)_13: -5127617156406776460
+      MCTeaDeath (SpriteSheet)_14: 5645353781907324789
+      MCTeaDeath (SpriteSheet)_15: 5153061091756303134
+      MCTeaDeath (SpriteSheet)_16: -2697216253940826515
+      MCTeaDeath (SpriteSheet)_17: 7216701195626260508
+      MCTeaDeath (SpriteSheet)_18: -3060719513632990507
+      MCTeaDeath (SpriteSheet)_19: 876990676150914623
+      MCTeaDeath (SpriteSheet)_2: -7519169902485162161
+      MCTeaDeath (SpriteSheet)_20: 2215310091652491337
+      MCTeaDeath (SpriteSheet)_21: -7906084358801274176
+      MCTeaDeath (SpriteSheet)_22: 6565142136774840531
+      MCTeaDeath (SpriteSheet)_23: 3720698461773997113
+      MCTeaDeath (SpriteSheet)_24: -6729998705242991797
+      MCTeaDeath (SpriteSheet)_25: 5292606014589106580
+      MCTeaDeath (SpriteSheet)_26: 4956122460900882129
+      MCTeaDeath (SpriteSheet)_27: 345703712413512618
+      MCTeaDeath (SpriteSheet)_28: -8238725847123722283
+      MCTeaDeath (SpriteSheet)_29: 5609234201051207083
+      MCTeaDeath (SpriteSheet)_3: -2439716326659605444
+      MCTeaDeath (SpriteSheet)_30: 7107027090933782411
+      MCTeaDeath (SpriteSheet)_31: -6862504865401309454
+      MCTeaDeath (SpriteSheet)_32: -6481784231428582701
+      MCTeaDeath (SpriteSheet)_33: -459903041476395066
+      MCTeaDeath (SpriteSheet)_34: -2930794908097041266
+      MCTeaDeath (SpriteSheet)_35: 6540829456571815828
+      MCTeaDeath (SpriteSheet)_36: -4625475815470876362
+      MCTeaDeath (SpriteSheet)_37: 1379478088929316929
+      MCTeaDeath (SpriteSheet)_38: 4292074220383355165
+      MCTeaDeath (SpriteSheet)_39: 3460839401912202195
+      MCTeaDeath (SpriteSheet)_4: -4622195716066529735
+      MCTeaDeath (SpriteSheet)_40: 7765763769404992582
+      MCTeaDeath (SpriteSheet)_41: 5342206526574325290
+      MCTeaDeath (SpriteSheet)_5: -1165311163163091368
+      MCTeaDeath (SpriteSheet)_6: -7915116316564954124
+      MCTeaDeath (SpriteSheet)_7: -3854238047686839191
+      MCTeaDeath (SpriteSheet)_8: -3910669468142721331
+      MCTeaDeath (SpriteSheet)_9: -8656021866742641803
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
