@@ -4712,10 +4712,10 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.0015625
-    y: 0.056250002
-    width: 0.375
-    height: 0.5
+    x: 0.125
+    y: 0
+    width: 0.75
+    height: 1
   near clip plane: 0.1
   far clip plane: 5000
   field of view: 40
@@ -6059,7 +6059,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 676578586}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 140cfa0e2109679489f73a579ba8a4a8, type: 3}
   m_Name: 
@@ -6210,7 +6210,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 691016274}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 140cfa0e2109679489f73a579ba8a4a8, type: 3}
   m_Name: 
@@ -9161,10 +9161,10 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.0015625
-    y: 0.056250002
-    width: 0.375
-    height: 0.5
+    x: 0.125
+    y: 0
+    width: 0.75
+    height: 1
   near clip plane: 0.1
   far clip plane: 5000
   field of view: 40
@@ -10048,6 +10048,51 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1331210801
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1331210803}
+  - component: {fileID: 1331210802}
+  m_Layer: 0
+  m_Name: -----LanguageTestButton---
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1331210802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331210801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b44a37dcf390f54aa4a598472834cc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  debugLanguage: 2
+--- !u!4 &1331210803
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331210801}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -21.38242, y: -0.10608735, z: -0.0049696006}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1331402643
 GameObject:
   m_ObjectHideFlags: 0
@@ -10846,7 +10891,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1436270607}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 140cfa0e2109679489f73a579ba8a4a8, type: 3}
   m_Name: 
@@ -11180,6 +11225,8 @@ MonoBehaviour:
     expression: thinking
   textSpeed: 0.1
   dialogueCanvas: {fileID: 1351478493}
+  englishFontSize: 120
+  japaneseFontSize: 80
   references:
     version: 2
     RefIds: []
@@ -11764,6 +11811,8 @@ MonoBehaviour:
     expression: thinking
   textSpeed: 0.1
   dialogueCanvas: {fileID: 1411043553}
+  englishFontSize: 120
+  japaneseFontSize: 80
   references:
     version: 2
     RefIds: []
@@ -13237,6 +13286,8 @@ MonoBehaviour:
     expression: thinking
   textSpeed: 0.1
   dialogueCanvas: {fileID: 740950424}
+  englishFontSize: 120
+  japaneseFontSize: 80
   references:
     version: 2
     RefIds: []
@@ -13509,7 +13560,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2023858444}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 140cfa0e2109679489f73a579ba8a4a8, type: 3}
   m_Name: 
@@ -14265,6 +14316,8 @@ MonoBehaviour:
     expression: thinking
   textSpeed: 0.1
   dialogueCanvas: {fileID: 131454501978631579}
+  englishFontSize: 120
+  japaneseFontSize: 80
   references:
     version: 2
     RefIds: []
@@ -15108,3 +15161,4 @@ SceneRoots:
   - {fileID: 1295845884}
   - {fileID: 2064727762}
   - {fileID: 11290099}
+  - {fileID: 1331210803}
