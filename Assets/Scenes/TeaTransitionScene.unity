@@ -540,7 +540,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -822,7 +822,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sequenceSteps:
   - stepType: 0
-    timeline: {fileID: 1606402947}
+    timeline: {fileID: 1883095582}
     dialogueCanvas: {fileID: 0}
     dialogue: {fileID: 0}
     setFacingAfterStep: 0
@@ -842,7 +842,7 @@ MonoBehaviour:
       setYandere: 0
       yandereDirection: 0
   - stepType: 0
-    timeline: {fileID: 1113082335}
+    timeline: {fileID: 1523861562}
     dialogueCanvas: {fileID: 0}
     dialogue: {fileID: 0}
     setFacingAfterStep: 0
@@ -851,7 +851,7 @@ MonoBehaviour:
       mcDirection: 0
       setYandere: 0
       yandereDirection: 0
-  nextSceneName: RetryScene (Tutorial)
+  nextSceneName: TutorialScene
   directionManager: {fileID: 785217392}
 --- !u!4 &397889613
 Transform:
@@ -966,7 +966,7 @@ Transform:
   m_GameObject: {fileID: 509657430}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.75, y: 2.5, z: 0}
+  m_LocalPosition: {x: 1.427, y: -0.346, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1240,28 +1240,118 @@ MonoBehaviour:
   lines:
   - localizedLine:
       m_TableReference:
-        m_TableCollectionName: GUID:353dda600ef300240895d75eac276e73
+        m_TableCollectionName: GUID:0fe50ee2b4e79a34b9a4eb3d2ee6dd2b
       m_TableEntryReference:
-        m_KeyId: 4759072768
+        m_KeyId: 4570329088
         m_Key: 
       m_FallbackState: 0
       m_WaitForCompletion: 0
       m_LocalVariables: []
-    speakerName: MC
-    expression: gag
+    speakerName: Yandere
+    expression: normal smile with eyes closed
   - localizedLine:
       m_TableReference:
-        m_TableCollectionName: GUID:353dda600ef300240895d75eac276e73
+        m_TableCollectionName: GUID:0fe50ee2b4e79a34b9a4eb3d2ee6dd2b
       m_TableEntryReference:
-        m_KeyId: 28431724544
+        m_KeyId: 1041905729777664
         m_Key: 
       m_FallbackState: 0
       m_WaitForCompletion: 0
       m_LocalVariables: []
-    speakerName: MC
-    expression: gag
+    speakerName: Yandere
+    expression: normal smile with eyes closed
+  - localizedLine:
+      m_TableReference:
+        m_TableCollectionName: GUID:0fe50ee2b4e79a34b9a4eb3d2ee6dd2b
+      m_TableEntryReference:
+        m_KeyId: 260531924992
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    speakerName: Yandere
+    expression: normal smile
+  - localizedLine:
+      m_TableReference:
+        m_TableCollectionName: GUID:0fe50ee2b4e79a34b9a4eb3d2ee6dd2b
+      m_TableEntryReference:
+        m_KeyId: 328240574464
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    speakerName: Yandere
+    expression: normal smile
+  - localizedLine:
+      m_TableReference:
+        m_TableCollectionName: GUID:0fe50ee2b4e79a34b9a4eb3d2ee6dd2b
+      m_TableEntryReference:
+        m_KeyId: 218177945055232
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    speakerName: Yandere
+    expression: normal smile
+  - localizedLine:
+      m_TableReference:
+        m_TableCollectionName: GUID:0fe50ee2b4e79a34b9a4eb3d2ee6dd2b
+      m_TableEntryReference:
+        m_KeyId: 218317363720192
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    speakerName: Yandere
+    expression: normal smile
+  - localizedLine:
+      m_TableReference:
+        m_TableCollectionName: GUID:0fe50ee2b4e79a34b9a4eb3d2ee6dd2b
+      m_TableEntryReference:
+        m_KeyId: 218463711375360
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    speakerName: Yandere
+    expression: normal smile with eyes closed
+  - localizedLine:
+      m_TableReference:
+        m_TableCollectionName: GUID:0fe50ee2b4e79a34b9a4eb3d2ee6dd2b
+      m_TableEntryReference:
+        m_KeyId: 218568103407616
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    speakerName: Yandere
+    expression: normal smile
+  - localizedLine:
+      m_TableReference:
+        m_TableCollectionName: GUID:0fe50ee2b4e79a34b9a4eb3d2ee6dd2b
+      m_TableEntryReference:
+        m_KeyId: 218630904721408
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    speakerName: Yandere
+    expression: normal smile with eyes closed
+  - localizedLine:
+      m_TableReference:
+        m_TableCollectionName: GUID:0fe50ee2b4e79a34b9a4eb3d2ee6dd2b
+      m_TableEntryReference:
+        m_KeyId: 1042669424455680
+        m_Key: 
+      m_FallbackState: 0
+      m_WaitForCompletion: 0
+      m_LocalVariables: []
+    speakerName: Yandere
+    expression: normal smile
   textSpeed: 0.1
   dialogueCanvas: {fileID: 0}
+  englishFontSize: 160
+  japaneseFontSize: 120
   references:
     version: 2
     RefIds: []
@@ -1983,7 +2073,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: c51f9d95109ae0241ba5518b8d9f3db9, type: 3}
+  m_Sprite: {fileID: 5402715185148056672, guid: 1cfb4c620b2ad374fb2d850c46c951ae, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2035,66 +2125,6 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.70588994, y: 1.2760186, z: 0.20445018}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1113082334
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1113082336}
-  - component: {fileID: 1113082335}
-  m_Layer: 0
-  m_Name: Timeline Scene 2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!320 &1113082335
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1113082334}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: eee949d7bf2ece54d92c5d54f5ce652e, type: 2}
-  m_InitialState: 0
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings:
-  - key: {fileID: -2148495876048328471, guid: eee949d7bf2ece54d92c5d54f5ce652e, type: 2}
-    value: {fileID: 1541116202}
-  - key: {fileID: -1763883986462860461, guid: eee949d7bf2ece54d92c5d54f5ce652e, type: 2}
-    value: {fileID: 2109797034}
-  - key: {fileID: -3325139066053822519, guid: eee949d7bf2ece54d92c5d54f5ce652e, type: 2}
-    value: {fileID: 468513858}
-  - key: {fileID: 152769535216922119, guid: eee949d7bf2ece54d92c5d54f5ce652e, type: 2}
-    value: {fileID: 863562364}
-  - key: {fileID: -2918197818145202317, guid: eee949d7bf2ece54d92c5d54f5ce652e, type: 2}
-    value: {fileID: 863562364}
-  m_ExposedReferences:
-    m_References:
-    - 56e702aa8b3dfdd4f96c6d05f74d3bc2: {fileID: 863562362}
---- !u!4 &1113082336
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1113082334}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.091177404, y: 0.46057922, z: 0.018187962}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2349,7 +2379,7 @@ GameObject:
   - component: {fileID: 1405381243}
   - component: {fileID: 1405381242}
   m_Layer: 5
-  m_Name: DamageEffects
+  m_Name: FadeEffects
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2438,7 +2468,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 1000
+  m_SortingOrder: 10000
   m_TargetDisplay: 0
 --- !u!224 &1405381246
 RectTransform:
@@ -3346,6 +3376,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1523861560
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1523861561}
+  - component: {fileID: 1523861562}
+  m_Layer: 0
+  m_Name: Timeline Scene 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1523861561
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523861560}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.9694954, y: 1.1537063, z: 0.05518901}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!320 &1523861562
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523861560}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: f7f2ab80ae2b8814797e55fbea6e6db9, type: 2}
+  m_InitialState: 0
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: -5226450421605799138, guid: f7f2ab80ae2b8814797e55fbea6e6db9, type: 2}
+    value: {fileID: 1405381242}
+  - key: {fileID: 4951040360157483817, guid: f7f2ab80ae2b8814797e55fbea6e6db9, type: 2}
+    value: {fileID: 2109797034}
+  - key: {fileID: -7012904165728711216, guid: f7f2ab80ae2b8814797e55fbea6e6db9, type: 2}
+    value: {fileID: 509657432}
+  - key: {fileID: 3746084776811835011, guid: f7f2ab80ae2b8814797e55fbea6e6db9, type: 2}
+    value: {fileID: 976602294}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &1541116200
 GameObject:
   m_ObjectHideFlags: 0
@@ -3372,7 +3459,7 @@ Transform:
   m_GameObject: {fileID: 1541116200}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.189, y: 1.244, z: 0}
+  m_LocalPosition: {x: 0.806, y: -0.346, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3943,67 +4030,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.09196186, y: 0.53962994}
   m_EdgeRadius: 0
---- !u!1 &1606402946
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1606402948}
-  - component: {fileID: 1606402947}
-  m_Layer: 0
-  m_Name: Timeline Scene 1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!320 &1606402947
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1606402946}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: d06a97e7f23a7194891187bf00080104, type: 2}
-  m_InitialState: 0
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings:
-  - key: {fileID: -3147299676441659220, guid: d06a97e7f23a7194891187bf00080104, type: 2}
-    value: {fileID: 1541116202}
-  - key: {fileID: 5602313790089451418, guid: d06a97e7f23a7194891187bf00080104, type: 2}
-    value: {fileID: 2109797034}
-  - key: {fileID: 3405765292606087304, guid: d06a97e7f23a7194891187bf00080104, type: 2}
-    value: {fileID: 1405381242}
-  - key: {fileID: -4563830246766430180, guid: d06a97e7f23a7194891187bf00080104, type: 2}
-    value: {fileID: 863562364}
-  - key: {fileID: -2815998164202944746, guid: d06a97e7f23a7194891187bf00080104, type: 2}
-    value: {fileID: 8512734}
-  - key: {fileID: -409554642573126876, guid: d06a97e7f23a7194891187bf00080104, type: 2}
-    value: {fileID: 97554682}
-  m_ExposedReferences:
-    m_References: []
---- !u!4 &1606402948
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1606402946}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.091177404, y: 0.46057922, z: 0.018187962}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1672175510
 GameObject:
   m_ObjectHideFlags: 0
@@ -4995,6 +5021,57 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   englishFontSize: 160
   japaneseFontSize: 120
+--- !u!1 &1883095581
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1883095583}
+  - component: {fileID: 1883095582}
+  m_Layer: 0
+  m_Name: Timeline Scene 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!320 &1883095582
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1883095581}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: ae6ffd879227b444583e1bf4ba25060c, type: 2}
+  m_InitialState: 0
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 9062762761229049138, guid: ae6ffd879227b444583e1bf4ba25060c, type: 2}
+    value: {fileID: 1405381242}
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &1883095583
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1883095581}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -20.178242, y: -0.40659797, z: 658.3407}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1956923758
 GameObject:
   m_ObjectHideFlags: 0
@@ -5074,10 +5151,10 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.1078125
-    y: 0.068055555
-    width: 0.1875
-    height: 0.25
+    x: 0.125
+    y: 0
+    width: 0.75
+    height: 1
   near clip plane: 0.1
   far clip plane: 5000
   field of view: 40
@@ -5215,7 +5292,7 @@ Transform:
   m_GameObject: {fileID: 2044865915}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.189, y: 1.244, z: -10}
+  m_LocalPosition: {x: 0.806, y: -0.346, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5402,7 +5479,7 @@ Transform:
   m_GameObject: {fileID: 2109797033}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.060499907, y: -0.07229996, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5422,8 +5499,8 @@ SceneRoots:
   - {fileID: 1556561930}
   - {fileID: 785217393}
   - {fileID: 397889613}
-  - {fileID: 1606402948}
-  - {fileID: 1113082336}
+  - {fileID: 1883095583}
+  - {fileID: 1523861561}
   - {fileID: 1473712204}
   - {fileID: 918420202}
   - {fileID: 769809327}
