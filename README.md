@@ -13,11 +13,24 @@ Some sound effects used in this game are provided by:
 **効果音ラボ (Sound Effect Lab)**  
 https://soundeffect-lab.info/
 
+All rights reserved by Sound Effect Lab. Used under their free use license.
+
 **DOVA-SYNDROME**  
 https://dova-s.jp/
 - "不穏な影" 
 
-All rights reserved by Sound Effect Lab. Used under their free use license.
+**Sound Effects: OtoLogic**
+https://otologic.jp/
+
+**Fonts Used:**
+
+- ベストテンFONT by フロップデザイン
+  https://flopdesign.booth.pm/items/2747965  
+  (Free for commercial use. Embedding allowed. Please credit if possible.)
+
+- Vonwaon Bitmap Font
+  Released under CC0 1.0 Public Domain  
+  (Attribution optional but appreciated.)
 
 ---
 
