@@ -4,7 +4,7 @@
 
 ❌ These assets **may not be reused, modified, or redistributed** without explicit permission.
 
-If you wish to use these assets or features of this project in any way, please contact the developer for permission.
+If you wish to use these assets or features of this project in any way, please contact Teh Hock Jian for permission.
 
 🔊 **Sound effects** are sourced from free-use libraries under their respective licenses.
 
