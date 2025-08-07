@@ -32,8 +32,6 @@ public class CharacterExpressionManager : MonoBehaviour
         if (expr == null) return;
 
         characterImage.sprite = expr.sprite;
-
-        Debug.Log("Found");
     }
 }
 

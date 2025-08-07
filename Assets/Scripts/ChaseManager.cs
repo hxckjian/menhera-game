@@ -12,6 +12,12 @@ public class ChaseManager : MonoBehaviour
     [Header("UI")]
     [SerializeField] private DebugTimerDisplay debugTimer;
 
+    [Header("LightManager")]
+    [SerializeField] private LightFlickerManager lightManager;
+
+    [Header("Timer End Audio")]
+    [SerializeField] private AudioSource timerEndAudio;
+
     private void Start()
     {
         // Start debug countdown UI
@@ -25,12 +31,19 @@ public class ChaseManager : MonoBehaviour
             yandere.SetActive(false);
             StartCoroutine(DelayYandereSpawn());
         }
+
+        lightManager?.StartFlickerRoutine(yandereAppearDelay);
     }
 
     private IEnumerator DelayYandereSpawn()
     {
         yield return new WaitForSeconds(yandereAppearDelay);
+
+        timerEndAudio?.Play();
+
         yandere.SetActive(true);
+
+        lightManager?.TurnLightRed();
 
         // Optional: start chasing behavior
         var ai = yandere.GetComponent<TestYandereAI>();

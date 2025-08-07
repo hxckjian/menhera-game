@@ -16,6 +16,11 @@ public class StartMenu : MonoBehaviour
         FindFirstObjectByType<SceneTransitionManager>().LoadSceneAndDestroy("SampleScene");
     }
       
+    public void OnTutorialClick()
+    {
+        FindFirstObjectByType<SceneTransitionManager>().LoadSceneAndDestroy("TeaTransitionScene");
+    }
+    
     // Called when Exit Button is clicked and exit application
     public void OnExitClick()
     {

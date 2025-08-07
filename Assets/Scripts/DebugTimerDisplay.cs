@@ -18,7 +18,7 @@ public class DebugTimerDisplay : MonoBehaviour
     {
         timeLeft = delay;
         isRunning = true;
-
+        
         if (timerText != null)
         {
             timerText.gameObject.SetActive(showDebugTimer);

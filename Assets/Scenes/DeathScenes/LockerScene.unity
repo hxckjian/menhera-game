@@ -2435,6 +2435,8 @@ MonoBehaviour:
     expression: yandere smile
   textSpeed: 0.1
   dialogueCanvas: {fileID: 0}
+  englishFontSize: 160
+  japaneseFontSize: 120
   references:
     version: 2
     RefIds: []
@@ -6028,7 +6030,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1838722478}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 140cfa0e2109679489f73a579ba8a4a8, type: 3}
   m_Name: 
@@ -7442,10 +7444,10 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.085416675
-    y: 0.24166666
-    width: 0.25
-    height: 0.3333333
+    x: 0.16640626
+    y: 0.088194445
+    width: 0.1875
+    height: 0.25
   near clip plane: 0.1
   far clip plane: 5000
   field of view: 40
