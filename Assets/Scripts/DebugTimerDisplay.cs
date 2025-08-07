@@ -18,18 +18,11 @@ public class DebugTimerDisplay : MonoBehaviour
     {
         timeLeft = delay;
         isRunning = true;
-
-        //Disable for now
-        showDebugTimer = !showDebugTimer;
-
-        if (timerPanel != null)
+        
+        if (timerText != null)
         {
-            timerPanel.SetActive(showDebugTimer);
+            timerText.gameObject.SetActive(showDebugTimer);
         }
-        // if (timerText != null)
-        // {
-        //     timerText.gameObject.SetActive(showDebugTimer);
-        // }
     }
 
     private void Update()
