@@ -19,12 +19,12 @@ All rights reserved by Sound Effect Lab. Used under their free use license.
 https://dova-s.jp/
 - "不穏な影" 
 
-**Sound Effects: OtoLogic**
+**Sound Effects: OtoLogic**  
 https://otologic.jp/
 
 **Fonts Used:**
 
-- ベストテンFONT by フロップデザイン
+- ベストテンFONT by フロップデザイン  
   https://flopdesign.booth.pm/items/2747965  
   (Free for commercial use. Embedding allowed. Please credit if possible.)
 
