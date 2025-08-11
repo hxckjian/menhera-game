@@ -29,7 +29,7 @@ public class LightFlickerManager : MonoBehaviour
         yield return new WaitForSeconds(delay - 10f);
         yield return FlickerOnce(0.15f);
 
-        yield return new WaitForSeconds(5f); // 5s left
+        yield return new WaitForSeconds(5f); 
         yield return FlickerOnce(0.1f);
         yield return new WaitForSeconds(0.4f);
         yield return FlickerOnce(0.05f);
@@ -42,9 +42,9 @@ public class LightFlickerManager : MonoBehaviour
         if (globalLight != null)
         {
             PlayFlickerSound();
-            globalLight.intensity = 0.1f; // Almost dark
+            globalLight.intensity = 0.1f; 
             yield return new WaitForSeconds(duration);
-            globalLight.intensity = 1.7f; // Back to normal brightness
+            globalLight.intensity = 1.7f; 
         }
     }
 

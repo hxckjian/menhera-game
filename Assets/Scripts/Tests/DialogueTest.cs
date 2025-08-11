@@ -15,19 +15,15 @@ public class DialogueTest
     {
         dialogueGO = new GameObject("DialogueBox");
 
-        // Add Canvas (optional)
         Canvas canvas = dialogueGO.AddComponent<Canvas>();
         canvas.renderMode = RenderMode.ScreenSpaceOverlay;
 
-        // Create a TMP Text object
         GameObject tmpObject = new GameObject("TMP_Text");
         tmpObject.transform.SetParent(dialogueGO.transform);
         tmpText = tmpObject.AddComponent<TextMeshProUGUI>();
 
-        // Attach Dialogue component
         dialogue = dialogueGO.AddComponent<Dialogue>();
 
-        // Use reflection or serialized field to inject TMP and lines
         typeof(Dialogue).GetField("textComponent", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance)
             .SetValue(dialogue, tmpText);
 
@@ -48,19 +44,18 @@ public class DialogueTest
 
         dialogue.StartDialogueManually();
 
-        // Wait for the first line to type
         yield return new WaitForSecondsRealtime(0.1f);
 
-        dialogue.HandleClick(); // Finish first line
+        dialogue.HandleClick(); 
         yield return new WaitForSecondsRealtime(0.1f);
 
-        dialogue.HandleClick(); // Go to next line
+        dialogue.HandleClick(); 
         yield return new WaitForSecondsRealtime(0.1f);
 
-        dialogue.HandleClick(); // Finish second line
+        dialogue.HandleClick(); 
         yield return new WaitForSecondsRealtime(0.1f);
 
-        dialogue.HandleClick(); // Trigger complete
+        dialogue.HandleClick(); 
         yield return new WaitForSecondsRealtime(0.1f);
 
         Assert.IsTrue(completed, "Dialogue did not complete properly.");
