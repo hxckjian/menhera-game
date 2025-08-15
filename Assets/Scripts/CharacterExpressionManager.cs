@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class CharacterExpressionManager : MonoBehaviour
 {
-    [SerializeField] private Image characterImage; // UI Image on the right
+    [SerializeField] private Image characterImage; 
     [SerializeField] private List<CharacterExpressions> characterSprites;
 
     [System.Serializable]
@@ -19,7 +19,7 @@ public class CharacterExpressionManager : MonoBehaviour
     [System.Serializable]
     public class ExpressionSprite
     {
-        public string expressionName;  // "neutral", "smile", etc.
+        public string expressionName; 
         public Sprite sprite;
     }
 
