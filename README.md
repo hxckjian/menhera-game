@@ -6,7 +6,7 @@ https://nekorin24.itch.io/i-tried-escaping-my-yandere-girlfriend-but-she-still-f
 
 ![Banner](Assets/Readme%20Assets/gametitleBannerv3.jpg)
 
-## A solo-developed pixel horror experience created as a portfolio piece to showcase programming, artistic and japanese skills in just 10-15 minutes.
+## A pixel horror experience created as a portfolio piece to showcase programming, artistic and japanese skills in just 10-15 minutes.
 
 You went to your girlfriend's house
 
