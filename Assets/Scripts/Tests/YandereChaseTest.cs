@@ -37,7 +37,6 @@ public class YandereChaseTest
         agent = yandere.GetComponent<NavMeshAgent>();
         ai = yandere.GetComponent<TestYandereAI>();
 
-        // Inject the dummy player as the yandere’s target
         ai.InjectPlayer(player.transform);
         ai.BeginChase();
 

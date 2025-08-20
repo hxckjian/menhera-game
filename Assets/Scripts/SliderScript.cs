@@ -7,21 +7,9 @@ public class SliderScript : MonoBehaviour
 {
     [SerializeField] private Slider _slider;
     [SerializeField] private TextMeshProUGUI _sliderText;
-    [SerializeField] private AudioMixer _mixer; // assign this in inspector
-    [SerializeField] private string exposedParam = "MasterVolume"; // or MusicVolume, etc.
+    [SerializeField] private AudioMixer _mixer; 
+    [SerializeField] private string exposedParam = "MasterVolume"; 
 
-    // void Start()
-    // {
-
-    //     // Set default value to 100
-    // _slider.value = 100;
-
-    // // Update text immediately
-    // _sliderText.text = _slider.value.ToString("0");
-    //     _slider.onValueChanged.AddListener((v) => {
-    //         _sliderText.text = v.ToString("0");
-    //     });
-    // }
     void Start()
     {
         // Load previously saved volume
@@ -37,12 +25,11 @@ public class SliderScript : MonoBehaviour
     }
 
     void SetVolume(float sliderValue)
-{
-    // Clamp to a minimum safe value (0.0001 = -80dB)
-    float clampedValue = Mathf.Clamp(sliderValue / 100f, 0.0001f, 1f);
-    float volume = Mathf.Log10(clampedValue) * 20;
+    {
+        float clampedValue = Mathf.Clamp(sliderValue / 100f, 0.0001f, 1f);
+        float volume = Mathf.Log10(clampedValue) * 20;
 
-    _mixer.SetFloat(exposedParam, volume);
-    PlayerPrefs.SetFloat(exposedParam, clampedValue);
-}
+        _mixer.SetFloat(exposedParam, volume);
+        PlayerPrefs.SetFloat(exposedParam, clampedValue);
+    }
 }
