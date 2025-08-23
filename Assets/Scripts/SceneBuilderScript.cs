@@ -9,7 +9,7 @@ public class SceneBuilderScript : MonoBehaviour
         // For now commented resolution fixing to see if other features can be expanded
         if (!hasSetResolution)
         {
-            Screen.SetResolution(960, 720, false);
+            Screen.SetResolution(1920, 1440, true);
             hasSetResolution = true;
             // Debug.Log("Initial resolution set once!");
         }
